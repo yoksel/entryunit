@@ -1,0 +1,93 @@
+.j-e-nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: ProximaNovaSemibold,Helvetica,sans-serif;
+    font-size: .875em
+}
+
+.j-e-nav-item {
+    display: block;
+    position: relative;
+    float: left;
+    height: 30px;
+    margin-right: 20px;
+    line-height: 30px
+}
+
+.j-e-nav-item:before {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 30px;
+    height: 26px;
+    margin: auto;
+    content: "";
+    background: url(/img/friendsfeed/sprite.svg) no-repeat
+}
+
+.b-feedsettings-on .j-e-nav-item:before {
+    display: none
+}
+
+.j-e-nav-item-comments,.j-e-nav-item-reply {
+    letter-spacing: .05em;
+    text-transform: uppercase
+}
+
+.j-e-nav-item-comments-icon,.j-e-nav-item-reply-icon {
+    position: absolute;
+    left: 0;
+    top: auto;
+    display: block;
+    height: 30px;
+    color: #7A9199
+}
+
+.j-e-nav-item-icon .svgicon {
+    width: 31px;
+    height: 30px
+}
+
+.j-e-nav-item-text {
+    padding: 0 6px
+}
+
+.j-e-nav-item-clear:before {
+    content: none
+}
+
+.j-e-nav-item-comments:before {
+    height: 30px;
+    background-position: -40px 3px
+}
+
+.j-e-nav-item-comments:hover:before {
+    background-position: -40px -37px
+}
+
+.j-e-nav-item-reply:before {
+    height: 30px;
+    background-position: -80px 3px
+}
+
+.j-e-nav-item-reply:hover:before {
+    background-position: -80px -37px
+}
+
+.j-e-nav-item-comments:before,.j-e-nav-item-reply:before {
+    right: auto
+}
+
+.j-e-nav-item A {
+    position: relative
+}
+
+.j-e-nav-item-comments A,.j-e-nav-item-reply A {
+    display: block;
+    position: relative;
+    padding: 0 0 0 34px
+}

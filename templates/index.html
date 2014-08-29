@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Modules</title>
+    <style>
+        {{{styles}}}
+    </style>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+{{{svg}}}
+
+    <div class="wrapper">
+        {{#templates}}
+            <div class="module">
+                <h2 class="module__title">{{name}}</h2>
+                <div class="module__wrapper">
+                    <div class="module__item module__content">
+                        {{{content}}}
+                    </div>
+                    <div class="module__item module__components">
+                        {{{components}}}
+                    </div>
+                </div>
+            </div>
+        {{/templates}}
+    </div>
+
+    <script src="//localhost:1337/livereload.js"></script>
+    <!-- 35729 -->
+</body>
+</html>

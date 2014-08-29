@@ -1,0 +1,40 @@
+/* links */
+BODY {
+    margin: 0;
+    padding: 0;
+    background: #FFF;
+    font: 15px/1.4 ProximaNovaRegular,Helvetica,sans-serif;
+    letter-spacing: .01em;
+    -webkit-font-smoothing: antialiased
+}
+
+A:link {
+    color: #00A3D9;
+    }
+A:visited {
+    color: #5CB7D6;
+    }
+A:hover {
+    color: #0086B3;
+    }
+A:active {
+    color: #0086B3;
+    }
+
+.svgicon {
+    fill: currentColor
+    }
+
+UL {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+@import '_entryunit';
+@import '_entryunit_v3';
+
+@import '_ljuser';
+@import '_flatsocial';
+
+@import '_nav-list';
