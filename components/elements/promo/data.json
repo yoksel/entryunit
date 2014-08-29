@@ -1,8 +1,3 @@
 {
-    "links": [
-        {"url": "http://ya.ru",
-          "text": "Добавить комментарий"  },
-        {"url": "http://ya.ru",
-          "text": "156 комментариев"  }
-    ]
+    "empty": "empty"
 }

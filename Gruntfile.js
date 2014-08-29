@@ -2,6 +2,8 @@
 
 module.exports = function(grunt) {
 
+    require('load-grunt-tasks')(grunt);
+
     // Project configuration.
     grunt.initConfig({
         clean: {
@@ -10,7 +12,9 @@ module.exports = function(grunt) {
 
         prototyper: {
             default_options: {
-                options: {},
+                options: {
+                  openResult: false
+                },
                 cwd: "",
                 componentsFolder: "components/",
                 templatesFolder: "templates/",
@@ -32,24 +36,39 @@ module.exports = function(grunt) {
           },
 
           watch: {
+              html: {
+                files: ['components/**/*.html'],
+                tasks: ['prototyper'],
+                options: {
+                  livereload: 1337,//true,
+                },
+              },
               css: {
-                files: '**/*.scss',
+                files: ['**/*.scss'],
                 tasks: ['sass'],
                 options: {
                   livereload: 1337,//true,
                 },
               },
-            }
+            },
+
+          connect: {
+              server: {
+                  options: {
+                      // base: './',
+                      port: 9002,
+                      open: {
+                          target: 'http://localhost:9002'
+                      }
+                  }
+              }
+          }
 
     });
 
-    // Actually load this plugin's task(s).
-    // grunt.loadTasks('tasks');
-    grunt.loadNpmTasks('grunt-prototyper');
-    grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-
-    grunt.registerTask('default', ['prototyper']); //,'watch'
+    grunt.registerTask('default', [
+        'connect:server:open',
+        'watch'
+    ]);
 
 };
