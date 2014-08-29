@@ -37,7 +37,7 @@ module.exports = function(grunt) {
 
           watch: {
               html: {
-                files: ['components/**/*.html'],
+                files: ['components/**/*.html','config.json'],
                 tasks: ['prototyper'],
                 options: {
                   livereload: 1337,//true,

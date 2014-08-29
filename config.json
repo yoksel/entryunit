@@ -1,5 +1,57 @@
 {
-    "var1": ["user", "title", "comments"],
-    "var2": ["date", "entrytext"],
-    "var3": ["title", "date"]
+    "promo": [
+        "promo",
+        "user",
+        "date",
+        "headercomments",
+        "title",
+        "entrytext"],
+    "raiting": [
+        "position",
+        "user",
+        "date",
+        "headercomments",
+        "title",
+        "entrytext",
+        "actions"],
+    "recomended": [
+        "recomend",
+        "user",
+        "headerreply" ,
+        "title",
+        "entrytext"],
+    "magazine": [
+        "user",
+        "date",
+        "headercomments",
+        "title",
+        "imagefull",
+        "entrytext"
+        ],
+     "browsepost": [
+        "position",
+        "tocommunity",
+        "date",
+        "headerreply",
+        "title",
+        "entrytext",
+        "share"
+        ],
+    "browsecommunity": [
+        "comm",
+        "stats",
+        "imageupic",
+        "shorttext",
+        "joinwatch"
+        ],
+    "feed": [
+        "usepic",
+        "user",
+        "date",
+        "title",
+        "entrytext",
+        "tags",
+        "comments"
+    ]
+
 }
