@@ -1,25 +1,33 @@
 {
-    "promo": [
-        "promo",
-        "user",
-        "date",
-        "headercomments",
-        "title",
-        "entrytext"],
-    "raiting": [
-        "position",
-        "user",
-        "date",
-        "headercomments",
-        "title",
-        "entrytext",
-        "actions"],
+    "promo": {
+        "elements": [
+            "promo",
+            "user",
+            "date",
+            "headercomments",
+            "title",
+            "entrytext"
+        ]
+    },
+    "rating": {
+        "wrapper-class": "b-mainpage",
+        "elements": [
+            "position",
+            "user",
+            "date",
+            "headercomments",
+            "title",
+            "entrytext",
+            "actions"
+        ]
+    },
     "recomended": [
         "recomend",
         "user",
-        "headerreply" ,
+        "headerreply",
         "title",
-        "entrytext"],
+        "entrytext"
+    ],
     "magazine": [
         "user",
         "date",
@@ -27,8 +35,8 @@
         "title",
         "imagefull",
         "entrytext"
-        ],
-     "browsepost": [
+    ],
+    "browsepost": [
         "position",
         "tocommunity",
         "date",
@@ -36,16 +44,16 @@
         "title",
         "entrytext",
         "share"
-        ],
+    ],
     "browsecommunity": [
         "comm",
         "stats",
         "imageupic",
         "shorttext",
         "joinwatch"
-        ],
+    ],
     "feed": [
-        "usepic",
+        "userpic",
         "user",
         "date",
         "title",

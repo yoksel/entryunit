@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Modules</title>
+     <!-- Included styles -->
     <style>
         BODY {
     background: #FFF;
@@ -11,16 +12,83 @@
     min-width: 500px;
     max-width: 1000px;
     margin: 3em auto;
+    padding: 0 2em;
     }
+/* DEMOTABS
+------------------------------- */
+.demotabs {
+    position: relative;
+    margin-bottom: 2em;
+    padding: 0;
+    }
+    .demotabs:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        border-bottom: 1px solid #DDD;
+        }
+    .demotab {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        padding: .5em 1em;
+        border: 1px solid transparent;
+        border-width: 1px 1px 0;
+        font: 1.2em/1 Trebuchet MS, sans-serif;
+        color: #777;
+        cursor: pointer;
+        }
+        .demotab--current {
+            background: #FFF;
+            border-color: #DDD;
+            color: #000;
+            cursor: default;
+            }
+/* DEMOITEMS
+------------------------------- */
+.demoitem {
+    display: none;
+    }
+.demoitem--current {
+    display: block;
+    }
+/* MODULES
+------------------------------- */
 .module {
     margin-bottom: 2em;
     }
 .module__title {
+    display: inline-block;
+    position: relative;
     margin: 0 0 .5em;
-    font: 2em/1 Trebuchet MS, sans-serif;
+    padding: .2em .5em;
+    background: steelblue;
+    font: 1.3em/1 Trebuchet MS, sans-serif;
+    color: #FFF;
     }
-.module__wrapper {
-    }
+    .module__title:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: -.692em;
+        width: 0;
+        height: 0;
+        border: .72em solid transparent;
+        border-right-width: 0;
+        border-left-color: steelblue;
+        }
+    .demoitem--elements .module__title {
+        background: yellowgreen;
+        }
+        .demoitem--elements .module__title:after {
+            border-left-color: yellowgreen;
+            }
+
+.module__wrapper {}
+
     .module__wrapper:after {
         content: "";
         display: table;
@@ -30,23 +98,31 @@
 .module__item {
     box-sizing: border-box;
     }
-    .module__content {
+    .demoitem--elements .module__item {
+        border: 1px solid #DDD;
+        padding: 1em;
+        }
+    .demoitem--templates .module__content {
         float: left;
         width: 60%;
         padding-right: 2em;
         border-right: 2px solid #DDD;
         }
-    .module__components {
+    .demoitem--templates .module__components {
         float: right;
         width: 38%;
         }
-
     </style>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Custom content -->
+        
+        <link rel="stylesheet" href="assets/css/styles.css">
+        
+    <!-- //Custom content -->
 </head>
 <body>
-
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <!-- Custom content -->
+        
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
 
     <symbol id="fi-arrow-bottom-bold" viewBox="0 0 512 512">
       <path d="m221 391l34 36 34-36 223-236-68-70-189 200-187-199-68 70z"></path>
@@ -161,31 +237,48 @@
     </symbol>
 
 </svg>
-
+        
+    <!-- //Custom content -->
     <div class="wrapper">
-            <div class="module">
-                <h2 class="module__title">entryunit</h2>
-                <div class="module__wrapper">
-                    <div class="module__item module__content">
-                        <article class="entryunit">
-    <header class="entryunit__header">
-    <span class="entryunit__position"><span title="запись поднялась и зависла">5.</span></span>
-    <span class="entryunit__userpic"><img src='assets/img/userpic.png'/></span>
-    <div class="b-entryunit-meta">
-        <ul class="b-entryunit-meta-items">
-            <li class="b-entryunit-meta-item"><span class="b-entryunit-label b-entryunit-label-selfpromo"><a href="/shop/selfpromo.bml?country=cyr" target="_blank">промо</a></span></li>
-            <li class="b-entryunit-meta-item"><span class="b-entryunit-label b-entryunit-label-mustread">Рекомендуемое</span></li>
-            <li class="b-entryunit-meta-item"><span class="b-todaylj-username"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile"><img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/userinfo.gif"></a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>user</b></a></span></li>
-            <li class="b-entryunit-meta-item"><span class="b-todaylj-username"><span class="ljuser i-ljuser i-ljuser-type-C"><a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile"><img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/community.gif"></a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>comm</b></a></span></li>
-            <li class="b-entryunit-meta-item"><span class="b-entryunit-author"><span class="ljuser         i-ljuser         i-ljuser-type-P"><a class="i-ljuser-profile" target="_self" href="http://la-ra-fa.livejournal.com/profile"><img class="i-ljuser-userhead ContextualPopup ContextualPopup"></a><a class="i-ljuser-username" title="" target="_self" href="http://la-ra-fa.livejournal.com/"><b>la_ra_fa</b></a><span class="i-ljuser-alias ng-binding"></span></span><span class="b-entryunit-author-wrotein">wrote in</span><span class="ljuser         i-ljuser         i-ljuser-type-C" ><a class="i-ljuser-profile" href="http://30-day-photo.livejournal.com/profile"><img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/community.gif?v=556?v=trunk"></a><a class="i-ljuser-username" href="http://30-day-photo.livejournal.com/"><b>30_day_photo</b></a><span class="i-ljuser-alias ng-binding"></span></span></span></li>
-            <li class="b-entryunit-meta-item"><span class="date">August 26 2014, 13:01</span></li>
-            <li class="b-entryunit-meta-item"><span class="b-entryunit-stat"><span class="b-entryunit-stat-item b-entryunit-stat-friends" title="Friends count">18221</span><span class="b-entryunit-stat-item b-entryunit-stat-friendof" title="Friend of count">8012</span><span class="b-entryunit-stat-item b-entryunit-stat-posts" title="Posts count">32767</span></span></li>
-            <li class="b-entryunit-meta-item"><span class="b-entryunit-comments"> <a href="#comments" target="_blank"> <span class="b-entryunit-icon b-entryunit-icon-comments"></span> <span class="b-entryunit-comments-inner">1234</span> </a> </span></li>
-            <li class="b-entryunit-meta-item"><span class="b-entryunit-comments"><a target="_blank" href="#comments"><span class="b-entryunit-icon b-entryunit-icon-comments"></span><span class="b-entryunit-comments-inner"><span>Оставить комментарий</span></span></a></span></li>
+
+        <ul class="demotabs">
+            <li class="demotab" data-show="demoitem--templates">Templates</li>
+            <li class="demotab" data-show="demoitem--elements">Elements</li>
+        </ul>
+
+        <div class="demoitems">
+            <div class="demoitem demoitem--templates">
+                    <!-- Module: entryunit -->
+                    <div class="module">
+                        <h2 class="module__title">entryunit</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <!-- entryunit -->
+                                <article class="entryunit">
+        <img src='assets/img/userpic.png'/>
+    <div class="entryunit-meta">
+        <ul class="entryunit-meta-items">
+            <li class="entryunit-meta-item"><span class="b-entryunit-position"> <span class="b-entryunit-position-inner"> <span class="b-entryunit-position-number">2.</span><span class=" b-entryunit-icon b-entryunit-updown " title="Эта запись изменила свою позицию в рейтинге на 3 места"></span></span> </span></li>
+            <li class="entryunit-meta-item"><span class="entryunit-label entryunit-label-selfpromo"><a href="/shop/selfpromo.bml?country=cyr" target="_blank">промо</a></span></li>
+            <li class="entryunit-meta-item"><span class="entryunit-label entryunit-label-mustread">Рекомендуемое</span></li>
+            <li class="entryunit-meta-item"><span class="b-entryunit-autor"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile"><img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/userinfo.gif"></a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>user</b></a></span></li>
+            <li class="entryunit-meta-item"><span class="b-todaylj-username"><span class="ljuser i-ljuser i-ljuser-type-C"><a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile"><img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/community.gif"></a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>comm</b></a></span></li>
+            <li class="entryunit-meta-item"><span class="b-entryunit-author">
+    <span class="ljuser         i-ljuser         i-ljuser-type-P"><a class="i-ljuser-profile" target="_self" href="http://la-ra-fa.livejournal.com/profile"><img class="i-ljuser-userhead ContextualPopup ContextualPopup"></a><a class="i-ljuser-username" title="" target="_self" href="http://la-ra-fa.livejournal.com/"><b>la_ra_fa</b></a></span>
+
+    <span class="b-entryunit-author-wrotein">wrote in</span>
+
+    <span class="ljuser         i-ljuser         i-ljuser-type-C" ><a class="i-ljuser-profile" href="http://30-day-photo.livejournal.com/profile"><img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/community.gif?v=556"></a><a class="i-ljuser-username" href="http://30-day-photo.livejournal.com/"><b>30_day_photo</b></a></span>
+</span></li>
+            <li class="entryunit-meta-item"><span class="date">August 26 2014, 13:01</span></li>
+            <li class="entryunit-meta-item"><span class="b-entryunit-stat"><span class="b-entryunit-stat-item b-entryunit-stat-friends" title="Friends count">18221</span><span class="b-entryunit-stat-item b-entryunit-stat-friendof" title="Friend of count">8012</span><span class="b-entryunit-stat-item b-entryunit-stat-posts" title="Posts count">32767</span></span></li>
+            <li class="entryunit-meta-item"><span class="entryunit-comments"> <a href="#comments" target="_blank"> <span class="entryunit-icon entryunit-icon-comments"></span> <span class="entryunit-comments-inner">1234</span> </a> </span></li>
+            <li class="entryunit-meta-item"><span class="entryunit-comments"><a target="_blank" href="#comments"><span class="entryunit-icon entryunit-icon-comments"></span><span class="entryunit-comments-inner"><span>Оставить комментарий</span></span></a></span></li>
         </ul>
     </div>
+<header class="entryunit-head">
     <span class="entryunit__title">(замочек)</span>
-    <span class="entryunit__title"><h3 class="entryunit__title"><a href="http://www.livejournal.com/magazine/299255.html">Разнокомпонентный интеграл от функции комплексной переменной: методология и особенности</a></h3></span>
+    <h3 class="entryunit-title"><a href="http://www.livejournal.com/magazine/299255.html">Разнокомпонентный интеграл от функции комплексной переменной: методология и особенности</a></h3>
 </header>
     <div class="entryunit__content">
     <figure class="b-entryunit-panorama ng-scope" ng-if="item.image &amp;&amp; !item.hide_image">
@@ -252,54 +345,60 @@
 </div></div>
 
     </div>
-     <div class="entryunit__meta"><ul class="b-lenta-item-metainfo"> <li class="b-lenta-metaitem b-lenta-item-tags"> <span class="b-lenta-meta-label">Tags</span> <a class="b-lenta-tag b-lenta-meta-content" target="_self" href="http://mi3ch.livejournal.com/tag/history">history</a><span>, </span> <a class="b-lenta-tag b-lenta-meta-content" target="_self" href="http://mi3ch.livejournal.com/tag/москва">москва</a><span>, </span> <a class="b-lenta-tag b-lenta-meta-content ng-scope" ng-href="http://mi3ch.livejournal.com/tag/статистика" href="http://mi3ch.livejournal.com/tag/статистика">статистика</a></li> </ul></div>
-     <div class="entryunit__comments"><ul class="j-e-nav-list"> <li class="j-e-nav-item j-e-nav-item-comments"> <a ng-href="http://mi3ch.livejournal.com/2665075.html#comments" target="_self" href="http://mi3ch.livejournal.com/2665075.html#comments"> <span class="j-e-nav-item-comments-icon j-e-nav-item-icon" ng-show="isSettingsEnabled"> <svg class="svgicon"> <use xlink:href="#fi-comment-view"></use> </svg> </span> <span class="j-e-nav-item-comments-text j-e-nav-item-text  ng-binding" ng-bind="item.reply_count">6</span> </a> </li> <li ng-show="item.posting_comments_allowed" class="j-e-nav-item j-e-nav-item-reply"> <a ng-href="http://mi3ch.livejournal.com/2665075.html?mode=reply#add_comment" target="_self" href="http://mi3ch.livejournal.com/2665075.html?mode=reply#add_comment"> <span class="j-e-nav-item-reply-icon j-e-nav-item-icon" ng-show="isSettingsEnabled"> <svg class="svgicon"> <use xlink:href="#fi-comment-add"></use> </svg> </span> <span class=" j-e-nav-item-reply-text j-e-nav-item-text " lj-ml="friendsfeed.link.reply">Add comment</span> </a> </li> </ul>
+     <div class="entryunit__meta"><ul class="b-lenta-item-metainfo"><li class="b-lenta-metaitem
+b-lenta-item-tags"> <span class="b-lenta-meta-label
+    b-lenta-metatoggle-target">Метки (<a href="http://www.livejournal.com/edittags.bml?journal=layouts_ru&amp;itemid=521188">редактировать</a>):</span> <a class="b-lenta-tag b-lenta-meta-content" target="_self" href="http://layouts-ru.livejournal.com/tag/стиль: expressive">стиль: expressive</a><span>, </span><a class="b-lenta-tag b-lenta-meta-content" target="_self" href="http://layouts-ru.livejournal.com/tag/цвет: бежевый">цвет: бежевый</a><span>, </span><a class="b-lenta-tag b-lenta-meta-content" target="_self" href="http://layouts-ru.livejournal.com/tag/цвет: разноцветный">цвет: разноцветный</a></li>
+</ul></div>
+     <div class="entryunit__comments"><ul class="j-e-nav-list"> <li class="j-e-nav-item j-e-nav-item-comments"> <a ng-href="http://mi3ch.livejournal.com/2665075.html#comments" target="_self" href="http://mi3ch.livejournal.com/2665075.html#comments"> <span class="j-e-nav-item-comments-icon j-e-nav-item-icon"> <svg class="svgicon"> <use xlink:href="#fi-comment-view"></use> </svg> </span> <span class="j-e-nav-item-comments-text j-e-nav-item-text ">6</span> </a> </li> <li class="j-e-nav-item j-e-nav-item-reply"> <a target="_self" href="http://mi3ch.livejournal.com/2665075.html?mode=reply#add_comment"> <span class="j-e-nav-item-reply-icon j-e-nav-item-icon"> <svg class="svgicon"> <use xlink:href="#fi-comment-add"></use> </svg> </span> <span class=" j-e-nav-item-reply-text j-e-nav-item-text ">Add comment</span> </a> </li> </ul>
 
 <!-- 
     <a href="http://ya.ru">Добавить комментарий</a>
 
     <a href="http://ya.ru">156 комментариев</a>
  --></div>
-      <div class="entryunit__joinwatch"><ul class="b-entryunit-sidecontrols">
-        <li class="b-entryunit-sidecontrols-item">
+      <div class="entryunit__joinwatch"><ul class="entryunit-sidecontrols">
+        <li class="entryunit-sidecontrols-item">
             <a target="_blank" href="#join">Join</a>
         </li>
-        <li class="b-entryunit-sidecontrols-item">
+        <li class="entryunit-sidecontrols-item">
             <a target="_blank" href="#watch">Watch</a>
         </li>
     </ul></div>
-      <menu class="entryunit__menu">(acts)<span class=" b-entryunit-readhide b-entryunit-hide "> <a href="javascript:void(0)" class="b-entryunit-readhide-link"><span class=" b-entryunit-icon b-entryunit-icon-hide b-entryunit-readhide-icon "></span><span class=" b-entryunit-readhide-inner b-entryunit-hide-hide ">Скрыть автора из рейтинга</span><span class=" b-entryunit-readhide-inner b-entryunit-hide-show ">Вернуть автора в рейтинг</span></a> </span></menu>
+      <menu class="entryunit-actions"><span class=" entryunit-readhide entryunit-hide "> <a href="javascript:void(0)" class="entryunit-readhide-link"><span class=" entryunit-icon entryunit-icon-hide entryunit-readhide-icon "></span><span class=" entryunit-readhide-inner entryunit-hide-hide ">Скрыть автора из рейтинга</span><span class=" entryunit-readhide-inner entryunit-hide-show ">Вернуть автора в рейтинг</span></a> </span></menu>
 </footer>
 </article>
+                                <!-- //entryunit -->
+                            </div>
+                            <div class="module__item module__components">
+                                
+                            </div>
+                        </div>
                     </div>
-                    <div class="module__item module__components">
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="module">
-                <h2 class="module__title">entryunit--promo</h2>
-                <div class="module__wrapper">
-                    <div class="module__item module__content">
-                        <article class="entryunit">
-    <header class="entryunit__header">
-    <span class="entryunit__position"></span>
-    <span class="entryunit__userpic"></span>
-    <div class="b-entryunit-meta">
-        <ul class="b-entryunit-meta-items">
-            <li class="b-entryunit-meta-item"><span class="b-entryunit-label b-entryunit-label-selfpromo"><a href="/shop/selfpromo.bml?country=cyr" target="_blank">промо</a></span></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"><span class="b-todaylj-username"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile"><img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/userinfo.gif"></a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>user</b></a></span></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"><span class="date">August 26 2014, 13:01</span></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"><span class="b-entryunit-comments"> <a href="#comments" target="_blank"> <span class="b-entryunit-icon b-entryunit-icon-comments"></span> <span class="b-entryunit-comments-inner">1234</span> </a> </span></li>
-            <li class="b-entryunit-meta-item"></li>
+                    <!-- Module: entryunit--promo -->
+                    <div class="module">
+                        <h2 class="module__title">entryunit--promo</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <!-- entryunit--promo -->
+                                <article class="entryunit">
+        
+    <div class="entryunit-meta">
+        <ul class="entryunit-meta-items">
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"><span class="entryunit-label entryunit-label-selfpromo"><a href="/shop/selfpromo.bml?country=cyr" target="_blank">промо</a></span></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"><span class="b-entryunit-autor"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile"><img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/userinfo.gif"></a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>user</b></a></span></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"><span class="date">August 26 2014, 13:01</span></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"><span class="entryunit-comments"> <a href="#comments" target="_blank"> <span class="entryunit-icon entryunit-icon-comments"></span> <span class="entryunit-comments-inner">1234</span> </a> </span></li>
+            <li class="entryunit-meta-item"></li>
         </ul>
     </div>
+<header class="entryunit-head">
     <span class="entryunit__title"></span>
-    <span class="entryunit__title"><h3 class="entryunit__title"><a href="http://www.livejournal.com/magazine/299255.html">Разнокомпонентный интеграл от функции комплексной переменной: методология и особенности</a></h3></span>
+    <h3 class="entryunit-title"><a href="http://www.livejournal.com/magazine/299255.html">Разнокомпонентный интеграл от функции комплексной переменной: методология и особенности</a></h3>
 </header>
     <div class="entryunit__content">
     
@@ -312,38 +411,41 @@
      <div class="entryunit__meta"></div>
      <div class="entryunit__comments"></div>
       <div class="entryunit__joinwatch"></div>
-      <menu class="entryunit__menu"></menu>
+      
 </footer>
 </article>
+                                <!-- //entryunit--promo -->
+                            </div>
+                            <div class="module__item module__components">
+                                <ul><li>promo</li><li>user</li><li>date</li><li>headercomments</li><li>title</li><li>entrytext</li></ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="module__item module__components">
-                        <ul><li>promo</li><li>user</li><li>date</li><li>headercomments</li><li>title</li><li>entrytext</li></ul>
-                    </div>
-                </div>
-            </div>
-            <div class="module">
-                <h2 class="module__title">entryunit--raiting</h2>
-                <div class="module__wrapper">
-                    <div class="module__item module__content">
-                        <article class="entryunit">
-    <header class="entryunit__header">
-    <span class="entryunit__position"><span title="запись поднялась и зависла">5.</span></span>
-    <span class="entryunit__userpic"></span>
-    <div class="b-entryunit-meta">
-        <ul class="b-entryunit-meta-items">
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"><span class="b-todaylj-username"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile"><img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/userinfo.gif"></a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>user</b></a></span></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"><span class="date">August 26 2014, 13:01</span></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"><span class="b-entryunit-comments"> <a href="#comments" target="_blank"> <span class="b-entryunit-icon b-entryunit-icon-comments"></span> <span class="b-entryunit-comments-inner">1234</span> </a> </span></li>
-            <li class="b-entryunit-meta-item"></li>
+                    <!-- Module: entryunit--rating -->
+                    <div class="module">
+                        <h2 class="module__title">entryunit--rating</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <!-- entryunit--rating -->
+                                <div class=b-mainpage><article class="entryunit">
+        
+    <div class="entryunit-meta">
+        <ul class="entryunit-meta-items">
+            <li class="entryunit-meta-item"><span class="b-entryunit-position"> <span class="b-entryunit-position-inner"> <span class="b-entryunit-position-number">2.</span><span class=" b-entryunit-icon b-entryunit-updown " title="Эта запись изменила свою позицию в рейтинге на 3 места"></span></span> </span></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"><span class="b-entryunit-autor"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile"><img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/userinfo.gif"></a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>user</b></a></span></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"><span class="date">August 26 2014, 13:01</span></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"><span class="entryunit-comments"> <a href="#comments" target="_blank"> <span class="entryunit-icon entryunit-icon-comments"></span> <span class="entryunit-comments-inner">1234</span> </a> </span></li>
+            <li class="entryunit-meta-item"></li>
         </ul>
     </div>
+<header class="entryunit-head">
     <span class="entryunit__title"></span>
-    <span class="entryunit__title"><h3 class="entryunit__title"><a href="http://www.livejournal.com/magazine/299255.html">Разнокомпонентный интеграл от функции комплексной переменной: методология и особенности</a></h3></span>
+    <h3 class="entryunit-title"><a href="http://www.livejournal.com/magazine/299255.html">Разнокомпонентный интеграл от функции комплексной переменной: методология и особенности</a></h3>
 </header>
     <div class="entryunit__content">
     
@@ -356,38 +458,41 @@
      <div class="entryunit__meta"></div>
      <div class="entryunit__comments"></div>
       <div class="entryunit__joinwatch"></div>
-      <menu class="entryunit__menu">(acts)<span class=" b-entryunit-readhide b-entryunit-hide "> <a href="javascript:void(0)" class="b-entryunit-readhide-link"><span class=" b-entryunit-icon b-entryunit-icon-hide b-entryunit-readhide-icon "></span><span class=" b-entryunit-readhide-inner b-entryunit-hide-hide ">Скрыть автора из рейтинга</span><span class=" b-entryunit-readhide-inner b-entryunit-hide-show ">Вернуть автора в рейтинг</span></a> </span></menu>
+      <menu class="entryunit-actions"><span class=" entryunit-readhide entryunit-hide "> <a href="javascript:void(0)" class="entryunit-readhide-link"><span class=" entryunit-icon entryunit-icon-hide entryunit-readhide-icon "></span><span class=" entryunit-readhide-inner entryunit-hide-hide ">Скрыть автора из рейтинга</span><span class=" entryunit-readhide-inner entryunit-hide-show ">Вернуть автора в рейтинг</span></a> </span></menu>
 </footer>
-</article>
+</article></div>
+                                <!-- //entryunit--rating -->
+                            </div>
+                            <div class="module__item module__components">
+                                <ul><li>position</li><li>user</li><li>date</li><li>headercomments</li><li>title</li><li>entrytext</li><li>actions</li></ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="module__item module__components">
-                        <ul><li>position</li><li>user</li><li>date</li><li>headercomments</li><li>title</li><li>entrytext</li><li>actions</li></ul>
-                    </div>
-                </div>
-            </div>
-            <div class="module">
-                <h2 class="module__title">entryunit--recomended</h2>
-                <div class="module__wrapper">
-                    <div class="module__item module__content">
-                        <article class="entryunit">
-    <header class="entryunit__header">
-    <span class="entryunit__position"></span>
-    <span class="entryunit__userpic"></span>
-    <div class="b-entryunit-meta">
-        <ul class="b-entryunit-meta-items">
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"><span class="b-entryunit-label b-entryunit-label-mustread">Рекомендуемое</span></li>
-            <li class="b-entryunit-meta-item"><span class="b-todaylj-username"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile"><img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/userinfo.gif"></a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>user</b></a></span></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"><span class="b-entryunit-comments"><a target="_blank" href="#comments"><span class="b-entryunit-icon b-entryunit-icon-comments"></span><span class="b-entryunit-comments-inner"><span>Оставить комментарий</span></span></a></span></li>
+                    <!-- Module: entryunit--recomended -->
+                    <div class="module">
+                        <h2 class="module__title">entryunit--recomended</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <!-- entryunit--recomended -->
+                                <article class="entryunit">
+        
+    <div class="entryunit-meta">
+        <ul class="entryunit-meta-items">
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"><span class="entryunit-label entryunit-label-mustread">Рекомендуемое</span></li>
+            <li class="entryunit-meta-item"><span class="b-entryunit-autor"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile"><img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/userinfo.gif"></a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>user</b></a></span></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"><span class="entryunit-comments"><a target="_blank" href="#comments"><span class="entryunit-icon entryunit-icon-comments"></span><span class="entryunit-comments-inner"><span>Оставить комментарий</span></span></a></span></li>
         </ul>
     </div>
+<header class="entryunit-head">
     <span class="entryunit__title"></span>
-    <span class="entryunit__title"><h3 class="entryunit__title"><a href="http://www.livejournal.com/magazine/299255.html">Разнокомпонентный интеграл от функции комплексной переменной: методология и особенности</a></h3></span>
+    <h3 class="entryunit-title"><a href="http://www.livejournal.com/magazine/299255.html">Разнокомпонентный интеграл от функции комплексной переменной: методология и особенности</a></h3>
 </header>
     <div class="entryunit__content">
     
@@ -400,38 +505,41 @@
      <div class="entryunit__meta"></div>
      <div class="entryunit__comments"></div>
       <div class="entryunit__joinwatch"></div>
-      <menu class="entryunit__menu"></menu>
+      
 </footer>
 </article>
+                                <!-- //entryunit--recomended -->
+                            </div>
+                            <div class="module__item module__components">
+                                <ul><li>recomend</li><li>user</li><li>headerreply</li><li>title</li><li>entrytext</li></ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="module__item module__components">
-                        <ul><li>recomend</li><li>user</li><li>headerreply</li><li>title</li><li>entrytext</li></ul>
-                    </div>
-                </div>
-            </div>
-            <div class="module">
-                <h2 class="module__title">entryunit--magazine</h2>
-                <div class="module__wrapper">
-                    <div class="module__item module__content">
-                        <article class="entryunit">
-    <header class="entryunit__header">
-    <span class="entryunit__position"></span>
-    <span class="entryunit__userpic"></span>
-    <div class="b-entryunit-meta">
-        <ul class="b-entryunit-meta-items">
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"><span class="b-todaylj-username"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile"><img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/userinfo.gif"></a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>user</b></a></span></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"><span class="date">August 26 2014, 13:01</span></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"><span class="b-entryunit-comments"> <a href="#comments" target="_blank"> <span class="b-entryunit-icon b-entryunit-icon-comments"></span> <span class="b-entryunit-comments-inner">1234</span> </a> </span></li>
-            <li class="b-entryunit-meta-item"></li>
+                    <!-- Module: entryunit--magazine -->
+                    <div class="module">
+                        <h2 class="module__title">entryunit--magazine</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <!-- entryunit--magazine -->
+                                <article class="entryunit">
+        
+    <div class="entryunit-meta">
+        <ul class="entryunit-meta-items">
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"><span class="b-entryunit-autor"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile"><img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/userinfo.gif"></a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>user</b></a></span></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"><span class="date">August 26 2014, 13:01</span></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"><span class="entryunit-comments"> <a href="#comments" target="_blank"> <span class="entryunit-icon entryunit-icon-comments"></span> <span class="entryunit-comments-inner">1234</span> </a> </span></li>
+            <li class="entryunit-meta-item"></li>
         </ul>
     </div>
+<header class="entryunit-head">
     <span class="entryunit__title"></span>
-    <span class="entryunit__title"><h3 class="entryunit__title"><a href="http://www.livejournal.com/magazine/299255.html">Разнокомпонентный интеграл от функции комплексной переменной: методология и особенности</a></h3></span>
+    <h3 class="entryunit-title"><a href="http://www.livejournal.com/magazine/299255.html">Разнокомпонентный интеграл от функции комплексной переменной: методология и особенности</a></h3>
 </header>
     <div class="entryunit__content">
     <figure class="b-entryunit-panorama ng-scope" ng-if="item.image &amp;&amp; !item.hide_image">
@@ -447,38 +555,47 @@
      <div class="entryunit__meta"></div>
      <div class="entryunit__comments"></div>
       <div class="entryunit__joinwatch"></div>
-      <menu class="entryunit__menu"></menu>
+      
 </footer>
 </article>
+                                <!-- //entryunit--magazine -->
+                            </div>
+                            <div class="module__item module__components">
+                                <ul><li>user</li><li>date</li><li>headercomments</li><li>title</li><li>imagefull</li><li>entrytext</li></ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="module__item module__components">
-                        <ul><li>user</li><li>date</li><li>headercomments</li><li>title</li><li>imagefull</li><li>entrytext</li></ul>
-                    </div>
-                </div>
-            </div>
-            <div class="module">
-                <h2 class="module__title">entryunit--browsepost</h2>
-                <div class="module__wrapper">
-                    <div class="module__item module__content">
-                        <article class="entryunit">
-    <header class="entryunit__header">
-    <span class="entryunit__position"><span title="запись поднялась и зависла">5.</span></span>
-    <span class="entryunit__userpic"></span>
-    <div class="b-entryunit-meta">
-        <ul class="b-entryunit-meta-items">
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"><span class="b-entryunit-author"><span class="ljuser         i-ljuser         i-ljuser-type-P"><a class="i-ljuser-profile" target="_self" href="http://la-ra-fa.livejournal.com/profile"><img class="i-ljuser-userhead ContextualPopup ContextualPopup"></a><a class="i-ljuser-username" title="" target="_self" href="http://la-ra-fa.livejournal.com/"><b>la_ra_fa</b></a><span class="i-ljuser-alias ng-binding"></span></span><span class="b-entryunit-author-wrotein">wrote in</span><span class="ljuser         i-ljuser         i-ljuser-type-C" ><a class="i-ljuser-profile" href="http://30-day-photo.livejournal.com/profile"><img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/community.gif?v=556?v=trunk"></a><a class="i-ljuser-username" href="http://30-day-photo.livejournal.com/"><b>30_day_photo</b></a><span class="i-ljuser-alias ng-binding"></span></span></span></li>
-            <li class="b-entryunit-meta-item"><span class="date">August 26 2014, 13:01</span></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"><span class="b-entryunit-comments"><a target="_blank" href="#comments"><span class="b-entryunit-icon b-entryunit-icon-comments"></span><span class="b-entryunit-comments-inner"><span>Оставить комментарий</span></span></a></span></li>
+                    <!-- Module: entryunit--browsepost -->
+                    <div class="module">
+                        <h2 class="module__title">entryunit--browsepost</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <!-- entryunit--browsepost -->
+                                <article class="entryunit">
+        
+    <div class="entryunit-meta">
+        <ul class="entryunit-meta-items">
+            <li class="entryunit-meta-item"><span class="b-entryunit-position"> <span class="b-entryunit-position-inner"> <span class="b-entryunit-position-number">2.</span><span class=" b-entryunit-icon b-entryunit-updown " title="Эта запись изменила свою позицию в рейтинге на 3 места"></span></span> </span></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"><span class="b-entryunit-author">
+    <span class="ljuser         i-ljuser         i-ljuser-type-P"><a class="i-ljuser-profile" target="_self" href="http://la-ra-fa.livejournal.com/profile"><img class="i-ljuser-userhead ContextualPopup ContextualPopup"></a><a class="i-ljuser-username" title="" target="_self" href="http://la-ra-fa.livejournal.com/"><b>la_ra_fa</b></a></span>
+
+    <span class="b-entryunit-author-wrotein">wrote in</span>
+
+    <span class="ljuser         i-ljuser         i-ljuser-type-C" ><a class="i-ljuser-profile" href="http://30-day-photo.livejournal.com/profile"><img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/community.gif?v=556"></a><a class="i-ljuser-username" href="http://30-day-photo.livejournal.com/"><b>30_day_photo</b></a></span>
+</span></li>
+            <li class="entryunit-meta-item"><span class="date">August 26 2014, 13:01</span></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"><span class="entryunit-comments"><a target="_blank" href="#comments"><span class="entryunit-icon entryunit-icon-comments"></span><span class="entryunit-comments-inner"><span>Оставить комментарий</span></span></a></span></li>
         </ul>
     </div>
+<header class="entryunit-head">
     <span class="entryunit__title"></span>
-    <span class="entryunit__title"><h3 class="entryunit__title"><a href="http://www.livejournal.com/magazine/299255.html">Разнокомпонентный интеграл от функции комплексной переменной: методология и особенности</a></h3></span>
+    <h3 class="entryunit-title"><a href="http://www.livejournal.com/magazine/299255.html">Разнокомпонентный интеграл от функции комплексной переменной: методология и особенности</a></h3>
 </header>
     <div class="entryunit__content">
     
@@ -545,38 +662,41 @@
      <div class="entryunit__meta"></div>
      <div class="entryunit__comments"></div>
       <div class="entryunit__joinwatch"></div>
-      <menu class="entryunit__menu"></menu>
+      
 </footer>
 </article>
+                                <!-- //entryunit--browsepost -->
+                            </div>
+                            <div class="module__item module__components">
+                                <ul><li>position</li><li>tocommunity</li><li>date</li><li>headerreply</li><li>title</li><li>entrytext</li><li>share</li></ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="module__item module__components">
-                        <ul><li>position</li><li>tocommunity</li><li>date</li><li>headerreply</li><li>title</li><li>entrytext</li><li>share</li></ul>
-                    </div>
-                </div>
-            </div>
-            <div class="module">
-                <h2 class="module__title">entryunit--browsecommunity</h2>
-                <div class="module__wrapper">
-                    <div class="module__item module__content">
-                        <article class="entryunit">
-    <header class="entryunit__header">
-    <span class="entryunit__position"></span>
-    <span class="entryunit__userpic"></span>
-    <div class="b-entryunit-meta">
-        <ul class="b-entryunit-meta-items">
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"><span class="b-todaylj-username"><span class="ljuser i-ljuser i-ljuser-type-C"><a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile"><img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/community.gif"></a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>comm</b></a></span></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"><span class="b-entryunit-stat"><span class="b-entryunit-stat-item b-entryunit-stat-friends" title="Friends count">18221</span><span class="b-entryunit-stat-item b-entryunit-stat-friendof" title="Friend of count">8012</span><span class="b-entryunit-stat-item b-entryunit-stat-posts" title="Posts count">32767</span></span></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"></li>
+                    <!-- Module: entryunit--browsecommunity -->
+                    <div class="module">
+                        <h2 class="module__title">entryunit--browsecommunity</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <!-- entryunit--browsecommunity -->
+                                <article class="entryunit">
+        
+    <div class="entryunit-meta">
+        <ul class="entryunit-meta-items">
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"><span class="b-todaylj-username"><span class="ljuser i-ljuser i-ljuser-type-C"><a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile"><img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/community.gif"></a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>comm</b></a></span></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"><span class="b-entryunit-stat"><span class="b-entryunit-stat-item b-entryunit-stat-friends" title="Friends count">18221</span><span class="b-entryunit-stat-item b-entryunit-stat-friendof" title="Friend of count">8012</span><span class="b-entryunit-stat-item b-entryunit-stat-posts" title="Posts count">32767</span></span></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"></li>
         </ul>
     </div>
+<header class="entryunit-head">
     <span class="entryunit__title"></span>
-    <span class="entryunit__title"></span>
+    
 </header>
     <div class="entryunit__content">
     
@@ -588,46 +708,49 @@
     
      <div class="entryunit__meta"></div>
      <div class="entryunit__comments"></div>
-      <div class="entryunit__joinwatch"><ul class="b-entryunit-sidecontrols">
-        <li class="b-entryunit-sidecontrols-item">
+      <div class="entryunit__joinwatch"><ul class="entryunit-sidecontrols">
+        <li class="entryunit-sidecontrols-item">
             <a target="_blank" href="#join">Join</a>
         </li>
-        <li class="b-entryunit-sidecontrols-item">
+        <li class="entryunit-sidecontrols-item">
             <a target="_blank" href="#watch">Watch</a>
         </li>
     </ul></div>
-      <menu class="entryunit__menu"></menu>
+      
 </footer>
 </article>
+                                <!-- //entryunit--browsecommunity -->
+                            </div>
+                            <div class="module__item module__components">
+                                <ul><li>comm</li><li>stats</li><li>imageupic</li><li>shorttext</li><li>joinwatch</li></ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="module__item module__components">
-                        <ul><li>comm</li><li>stats</li><li>imageupic</li><li>shorttext</li><li>joinwatch</li></ul>
-                    </div>
-                </div>
-            </div>
-            <div class="module">
-                <h2 class="module__title">entryunit--feed</h2>
-                <div class="module__wrapper">
-                    <div class="module__item module__content">
-                        <article class="entryunit">
-    <header class="entryunit__header">
-    <span class="entryunit__position"></span>
-    <span class="entryunit__userpic"></span>
-    <div class="b-entryunit-meta">
-        <ul class="b-entryunit-meta-items">
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"><span class="b-todaylj-username"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile"><img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/userinfo.gif"></a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>user</b></a></span></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"><span class="date">August 26 2014, 13:01</span></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"></li>
-            <li class="b-entryunit-meta-item"></li>
+                    <!-- Module: entryunit--feed -->
+                    <div class="module">
+                        <h2 class="module__title">entryunit--feed</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <!-- entryunit--feed -->
+                                <article class="entryunit">
+        <img src='assets/img/userpic.png'/>
+    <div class="entryunit-meta">
+        <ul class="entryunit-meta-items">
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"><span class="b-entryunit-autor"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile"><img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/userinfo.gif"></a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>user</b></a></span></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"><span class="date">August 26 2014, 13:01</span></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"></li>
+            <li class="entryunit-meta-item"></li>
         </ul>
     </div>
+<header class="entryunit-head">
     <span class="entryunit__title"></span>
-    <span class="entryunit__title"><h3 class="entryunit__title"><a href="http://www.livejournal.com/magazine/299255.html">Разнокомпонентный интеграл от функции комплексной переменной: методология и особенности</a></h3></span>
+    <h3 class="entryunit-title"><a href="http://www.livejournal.com/magazine/299255.html">Разнокомпонентный интеграл от функции комплексной переменной: методология и особенности</a></h3>
 </header>
     <div class="entryunit__content">
     
@@ -637,8 +760,11 @@
 </div>
     <footer class="entryunit__footer">
     
-     <div class="entryunit__meta"><ul class="b-lenta-item-metainfo"> <li class="b-lenta-metaitem b-lenta-item-tags"> <span class="b-lenta-meta-label">Tags</span> <a class="b-lenta-tag b-lenta-meta-content" target="_self" href="http://mi3ch.livejournal.com/tag/history">history</a><span>, </span> <a class="b-lenta-tag b-lenta-meta-content" target="_self" href="http://mi3ch.livejournal.com/tag/москва">москва</a><span>, </span> <a class="b-lenta-tag b-lenta-meta-content ng-scope" ng-href="http://mi3ch.livejournal.com/tag/статистика" href="http://mi3ch.livejournal.com/tag/статистика">статистика</a></li> </ul></div>
-     <div class="entryunit__comments"><ul class="j-e-nav-list"> <li class="j-e-nav-item j-e-nav-item-comments"> <a ng-href="http://mi3ch.livejournal.com/2665075.html#comments" target="_self" href="http://mi3ch.livejournal.com/2665075.html#comments"> <span class="j-e-nav-item-comments-icon j-e-nav-item-icon" ng-show="isSettingsEnabled"> <svg class="svgicon"> <use xlink:href="#fi-comment-view"></use> </svg> </span> <span class="j-e-nav-item-comments-text j-e-nav-item-text  ng-binding" ng-bind="item.reply_count">6</span> </a> </li> <li ng-show="item.posting_comments_allowed" class="j-e-nav-item j-e-nav-item-reply"> <a ng-href="http://mi3ch.livejournal.com/2665075.html?mode=reply#add_comment" target="_self" href="http://mi3ch.livejournal.com/2665075.html?mode=reply#add_comment"> <span class="j-e-nav-item-reply-icon j-e-nav-item-icon" ng-show="isSettingsEnabled"> <svg class="svgicon"> <use xlink:href="#fi-comment-add"></use> </svg> </span> <span class=" j-e-nav-item-reply-text j-e-nav-item-text " lj-ml="friendsfeed.link.reply">Add comment</span> </a> </li> </ul>
+     <div class="entryunit__meta"><ul class="b-lenta-item-metainfo"><li class="b-lenta-metaitem
+b-lenta-item-tags"> <span class="b-lenta-meta-label
+    b-lenta-metatoggle-target">Метки (<a href="http://www.livejournal.com/edittags.bml?journal=layouts_ru&amp;itemid=521188">редактировать</a>):</span> <a class="b-lenta-tag b-lenta-meta-content" target="_self" href="http://layouts-ru.livejournal.com/tag/стиль: expressive">стиль: expressive</a><span>, </span><a class="b-lenta-tag b-lenta-meta-content" target="_self" href="http://layouts-ru.livejournal.com/tag/цвет: бежевый">цвет: бежевый</a><span>, </span><a class="b-lenta-tag b-lenta-meta-content" target="_self" href="http://layouts-ru.livejournal.com/tag/цвет: разноцветный">цвет: разноцветный</a></li>
+</ul></div>
+     <div class="entryunit__comments"><ul class="j-e-nav-list"> <li class="j-e-nav-item j-e-nav-item-comments"> <a ng-href="http://mi3ch.livejournal.com/2665075.html#comments" target="_self" href="http://mi3ch.livejournal.com/2665075.html#comments"> <span class="j-e-nav-item-comments-icon j-e-nav-item-icon"> <svg class="svgicon"> <use xlink:href="#fi-comment-view"></use> </svg> </span> <span class="j-e-nav-item-comments-text j-e-nav-item-text ">6</span> </a> </li> <li class="j-e-nav-item j-e-nav-item-reply"> <a target="_self" href="http://mi3ch.livejournal.com/2665075.html?mode=reply#add_comment"> <span class="j-e-nav-item-reply-icon j-e-nav-item-icon"> <svg class="svgicon"> <use xlink:href="#fi-comment-add"></use> </svg> </span> <span class=" j-e-nav-item-reply-text j-e-nav-item-text ">Add comment</span> </a> </li> </ul>
 
 <!-- 
     <a href="http://ya.ru">Добавить комментарий</a>
@@ -646,18 +772,318 @@
     <a href="http://ya.ru">156 комментариев</a>
  --></div>
       <div class="entryunit__joinwatch"></div>
-      <menu class="entryunit__menu"></menu>
+      
 </footer>
 </article>
+                                <!-- //entryunit--feed -->
+                            </div>
+                            <div class="module__item module__components">
+                                <ul><li>userpic</li><li>user</li><li>date</li><li>title</li><li>entrytext</li><li>tags</li><li>comments</li></ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="module__item module__components">
-                        <ul><li>usepic</li><li>user</li><li>date</li><li>title</li><li>entrytext</li><li>tags</li><li>comments</li></ul>
-                    </div>
-                </div>
             </div>
+            <div class="demoitem demoitem--elements">
+                    <div class="module">
+                        <h2 class="module__title">actions</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <menu class="entryunit-actions"><span class=" entryunit-readhide entryunit-hide "> <a href="javascript:void(0)" class="entryunit-readhide-link"><span class=" entryunit-icon entryunit-icon-hide entryunit-readhide-icon "></span><span class=" entryunit-readhide-inner entryunit-hide-hide ">Скрыть автора из рейтинга</span><span class=" entryunit-readhide-inner entryunit-hide-show ">Вернуть автора в рейтинг</span></a> </span></menu>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <h2 class="module__title">comm</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <span class="b-todaylj-username"><span class="ljuser i-ljuser i-ljuser-type-C"><a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile"><img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/community.gif"></a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>comm</b></a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <h2 class="module__title">comments</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <ul class="j-e-nav-list"> <li class="j-e-nav-item j-e-nav-item-comments"> <a ng-href="http://mi3ch.livejournal.com/2665075.html#comments" target="_self" href="http://mi3ch.livejournal.com/2665075.html#comments"> <span class="j-e-nav-item-comments-icon j-e-nav-item-icon"> <svg class="svgicon"> <use xlink:href="#fi-comment-view"></use> </svg> </span> <span class="j-e-nav-item-comments-text j-e-nav-item-text ">6</span> </a> </li> <li class="j-e-nav-item j-e-nav-item-reply"> <a target="_self" href="http://mi3ch.livejournal.com/2665075.html?mode=reply#add_comment"> <span class="j-e-nav-item-reply-icon j-e-nav-item-icon"> <svg class="svgicon"> <use xlink:href="#fi-comment-add"></use> </svg> </span> <span class=" j-e-nav-item-reply-text j-e-nav-item-text ">Add comment</span> </a> </li> </ul>
+
+<!-- 
+    <a href="http://ya.ru">Добавить комментарий</a>
+
+    <a href="http://ya.ru">156 комментариев</a>
+ -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <h2 class="module__title">date</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <span class="date">August 26 2014, 13:01</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <h2 class="module__title">entrytext</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                Бесконечно малая величина, в том числе, стремительно транслирует действительный контрапункт контрастных фактур, что известно даже школьникам. Интеграл по бесконечной области, как следует из вышесказанного, монотонно изменяет шоу-бизнес. Неравенство Бернулли mezzo forte раскручивает разнокомпонентный громкостнoй прогрессийный период.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <h2 class="module__title">headercomments</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <span class="entryunit-comments"> <a href="#comments" target="_blank"> <span class="entryunit-icon entryunit-icon-comments"></span> <span class="entryunit-comments-inner">1234</span> </a> </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <h2 class="module__title">headerreply</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <span class="entryunit-comments"><a target="_blank" href="#comments"><span class="entryunit-icon entryunit-icon-comments"></span><span class="entryunit-comments-inner"><span>Оставить комментарий</span></span></a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <h2 class="module__title">imagefull</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <figure class="b-entryunit-panorama ng-scope" ng-if="item.image &amp;&amp; !item.hide_image">
+    <a class="b-entryunit-panorama-pic" href="http://www.livejournal.com/magazine/300684.html" style="background-image: url(http://ic.pics.livejournal.com/lj_magazine/70300696/498036/498036_original.jpg);"><!--
+    --></a>
+</figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <h2 class="module__title">imageupic</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <img src='assets/img/userpic.png'/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <h2 class="module__title">joinwatch</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <ul class="entryunit-sidecontrols">
+        <li class="entryunit-sidecontrols-item">
+            <a target="_blank" href="#join">Join</a>
+        </li>
+        <li class="entryunit-sidecontrols-item">
+            <a target="_blank" href="#watch">Watch</a>
+        </li>
+    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <h2 class="module__title">position</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <span class="b-entryunit-position"> <span class="b-entryunit-position-inner"> <span class="b-entryunit-position-number">2.</span><span class=" b-entryunit-icon b-entryunit-updown " title="Эта запись изменила свою позицию в рейтинге на 3 места"></span></span> </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <h2 class="module__title">promo</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <span class="entryunit-label entryunit-label-selfpromo"><a href="/shop/selfpromo.bml?country=cyr" target="_blank">промо</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <h2 class="module__title">recomend</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <span class="entryunit-label entryunit-label-mustread">Рекомендуемое</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <h2 class="module__title">secure</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                (замочек)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <h2 class="module__title">share</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <div class="b-entryunit-sidelikes">
+
+        <!-- share button -->
+        <div class="b-entryunit-sidelikes-share">
+            <a class="b-flatsocial
+                    b-flatsocial-share
+                     ng-scope" href="javascript:void(0);" lj-share="{
+                    url:   item.url,
+                    title: item.subject,
+                    text:  item.lead
+                }" lj-share-services-exclude="'facebook,twitter,google'"><!--
+            --><span title="Share" class="b-flatsocial-name">Share</span><!--
+            --></a>
+        </div>
+
+        <!-- share buttons -->
+        <div class="b-entryunit-sidelikes-items" data-url="http://foto-trip.livejournal.com/4676278.html" data-title="Сарона - старинное поселение темплеров в самом центре Тель-Авива" data-hashtags="" data-services="facebook,twitter,google" data-text="Поскольку рассказ об одном дне из моей жизни неожиданно получился длинным, я решил разделить его на несколько частей. В этот раз я расскажу вам о своей прогулке в недавно отреставрированный квартал Сарона - бывшее поселение темплеров в самом центре Белого города, долгие годы стоявшее заброшенным. Теперь там почти рай.
+
+..." data-journal="5240142" data-ditemid="4676278" lj-screenable="social:likes:parse"><div class="
+        lj-like-item
+        lj-like-item-facebook
+        ">
+    <a href="javascript:void(0);" class="
+            b-flatsocial
+            b-flatsocial-facebook
+            "><!--
+        --><span class="b-flatsocial-name" title="Facebook">Facebook</span><!--
+        --><span class="b-flatsocial-counter">0</span><!--
+    --></a>
+</div><div class="
+        lj-like-item
+        lj-like-item-twitter
+        ">
+    <a href="javascript:void(0);" class="
+            b-flatsocial
+            b-flatsocial-twitter
+            "><!--
+        --><span class="b-flatsocial-name" title="Twitter">Twitter</span><!--
+        --><span class="b-flatsocial-counter">0</span><!--
+    --></a>
+</div><div class="
+        lj-like-item
+        lj-like-item-google
+        ">
+    <a href="javascript:void(0);" class="
+            b-flatsocial
+            b-flatsocial-google
+            b-flatsocial-button
+            "><!--
+        --><span class="b-flatsocial-name" title="Google+">Google+</span><!--
+        --><span class="b-flatsocial-counter">0</span><!--
+    --></a>
+</div></div>
+
+    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <h2 class="module__title">shorttext</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                Бесконечно малая величина, в том числе, стремительно транслирует действительный контрапункт контрастных фактур.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <h2 class="module__title">stats</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <span class="b-entryunit-stat"><span class="b-entryunit-stat-item b-entryunit-stat-friends" title="Friends count">18221</span><span class="b-entryunit-stat-item b-entryunit-stat-friendof" title="Friend of count">8012</span><span class="b-entryunit-stat-item b-entryunit-stat-posts" title="Posts count">32767</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <h2 class="module__title">tags</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <ul class="b-lenta-item-metainfo"><li class="b-lenta-metaitem
+b-lenta-item-tags"> <span class="b-lenta-meta-label
+    b-lenta-metatoggle-target">Метки (<a href="http://www.livejournal.com/edittags.bml?journal=layouts_ru&amp;itemid=521188">редактировать</a>):</span> <a class="b-lenta-tag b-lenta-meta-content" target="_self" href="http://layouts-ru.livejournal.com/tag/стиль: expressive">стиль: expressive</a><span>, </span><a class="b-lenta-tag b-lenta-meta-content" target="_self" href="http://layouts-ru.livejournal.com/tag/цвет: бежевый">цвет: бежевый</a><span>, </span><a class="b-lenta-tag b-lenta-meta-content" target="_self" href="http://layouts-ru.livejournal.com/tag/цвет: разноцветный">цвет: разноцветный</a></li>
+</ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <h2 class="module__title">title</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <h3 class="entryunit-title"><a href="http://www.livejournal.com/magazine/299255.html">Разнокомпонентный интеграл от функции комплексной переменной: методология и особенности</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <h2 class="module__title">tocommunity</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <span class="b-entryunit-author">
+    <span class="ljuser         i-ljuser         i-ljuser-type-P"><a class="i-ljuser-profile" target="_self" href="http://la-ra-fa.livejournal.com/profile"><img class="i-ljuser-userhead ContextualPopup ContextualPopup"></a><a class="i-ljuser-username" title="" target="_self" href="http://la-ra-fa.livejournal.com/"><b>la_ra_fa</b></a></span>
+
+    <span class="b-entryunit-author-wrotein">wrote in</span>
+
+    <span class="ljuser         i-ljuser         i-ljuser-type-C" ><a class="i-ljuser-profile" href="http://30-day-photo.livejournal.com/profile"><img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/community.gif?v=556"></a><a class="i-ljuser-username" href="http://30-day-photo.livejournal.com/"><b>30_day_photo</b></a></span>
+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <h2 class="module__title">user</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <span class="b-entryunit-autor"><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile"><img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/userinfo.gif"></a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>user</b></a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <h2 class="module__title">userpic</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <img src='assets/img/userpic.png'/>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+
     </div>
 
+    <!-- Included script -->
+    <script>(function(){
+    var doc = document;
+    var tabClass = "demotab";
+    var tabCurrent = tabClass + "--current";
+    var itemClass = "demoitem";
+    var itemCurrent = itemClass + "--current";
+
+    var tabs = doc.querySelectorAll("." + tabClass);
+    var Items = doc.querySelectorAll("." + itemClass);
+
+    var currentTabElem = tabs[0];
+    var currentItemElem = Items[0];
+
+    currentTabElem.classList.add(tabCurrent);
+    currentItemElem.classList.add(itemCurrent);
+
+    for (var i = 0; i < tabs.length; i++) {
+        var tab = tabs[i];
+        tab.onclick = function(event) {
+            var showElem = this.getAttribute("data-show");
+
+            currentTabElem.classList.remove(tabCurrent);
+            currentItemElem.classList.remove(itemCurrent);
+
+            this.classList.add(tabCurrent);
+            currentTabElem = this;
+
+            currentItemElem = doc.querySelector("." + showElem);
+            currentItemElem.classList.add(itemCurrent);;
+        };
+    }
+
+    function out(content) {
+        console.log(content);
+    }
+})();</script>
+    <!-- Custom content -->
+    <!-- //Custom content -->
     <script src="//localhost:1337/livereload.js"></script>
-    <!-- 35729 -->
 </body>
 </html>

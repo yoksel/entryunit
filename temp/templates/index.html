@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Modules</title>
+    <style>
+        {{{styles}}}
+    </style>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+{{{svg}}}
+
+    <div class="wrapper">
+
+        <ul class="demotabs">
+            <li class="demotab" data-show="demoitem--templates">Templates</li>
+            <li class="demotab" data-show="demoitem--elements">Elements</li>
+        </ul>
+
+        <div class="demoitems">
+            <div class="demoitem demoitem--templates">
+                {{#templates}}
+                    <!-- {{name}} -->
+                    <div class="module">
+                        <h2 class="module__title">{{name}}</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                {{{content}}}
+                            </div>
+                            <div class="module__item module__components">
+                                {{{components}}}
+                            </div>
+                        </div>
+                    </div>
+                {{/templates}}
+            </div>
+            <div class="demoitem demoitem--elements">
+                {{#elems}}
+                    <!-- {{name}} -->
+                    <div class="module">
+                        <h2 class="module__title">{{name}}</h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                {{{content}}}
+                            </div>
+                        </div>
+                    </div>
+                {{/elems}}
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>{{{script}}}</script>
+    <script src="//localhost:1337/livereload.js"></script>
+    <!-- 35729 -->
+</body>
+</html>

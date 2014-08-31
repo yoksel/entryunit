@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         prototyper: {
             default_options: {
                 options: {
-                  openResult: false
+                    openResult: false
                 },
                 cwd: "",
                 componentsFolder: "components/",
@@ -25,44 +25,47 @@ module.exports = function(grunt) {
 
         sass: {
             dist: {
-              options: {
-                // sourcemap: 'none',
-                style: 'expanded'
-              },
-              files: {
-                'assets/css/styles.css': '_src/css/styles.scss'
-              }
+                options: {
+                    // sourcemap: 'none',
+                    style: 'expanded'
+                },
+                files: {
+                    'assets/css/styles.css': '_src/css/styles.scss'
+                }
             }
-          },
+        },
 
-          watch: {
-              html: {
-                files: ['components/**/*.html','config.json'],
+        watch: {
+            html: {
+                files: ['components/**/*',
+                    'includes/**/*',
+                    'config.json'
+                ],
                 tasks: ['prototyper'],
                 options: {
-                  livereload: 1337,//true,
+                    livereload: 1337, //true,
                 },
-              },
-              css: {
+            },
+            css: {
                 files: ['**/*.scss'],
                 tasks: ['sass'],
                 options: {
-                  livereload: 1337,//true,
+                    livereload: 1337, //true,
                 },
-              },
             },
+        },
 
-          connect: {
-              server: {
-                  options: {
-                      // base: './',
-                      port: 9002,
-                      open: {
-                          target: 'http://localhost:9002'
-                      }
-                  }
-              }
-          }
+        connect: {
+            server: {
+                options: {
+                    // base: './',
+                    port: 9002,
+                    open: {
+                        target: 'http://localhost:9002'
+                    }
+                }
+            }
+        }
 
     });
 

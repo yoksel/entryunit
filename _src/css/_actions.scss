@@ -1,0 +1,20 @@
+.entryunit:hover .b-entryunit-hide,
+.entryunit:hover .b-entryunit-read {
+    visibility: visible;
+    }
+
+.entryunit-actions {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    padding: 0;
+    border-left: 1px solid #DAE3E6;
+    background: #F7F9FA;
+    }
+
+    .entryunit:hover .entryunit-actions {
+        display: block;
+        }
