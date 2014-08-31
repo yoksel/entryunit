@@ -32,6 +32,10 @@ padding: 0;
 list-style: none;
 }
 
+figure {
+    margin: 0;
+}
+
 @import '_proximanova';
 
 @import '_entryunit';
@@ -39,9 +43,14 @@ list-style: none;
 
 @import '_position';
 
+@import '_userpic';
+
 @import '_panorama';
 
 @import '_ljuser';
+
+@import '_e-types';
+
 @import '_flatsocial';
 
 @import '_metainfo';

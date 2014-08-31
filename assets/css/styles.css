@@ -36,6 +36,10 @@ UL {
   list-style: none;
 }
 
+figure {
+  margin: 0;
+}
+
 /* ---------------------------------------------------------------------------------
    file-start: proximanova-opentype.css
 */
@@ -2399,6 +2403,13 @@ UL {
   right: -2px;
 }
 
+.entryunit__userpic {
+  float: left;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-right: 25px;
+}
+
 .b-entryunit-panorama-pic {
   display: block;
   width: 100%;
@@ -2456,6 +2467,58 @@ HTML BODY .i-ljuser-type-P .i-ljuser-profile {
 /* community */
 HTML BODY .i-ljuser-type-C .i-ljuser-profile {
   background-image: url(http://stat.ljdev5.livejournal.ru/img/community_v3.png);
+}
+
+.j-e-types-item {
+  background-repeat: no-repeat;
+  background-image: url(http://stat.ljdev5.livejournal.ru/air/default_theme/img/sprite.png);
+  /* IE7-8 */
+  background-image: url(http://stat.ljdev5.livejournal.ru/air/default_theme/img/sprite.svg), none;
+}
+
+.j-e-types {
+  display: inline-block;
+  margin: 0 5px 0 0;
+  vertical-align: top;
+}
+
+.j-e-types-item {
+  display: inline-block;
+  width: 32px;
+  margin: 0 5px 0 0;
+  vertical-align: middle;
+  text-indent: -1000px;
+  overflow: hidden;
+}
+
+.j-e-type-security-private {
+  width: 22px;
+  height: 29px;
+  background-position: 0 -320px;
+}
+
+.j-e-type-security-protected {
+  width: 22px;
+  height: 33px;
+  background-position: -40px -320px;
+}
+
+.j-e-type-repost {
+  width: 25px;
+  height: 28px;
+  background-position: -80px -320px;
+}
+
+.j-e-type-security-custom {
+  width: 32px;
+  height: 34px;
+  background-position: -120px -320px;
+}
+
+.j-e-type-sticky {
+  width: 28px;
+  height: 33px;
+  background-position: -160px -320px;
 }
 
 .b-entryunit-sidelikes:after {

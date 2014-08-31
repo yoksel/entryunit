@@ -56,7 +56,7 @@
         "userpic",
         "user",
         "date",
-        "title",
+        "title--sec",
         "entrytext",
         "tags",
         "comments"
