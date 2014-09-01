@@ -1,0 +1,25 @@
+/* comments in first meta */
+.entryunit-comments {
+    position: relative;
+    display: inline-block;
+    margin: 0 1em .3em 0;
+    padding: 0 0 0 22px;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-family: ProximaNovaSemibold, Tahoma, Arial, sans-serif
+    }
+.entryunit-comments .entryunit-icon-comments {
+    display: block;
+    top: 0;
+    left: 0
+    }
+.entryunit-comments A:link,
+.entryunit-comments A:visited {
+    text-decoration: none;
+    color: #00A3D9
+    }
+.entryunit-comments A:active,
+.entryunit-comments A:hover {
+    text-decoration: none;
+    color: #0086B3
+    }

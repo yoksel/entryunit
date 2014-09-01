@@ -10,8 +10,8 @@
             "entrytext"
         ]
     },
+
     "rating": {
-        "wrapper-class": "b-mainpage",
         "elements": [
             "position",
             "user",
@@ -22,8 +22,47 @@
             "actions"
         ]
     },
+
+    "rating-restored": {
+        "aditional-classes": "entryunit-state-restored",
+        "elements": [
+            "position",
+            "user",
+            "date",
+            "headercomments",
+            "title",
+            "entrytext",
+            "actions"
+        ]
+    },
+
+    "rating-state-up": {
+        "aditional-classes": "entryunit-state-up",
+        "elements": [
+            "position",
+            "user",
+            "date",
+            "headercomments",
+            "title",
+            "entrytext",
+            "actions"
+        ]
+    },
+
+    "rating-state-down": {
+        "aditional-classes": "entryunit-state-down",
+        "elements": [
+            "position",
+            "user",
+            "date",
+            "headercomments",
+            "title",
+            "entrytext",
+            "actions"
+        ]
+    },
+
     "recomended": {
-        "wrapper-class": "b-mainpage",
         "elements": [
             "recomend",
             "user",
@@ -32,6 +71,7 @@
             "entrytext"
         ]
     },
+
     "magazine": [
         "user",
         "date",
@@ -40,6 +80,7 @@
         "imagefull",
         "entrytext"
     ],
+
     "browsepost": [
         "position",
         "tocommunity",
@@ -49,6 +90,7 @@
         "entrytext",
         "share"
     ],
+
     "browsecommunity": [
         "comm",
         "stats",
@@ -56,8 +98,9 @@
         "shorttext",
         "joinwatch"
     ],
+
     "feed": {
-        "additional-classes": "test",
+        "aditional-classes": "test",
         "elements": [
             "userpic",
             "user",
