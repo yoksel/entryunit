@@ -1,5 +1,6 @@
 {
     "promo": {
+        "wrapper-class": "b-mainpage",
         "elements": [
             "promo",
             "user",
@@ -21,13 +22,16 @@
             "actions"
         ]
     },
-    "recomended": [
-        "recomend",
-        "user",
-        "headerreply",
-        "title",
-        "entrytext"
-    ],
+    "recomended": {
+        "wrapper-class": "b-mainpage",
+        "elements": [
+            "recomend",
+            "user",
+            "headerreply",
+            "title",
+            "entrytext"
+        ]
+    },
     "magazine": [
         "user",
         "date",
@@ -52,14 +56,18 @@
         "shorttext",
         "joinwatch"
     ],
-    "feed": [
-        "userpic",
-        "user",
-        "date",
-        "title--sec",
-        "entrytext",
-        "tags",
-        "comments"
-    ]
+    "feed": {
+        "additional-classes": "test",
+        "elements": [
+            "userpic",
+            "user",
+            "date",
+            "title--sec",
+            "entrytext",
+            "tags",
+            "comments",
+            "actions--feed"
+        ]
+    }
 
 }

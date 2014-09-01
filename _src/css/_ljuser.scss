@@ -22,12 +22,15 @@ HTML BODY .i-ljuser {
         margin: 0 0.3em 0 0 !important;
         background-repeat: no-repeat;
         background-position: 0 0;
+        vertical-align:  text-bottom !important;
         }
+
         HTML BODY .i-ljuser-type-P .i-ljuser-userhead,
         HTML BODY .i-ljuser-type-C .i-ljuser-userhead {
             filter: alpha(opacity=0);
             opacity: 0;
             }
+
     /* user */
     HTML BODY .i-ljuser-type-P .i-ljuser-profile {
         background-image: url(http://stat.ljdev5.livejournal.ru/img/userinfo_v3.png?v=39106);
