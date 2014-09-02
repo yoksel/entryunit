@@ -1,4 +1,4 @@
-.j-e-nav-list {
+.entryunit-actions-items {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -6,7 +6,7 @@
     font-size: .875em
 }
 
-.j-e-nav-item {
+.entryunit-actions-item {
     display: block;
     position: relative;
     float: left;
@@ -15,7 +15,7 @@
     line-height: 30px
 }
 
-.j-e-nav-item:before {
+/*.entryunit-actions-item:before {
     display: block;
     position: absolute;
     left: 0;
@@ -26,68 +26,121 @@
     height: 26px;
     margin: auto;
     content: "";
-    background: url(http://stat.livejournal.com/img/friendsfeed/sprite.svg) no-repeat
-}
+    background: url(http://stat.livejournal.com/img/friendsfeed/sprite.svg) no-repeat;
+    border: 1px solid green;
+}*/
 
-.b-feedsettings-on .j-e-nav-item:before {
-    display: none
-}
 
-.j-e-nav-item-comments,.j-e-nav-item-reply {
+
+.entryunit-actions-item-comments,.entryunit-actions-item-reply {
     letter-spacing: .05em;
     text-transform: uppercase
-}
+    }
 
-.j-e-nav-item-comments-icon,.j-e-nav-item-reply-icon {
+.entryunit-actions-item-comments-icon,
+.entryunit-actions-item-reply-icon {
     position: absolute;
     left: 0;
     top: auto;
     display: block;
     height: 30px;
     color: #7A9199
-}
+    }
 
-.j-e-nav-item-icon .svgicon {
+.entryunit-actions-item-icon .svgicon {
     width: 31px;
     height: 30px
-}
+    }
 
-.j-e-nav-item-text {
+.entryunit-actions-item-text {
     padding: 0 6px
-}
+    }
 
-.j-e-nav-item-clear:before {
+/*.entryunit-actions-item-clear:before {
     content: none
-}
+    }
 
-.j-e-nav-item-comments:before {
+.entryunit-actions-item-comments:before {
     height: 30px;
     background-position: -40px 3px
-}
+    }
 
-.j-e-nav-item-comments:hover:before {
+.entryunit-actions-item-comments:hover:before {
     background-position: -40px -37px
-}
+    }
 
-.j-e-nav-item-reply:before {
+.entryunit-actions-item-reply:before {
     height: 30px;
     background-position: -80px 3px
-}
+    }
 
-.j-e-nav-item-reply:hover:before {
+.entryunit-actions-item-reply:hover:before {
     background-position: -80px -37px
 }
 
-.j-e-nav-item-comments:before,.j-e-nav-item-reply:before {
+.entryunit-actions-item-comments:before,
+.entryunit-actions-item-reply:before {
     right: auto
-}
+}*/
 
-.j-e-nav-item A {
+.entryunit-actions-item A {
     position: relative
 }
 
-.j-e-nav-item-comments A,.j-e-nav-item-reply A {
+.entryunit-actions-item-comments A,
+.entryunit-actions-item-reply A {
     display: block;
     position: relative;
     padding: 0 0 0 34px
+}
+
+.entryunit-actions-item A {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px
+    }
+
+.entryunit-actions-item A:hover:after,
+.entryunit-actions-item A:hover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -1px;
+    z-index: 5;
+    width: 0;
+    height: 0;
+    margin: auto;
+    border: 5px solid transparent;
+    border-left-color: #FFF
+    }
+
+.entryunit-actions-item A:hover:before {
+    border-width: 7px;
+    border-left-color: #DAE3E6
+    }
+
+.entryunit-actions-tooltip {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    bottom: 0;
+    visibility: hidden;
+    right: 40px;
+    padding: 0 10px;
+    line-height: 40px;
+    background: #FFF;
+    border: 1px solid #DAE3E6;
+    white-space: nowrap;
+    font-size: 11px
+    }
+
+.b-lenta-tiny-size .j-e-actiongs-tooltip {
+    font-size: 1em
+}
+
+.entryunit-actions-item A:hover .entryunit-actions-tooltip {
+    visibility: visible
 }

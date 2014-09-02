@@ -1,0 +1,31 @@
+@media all and (max-width: 1100px) {
+    .entryunit-panorama-pic, .entryunit-video EMBED,
+    .entryunit-video IFRAME, .entryunit-video OBJECT {
+        height: 300px
+    }
+}
+@media all and (max-width: 700px) {
+    .entryunit-panorama-pic, .entryunit-video EMBED,
+    .entryunit-video IFRAME, .entryunit-video OBJECT {
+        height: 250px
+    }
+}
+@media all and (max-width: 560px) {
+    .entryunit-panorama-pic, .entryunit-video EMBED,
+    .entryunit-video IFRAME, .entryunit-video OBJECT {
+        height: 200px
+    }
+}
+@media all and (max-width: 480px) {
+    .entryunit-title {
+        font-size: 1.5em
+    }
+    .b-ljpromo .entryunit-title, .selfpromo-shop H3.entryunit-title {
+        font-size: 1.5em;
+        line-height: 2
+    }
+    .entryunit-panorama-pic, .entryunit-video EMBED,
+    .entryunit-video IFRAME, .entryunit-video OBJECT {
+        height: 130px
+    }
+}

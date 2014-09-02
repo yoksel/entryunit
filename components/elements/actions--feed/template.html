@@ -1,53 +1,49 @@
-<div class="j-nav j-e-actions">
-    <ul class="j-e-actions-list">
-        <!-- ngRepeat: link in item.linkbar | filter: { active: true } -->
-        <li ng-repeat="link in item.linkbar | filter: { active: true }" class="j-e-actions-item ng-scope j-e-actions-item-addmem" ng-class="getActionLinkStyle(link)">
-            <!-- ngIf: link.type == 'memories' -->
-            <a ng-attr-title="link.name" ng-class="addmem" ng-href="http://www.livejournal.com/tools/memadd.bml?journal=lj_releases&amp;itemid=89249" ng-attr-id="link.id" ng-if="link.type == 'memories'" lj-memories="options" target="_self" class="ng-scope ng-isolate-scope" href="http://www.livejournal.com/tools/memadd.bml?journal=lj_releases&amp;itemid=89249">
-                <span class="j-e-actions-icon ng-isolate-scope j-e-actions-item-addmem" ng-class="getActionLinkStyle(link)" lj-svg-icon="link.svg_icon_name" ng-show="isSettingsEnabled">
-                    <svg class="svgicon" style="pointer-events: none; visibility: hidden;">
-                        <use xlink:href="#fi-favorite"></use>
-                    </svg>
-                </span>
-                <span class="j-e-actions-tooltip ng-binding" ng-bind="link.name">Добавить в избранное</span>
-            </a>
-            <!-- end ngIf: link.type == 'memories' -->
-            <!-- ngIf: link.type == 'share' -->
-            <!-- ngIf: link.type == 'track' -->
-            <!-- ngIf: link.type == 'edit' -->
-        </li>
-        <!-- end ngRepeat: link in item.linkbar | filter: { active: true } -->
-        <li ng-repeat="link in item.linkbar | filter: { active: true }" class="j-e-actions-item ng-scope j-e-actions-item-js-lj-share" ng-class="getActionLinkStyle(link)">
-            <!-- ngIf: link.type == 'memories' -->
-            <!-- ngIf: link.type == 'share' -->
-            <a ng-attr-title="link.name" ng-attr-id="link.id" href="javasctipt:void(0)" ng-if="link.type == 'share'" lj-share="{ url: link.data_url, title: link.data_title, text: link.data_text, hashtags: link.data_hashtags }" target="_self" class="ng-scope">
-                <span class="j-e-actions-icon ng-isolate-scope j-e-actions-item-js-lj-share" ng-class="getActionLinkStyle(link)" lj-svg-icon="link.svg_icon_name" ng-show="isSettingsEnabled">
+<menu class="entryunit-actions">
+    <ul class="entryunit-actions-items">
+
+        <li class="entryunit-actions-item entryunit-actions-item-js-lj-share">
+            <a href="javasctipt:void(0)">
+                <span class="entryunit-actions-icon entryunit-actions-item-js-lj-share">
                     <svg class="svgicon" style="pointer-events: none; visibility: hidden;">
                         <use xlink:href="#fi-share"></use>
                     </svg>
                 </span>
-                <span class="j-e-actions-tooltip ng-binding" ng-bind="link.name">Поделиться</span>
+                <span class="entryunit-actions-tooltip">Поделиться</span>
             </a>
-            <!-- end ngIf: link.type == 'share' -->
-            <!-- ngIf: link.type == 'track' -->
-            <!-- ngIf: link.type == 'edit' -->
         </li>
-        <!-- end ngRepeat: link in item.linkbar | filter: { active: true } -->
-        <li ng-repeat="link in item.linkbar | filter: { active: true }" class="j-e-actions-item ng-scope j-e-actions-item-track" ng-class="getActionLinkStyle(link)">
-            <!-- ngIf: link.type == 'memories' -->
-            <!-- ngIf: link.type == 'share' -->
-            <!-- ngIf: link.type == 'track' -->
-            <a ng-attr-title="link.name" ng-class="track" ng-href="http://www.livejournal.com/manage/subscriptions/entry.bml?journal=lj_releases&amp;amp;itemid=89249" ng-attr-id="link.id" ng-if="link.type == 'track'" target="_self" class="ng-scope" href="http://www.livejournal.com/manage/subscriptions/entry.bml?journal=lj_releases&amp;amp;itemid=89249">
-                <span class="j-e-actions-icon ng-isolate-scope j-e-actions-item-track" ng-class="getActionLinkStyle(link)" lj-svg-icon="link.svg_icon_name" ng-show="isSettingsEnabled">
+
+        <li class="entryunit-actions-item entryunit-actions-item-addmem">
+            <a href="http://www.livejournal.com/tools/memadd.bml?journal=lj_releases&amp;itemid=89249">
+                <span class="entryunit-actions-icon entryunit-actions-item-addmem">
+                    <svg class="svgicon" style="pointer-events: none; visibility: hidden;">
+                        <use xlink:href="#fi-favorite"></use>
+                    </svg>
+                </span>
+                <span class="entryunit-actions-tooltip ng-binding">Добавить в избранное</span>
+            </a>
+        </li>
+
+        <li class="entryunit-actions-item entryunit-actions-item-js-lj-share">
+            <a href="javasctipt:void(0)">
+                <span class="entryunit-actions-icon entryunit-actions-item-js-lj-share">
+                    <svg class="svgicon" style="pointer-events: none; visibility: hidden;">
+                        <use xlink:href="#fi-share"></use>
+                    </svg>
+                </span>
+                <span class="entryunit-actions-tooltip">Поделиться</span>
+            </a>
+        </li>
+
+        <li class="entryunit-actions-item entryunit-actions-item-track">
+            <a href="http://www.livejournal.com/manage/subscriptions/entry.bml?journal=lj_releases&amp;amp;itemid=89249">
+                <span class="entryunit-actions-icon entryunit-actions-item-track">
                     <svg class="svgicon" style="pointer-events: none; visibility: hidden;">
                         <use xlink:href="#fi-track"></use>
                     </svg>
                 </span>
-                <span class="j-e-actions-tooltip ng-binding" ng-bind="link.name">Отслеживать</span>
+                <span class="entryunit-actions-tooltip">Отслеживать</span>
             </a>
-            <!-- end ngIf: link.type == 'track' -->
-            <!-- ngIf: link.type == 'edit' -->
         </li>
-        <!-- end ngRepeat: link in item.linkbar | filter: { active: true } -->
+
     </ul>
-</div>
+</menu>
