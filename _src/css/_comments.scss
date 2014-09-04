@@ -23,3 +23,31 @@
     text-decoration: none;
     color: #0086B3
     }
+
+/* Footer Comments */
+
+/* Entry buttons
+---------------------- */
+.entryunit-nav {
+    margin-top: 10px;
+    }
+    .entryunit-nav-item {
+        display: block;
+        position: relative;
+        float: left;
+        line-height: 33px;
+        margin-right: 20px;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+        font-size: 12px
+        }
+        .entryunit-nav-item-clear {
+            height: 0;
+            margin: 0;
+            }
+        .entryunit-nav-item .svgicon {
+            width: 30px;
+            height: 26px;
+            vertical-align: middle;
+            }
+

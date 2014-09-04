@@ -23,18 +23,23 @@ A:active {
     }
 
 .svgicon {
-    fill: currentColor
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    visibility: inherit!important;
+    pointer-events: auto!important;
+    fill: currentColor;
     }
 
 UL {
-margin: 0;
-padding: 0;
-list-style: none;
-}
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
 
 figure {
     margin: 0;
-}
+    }
 
 @import '_proximanova';
 
@@ -71,8 +76,6 @@ figure {
 @import '_flatsocial';
 
 @import '_metainfo';
-
-@import '_nav-list';
 
 @import '_readhide';
 
