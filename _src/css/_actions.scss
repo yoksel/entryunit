@@ -1,0 +1,104 @@
+.entryunit-actions {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    padding: 0;
+    border-left: 1px solid #DAE3E6;
+    background: #F7F9FA;
+    }
+
+    .entryunit:hover .entryunit-actions,
+    .entryunit:hover .entryunit-actions {
+        display: block;
+        }
+
+/* Fix icons while scrolling page */
+.entryunit-scrolling {
+    position: fixed;
+    top: 0
+    }
+
+    .entryunit-scrolling-stop {
+        position: absolute;
+        top: auto;
+        bottom: 0
+        }
+
+/* Air: layout with sidebar on teh left side */
+.j-p-layout-tw .entryunit-actions {
+    border-width: 0 1px
+    }
+
+.entryunit-actions-item {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    }
+
+    .entryunit-actions-icon .svgicon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        margin: auto
+        }
+
+    .entryunit-actions-item A {
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 40px
+        }
+
+/* Tooltip */
+.entryunit-actions-tooltip {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    bottom: 0;
+    visibility: hidden;
+    right: 40px;
+    padding: 0 10px;
+    line-height: 40px;
+    background: #FFF;
+    border: 1px solid #DAE3E6;
+    white-space: nowrap;
+    }
+
+    .b-lenta-tiny-size .entryunit-actiongs-tooltip {
+        font-size: 1em
+        }
+
+    .entryunit-actions-item A:hover .entryunit-actions-tooltip {
+        visibility: visible
+        }
+
+    /* Tooltip right corner */
+    .entryunit-actions-item A:hover:after,
+    .entryunit-actions-item A:hover:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -1px;
+        z-index: 5;
+        width: 0;
+        height: 0;
+        margin: auto;
+        border: 5px solid transparent;
+        border-left-color: #FFF
+        }
+
+        .entryunit-actions-item A:hover:before {
+            border-width: 7px;
+            border-left-color: #DAE3E6
+            }
