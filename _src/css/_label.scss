@@ -3,58 +3,52 @@
     display: inline-block;
     margin: 0 0.5rem 0.3rem 0;
     padding: 4px 10px;
+    vertical-align: 1px;
     border-radius: 10px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font: 11px/1 "ProximaNovaSemibold",Tahoma,Arial,sans-serif;
-    background: #FD8F40;
     color: #FFF;
     }
-    .entryunit-label:hover {
+   .entryunit-label A {
+        display: inline-block;
+        margin: -2px -10px;
+        padding: 2px 10px;
+        }
+    .entryunit-label A:link,
+    .entryunit-label A:visited,
+    .entryunit-label A:hover,
+    .entryunit-label A:active {
+        text-decoration: none;
+        color: #FFF;
+        }
+
+/* selfpromo */
+.entryunit-label--selfpromo {
+    background: #FD8F40;
+    }
+    .entryunit-label--selfpromo:hover {
         background: #FF8126;
         }
-    .entryunit-label:last-child {
-        margin-right: 1rem;
-        }
-        .entryunit-label A {
-            display: inline-block;
-            margin: -2px -10px;
-            padding: 2px 10px;
-            }
-        .entryunit-label A:link,
-        .entryunit-label A:visited,
-        .entryunit-label A:hover,
-        .entryunit-label A:active {
-            text-decoration: none;
-            color: #FFF;
-            }
-/* labels for selfpromo, commpromo, mustread */
-.entryunit-label-selfpromo,
-.entryunit-label-commpromo,
-.entryunit-label-mustread {
-    display: none;
-    }
 /* mustread */
-.entryunit-label-mustread,
-.entryunit-label-mustread:hover {
+.entryunit-label--mustread,
+.entryunit-label--mustread:hover {
     background: #39BF71;
     }
 /* commpromo */
-.entryunit-label-commpromo {
+.entryunit-label--commpromo {
     background: #40AEFD;
     }
-    .entryunit-label-commpromo:hover {
+    .entryunit-label--commpromo:hover {
         background: #26A4FF;
         }
-/* selfpromo & commpromo */
-.entryunit-label-selfpromo,
-.entryunit-label-commpromo {
-    vertical-align: 1px;
+
+/* labels for selfpromo, commpromo, mustread */
+.entryunit-label {
+    display: none;
     }
-/* browse */
-.entryunit-label-browse {
-    background: #7A9199;
-    }
-.entryunit-label-browse:hover {
-    background: #94ABB3;
-    }
+    .entryunit--selfpromo .entryunit-label--selfpromo,
+    .entryunit--commpromo .entryunit-label--commpromo,
+    .entryunit--mustread .entryunit-label--mustread {
+        display: inline-block;
+        }

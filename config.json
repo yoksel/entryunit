@@ -1,8 +1,20 @@
 {
-    "promo": {
-        "wrapper-class": "b-mainpage",
+    "self-promo": {
+        "aditional-classes": "entryunit--selfpromo",
         "elements": [
-            "promo",
+            "labels",
+            "user",
+            "date",
+            "headercomments",
+            "title",
+            "entrytext"
+        ]
+    },
+
+    "comm-promo": {
+        "aditional-classes": "entryunit--commpromo",
+        "elements": [
+            "labels",
             "user",
             "date",
             "headercomments",
@@ -62,9 +74,10 @@
         ]
     },
 
-    "recomended": {
+    "mustread": {
+        "aditional-classes": "entryunit--mustread",
         "elements": [
-            "recomend",
+            "labels",
             "user",
             "headerreply",
             "title",

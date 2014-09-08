@@ -4,163 +4,195 @@
 .ie8 .flaticon {
     background-image: url(flaticon.png);
     }
-.flaticon--arrow-right {
-    width: 30px;
-    height: 56px;
-    background-position: 0 0;
-    }
 .flaticon--arrow-left {
     width: 30px;
     height: 56px;
+    background-position: 0 0;
+    fill: #7A9199;
+    }
+.flaticon--arrow-right {
+    width: 30px;
+    height: 56px;
     background-position: -40px 0;
+    fill: #7A9199;
     }
 .flaticon--security-friends {
     width: 30px;
     height: 39px;
     background-position: -80px 0;
+    fill: #7A9199;
     }
 .flaticon--spinner {
     width: 32px;
     height: 32px;
     background-position: 0 -66px;
-    }
-.flaticon--cross-bold {
-    width: 30px;
-    height: 30px;
-    background-position: -42px -66px;
-    }
-.flaticon--post {
-    width: 30px;
-    height: 30px;
-    background-position: -120px 0;
+    fill: #7A9199;
     }
 .flaticon--upload-image {
     width: 30px;
     height: 30px;
-    background-position: -120px -40px;
+    background-position: -42px -66px;
+    fill: #7A9199;
     }
 .flaticon--stickypost {
     width: 30px;
     height: 30px;
+    background-position: -120px 0;
+    fill: #7A9199;
+    }
+.flaticon--post {
+    width: 30px;
+    height: 30px;
+    background-position: -120px -40px;
+    fill: #7A9199;
+    }
+.flaticon--cross-bold {
+    width: 30px;
+    height: 30px;
     background-position: 0 -108px;
+    fill: #7A9199;
     }
 .flaticon--repost {
     width: 30px;
     height: 29px;
     background-position: -40px -108px;
-    }
-.flaticon--settings {
-    width: 27px;
-    height: 27px;
-    background-position: -82px -66px;
+    fill: #7A9199;
     }
 .flaticon--logout {
     width: 30px;
     height: 27px;
     background-position: -80px -108px;
+    fill: #7A9199;
+    }
+.flaticon--settings {
+    width: 27px;
+    height: 27px;
+    background-position: -82px -66px;
+    fill: #7A9199;
     }
 .flaticon--security-private {
     width: 30px;
     height: 25px;
     background-position: -120px -108px;
+    fill: #7A9199;
     }
 .flaticon--comment-view {
     width: 30px;
     height: 24px;
     background-position: -160px 0;
+    fill: #7A9199;
     }
 .flaticon--security-friendgroups {
     width: 30px;
     height: 24px;
     background-position: -160px -34px;
+    fill: #7A9199;
     }
 .flaticon--comment-add {
     width: 30px;
     height: 24px;
     background-position: -160px -68px;
+    fill: #7A9199;
     }
 .flaticon--menu {
     width: 25px;
     height: 24px;
     background-position: -160px -102px;
-    }
-.flaticon--arrow-down {
-    width: 16px;
-    height: 23px;
-    background-position: 0 -148px;
+    fill: #7A9199;
     }
 .flaticon--arrow-up {
     width: 16px;
     height: 23px;
-    background-position: -26px -148px;
+    background-position: 0 -148px;
+    fill: #7A9199;
     }
-.flaticon--check {
-    width: 30px;
-    height: 21px;
-    background-position: -52px -148px;
+.flaticon--arrow-down {
+    width: 16px;
+    height: 23px;
+    background-position: -26px -148px;
+    fill: #7A9199;
     }
 .flaticon--discovery {
     width: 36px;
     height: 20px;
-    background-position: -92px -148px;
+    background-position: -52px -148px;
+    fill: #39BF71;
     }
 .flaticon--delete-repost {
     width: 16px;
     height: 18px;
     background-position: -120px -80px;
+    fill: #7A9199;
     }
 .flaticon--share {
     width: 16px;
     height: 18px;
-    background-position: -138px -148px;
+    background-position: -98px -148px;
+    fill: #7A9199;
     }
 .flaticon--edit {
     width: 16px;
     height: 17px;
-    background-position: -164px -148px;
+    background-position: -124px -148px;
+    fill: #7A9199;
     }
 .flaticon--flag {
     width: 16px;
     height: 17px;
+    background-position: -150px -148px;
+    fill: #7A9199;
+    }
+.flaticon--track {
+    width: 16px;
+    height: 16px;
     background-position: -200px 0;
+    fill: #7A9199;
+    }
+.flaticon--hide {
+    width: 16px;
+    height: 16px;
+    background-position: -200px -26px;
+    fill: #7A9199;
+    }
+.flaticon--arrow-left-bold {
+    width: 10px;
+    height: 16px;
+    background-position: -200px -52px;
+    fill: #7A9199;
     }
 .flaticon--cross {
     width: 16px;
     height: 16px;
-    background-position: -200px -27px;
+    background-position: -200px -78px;
+    fill: #7A9199;
+    }
+.flaticon--arrow-right-bold {
+    width: 10px;
+    height: 16px;
+    background-position: -200px -104px;
+    fill: #7A9199;
     }
 .flaticon--comment-bold {
     width: 17px;
     height: 16px;
     background-position: 0 -181px;
-    }
-.flaticon--hide {
-    width: 16px;
-    height: 16px;
-    background-position: -200px -53px;
-    }
-.flaticon--arrow-left-bold {
-    width: 10px;
-    height: 16px;
-    background-position: -200px -79px;
-    }
-.flaticon--arrow-right-bold {
-    width: 10px;
-    height: 16px;
-    background-position: -200px -105px;
-    }
-.flaticon--track {
-    width: 16px;
-    height: 16px;
-    background-position: -200px -131px;
+    fill: #7A9199;
     }
 .flaticon--favorite {
     width: 16px;
     height: 15px;
-    background-position: -27px -181px;
+    background-position: -200px -130px;
+    fill: #7A9199;
+    }
+.flaticon--check {
+    width: 16px;
+    height: 11px;
+    background-position: -200px -155px;
+    fill: #7A9199;
     }
 .flaticon--arrow-bottom-bold {
     width: 12px;
     height: 8px;
-    background-position: -200px -157px;
+    background-position: -176px -148px;
+    fill: #7A9199;
     }

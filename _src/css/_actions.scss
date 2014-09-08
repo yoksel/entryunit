@@ -1,4 +1,4 @@
-.entryunit-actions {
+.entryunit-controls {
     display: none;
     position: absolute;
     z-index: 5;
@@ -11,8 +11,7 @@
     background: #F7F9FA;
     }
 
-    .entryunit:hover .entryunit-actions,
-    .entryunit:hover .entryunit-actions {
+    .entryunit:hover .entryunit-controls {
         display: block;
         }
 
@@ -29,18 +28,19 @@
         }
 
 /* Air: layout with sidebar on teh left side */
-.j-p-layout-tw .entryunit-actions {
+.j-p-layout-tw .entryunit-controls {
     border-width: 0 1px
     }
 
-.entryunit-actions-item {
+/* Items */
+.entryunit-controls-item {
     display: block;
     position: relative;
     width: 40px;
     height: 40px;
     }
 
-    .entryunit-actions-icon .svgicon {
+    .entryunit-controls-item .svgicon {
         position: absolute;
         top: 0;
         right: 0;
@@ -51,7 +51,7 @@
         margin: auto
         }
 
-    .entryunit-actions-item A {
+    .entryunit-controls-item A {
         display: block;
         position: relative;
         width: 40px;
@@ -59,7 +59,7 @@
         }
 
 /* Tooltip */
-.entryunit-actions-tooltip {
+.entryunit-controls-tooltip {
     display: block;
     position: absolute;
     z-index: 5;
@@ -78,13 +78,13 @@
         font-size: 1em
         }
 
-    .entryunit-actions-item A:hover .entryunit-actions-tooltip {
+    .entryunit-controls-item A:hover .entryunit-controls-tooltip {
         visibility: visible
         }
 
     /* Tooltip right corner */
-    .entryunit-actions-item A:hover:after,
-    .entryunit-actions-item A:hover:before {
+    .entryunit-controls-item A:hover:after,
+    .entryunit-controls-item A:hover:before {
         content: "";
         position: absolute;
         top: 0;
@@ -98,7 +98,7 @@
         border-left-color: #FFF
         }
 
-        .entryunit-actions-item A:hover:before {
+        .entryunit-controls-item A:hover:before {
             border-width: 7px;
             border-left-color: #DAE3E6
             }

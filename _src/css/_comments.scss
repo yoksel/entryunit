@@ -3,16 +3,13 @@
     position: relative;
     display: inline-block;
     margin: 0 1em .3em 0;
-    padding: 0 0 0 22px;
     text-transform: uppercase;
     letter-spacing: .05em;
     font-family: ProximaNovaSemibold, Tahoma, Arial, sans-serif
     }
-.entryunit-comments .entryunit-icon-comments {
-    display: block;
-    top: 0;
-    left: 0
-    }
+    .entryunit-comments .svgicon {
+        vertical-align: middle;
+        }
 .entryunit-comments A:link,
 .entryunit-comments A:visited {
     text-decoration: none;
@@ -25,29 +22,28 @@
     }
 
 /* Footer Comments */
-
-/* Entry buttons
----------------------- */
-.entryunit-nav {
+.entryunit-actions {
     margin-top: 10px;
     }
-    .entryunit-nav-item {
-        display: block;
-        position: relative;
-        float: left;
-        line-height: 33px;
-        margin-right: 20px;
-        text-transform: uppercase;
-        letter-spacing: .05em;
-        font-size: 12px
+    .entryunit-actions-item {
+
+        font-family: ProximaNovaSemibold,Helvetica,sans-serif;
+        font-size: .875em;
         }
-        .entryunit-nav-item-clear {
-            height: 0;
-            margin: 0;
+        .entryunit-actions-item {
+            display: block;
+            float: left;
+            margin-right: 20px;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            line-height: 33px;
             }
-        .entryunit-nav-item .svgicon {
-            width: 30px;
-            height: 26px;
-            vertical-align: middle;
-            }
+            .entryunit-actions-item-clear {
+                height: 0;
+                margin: 0;
+                }
+            .entryunit-actions-item .svgicon {
+                margin-right: 6px;
+                vertical-align: middle;
+                }
 

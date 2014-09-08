@@ -55,6 +55,14 @@ module.exports = function(grunt) {
             },
         },
 
+        uncss: {
+          dist: {
+            files: {
+              'dist/css/tidy.css': ['index.html']
+            }
+          }
+        },
+
         connect: {
             server: {
                 options: {
