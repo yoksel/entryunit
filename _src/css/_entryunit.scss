@@ -1,5 +1,3 @@
-.entryunit
-
 .entryunit {
     position: relative;
     margin: 0;
@@ -23,7 +21,7 @@
 }
 
 /* meta */
-.entryunit-meta {
+.meta-entryunit {
     margin: 0 0 .3em;
     font-size: 14px;
     font-size: .875rem;
@@ -31,18 +29,18 @@
     color: #7A9199
     }
     /* items */
-    .entryunit-meta-items {
+    .meta-entryunit__items {
         margin: 0;
         padding: 0;
         list-style: none
         }
-    .entryunit-meta-item {
+    .meta-entryunit__item {
         display: inline;
         margin: 0;
         padding: 0
         }
 
-.entryunit-date {
+.entryunit__date {
     position: relative;
     display: inline-block;
     margin: 0 1em .3em 0;

@@ -1,11 +1,16 @@
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    }
 BODY {
     margin: 0;
     padding: 0;
     background: #FFF;
-    font: 15px/1.4 ProximaNovaRegular,Helvetica,sans-serif;
+    font: 16px/1.4 ProximaNovaRegular, Helvetica, sans-serif;
     letter-spacing: .01em;
     -webkit-font-smoothing: antialiased
-}
+    }
 
 A:link {
     text-decoration: none;

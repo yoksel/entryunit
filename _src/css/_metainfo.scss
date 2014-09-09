@@ -1,13 +1,23 @@
-.entryunit__metainfo LI {
-display: block;
-margin: 0 0 7px;
-padding: 0;
-list-style: none;
-color: #333;
-}
-.b-lenta-meta-label {
-text-transform: uppercase;
-letter-spacing: .05em;
-font-family: ProximaNovaSemibold,Tahoma,Arial,sans-serif;
-color: #7A9199;
-}
+.entryunit__tagscurrents {
+    font-size: .875em;
+    }
+    .tagscurrents__list {
+        margin: 0;
+        }
+        .tagscurrents__item {
+            margin: 0 0 7px;
+            padding: 0;
+            list-style: none;
+            color: #333;
+            }
+        .tagscurrents__label,
+        .tagscurrents__content {
+            display: inline;
+            margin: 0;
+            }
+        .tagscurrents__label {
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            font-family: ProximaNovaSemibold,Tahoma, Arial, sans-serif;
+            color: #7A9199;
+            }

@@ -1,4 +1,4 @@
-.entryunit-controls {
+.controls-entryunit {
     display: none;
     position: absolute;
     z-index: 5;
@@ -11,11 +11,13 @@
     background: #F7F9FA;
     }
 
-    .entryunit:hover .entryunit-controls {
+    .entryunit:hover .controls-entryunit {
         display: block;
         }
 
-/* Fix icons while scrolling page */
+/* Fix icons while scrolling page
+not good enough
+ */
 .entryunit-scrolling {
     position: fixed;
     top: 0
@@ -28,19 +30,26 @@
         }
 
 /* Air: layout with sidebar on teh left side */
-.j-p-layout-tw .entryunit-controls {
+.j-p-layout-tw .controls-entryunit {
     border-width: 0 1px
     }
 
 /* Items */
-.entryunit-controls-item {
+.controls-entryunit__item {
     display: block;
     position: relative;
     width: 40px;
     height: 40px;
     }
 
-    .entryunit-controls-item .svgicon {
+    .controls-entryunit__link {
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 40px
+        }
+
+    .controls-entryunit__icon {
         position: absolute;
         top: 0;
         right: 0;
@@ -51,15 +60,8 @@
         margin: auto
         }
 
-    .entryunit-controls-item A {
-        display: block;
-        position: relative;
-        width: 40px;
-        height: 40px
-        }
-
 /* Tooltip */
-.entryunit-controls-tooltip {
+.controls-entryunit__tooltip {
     display: block;
     position: absolute;
     z-index: 5;
@@ -74,17 +76,17 @@
     white-space: nowrap;
     }
 
-    .b-lenta-tiny-size .entryunit-actiongs-tooltip {
+    .b-lenta-tiny-size .controls-entryunit__tooltip {
         font-size: 1em
         }
 
-    .entryunit-controls-item A:hover .entryunit-controls-tooltip {
+    .controls-entryunit__link:hover .controls-entryunit__tooltip {
         visibility: visible
         }
 
     /* Tooltip right corner */
-    .entryunit-controls-item A:hover:after,
-    .entryunit-controls-item A:hover:before {
+    .controls-entryunit__link:hover:after,
+    .controls-entryunit__link:hover:before {
         content: "";
         position: absolute;
         top: 0;
@@ -97,8 +99,7 @@
         border: 5px solid transparent;
         border-left-color: #FFF
         }
-
-        .entryunit-controls-item A:hover:before {
+        .controls-entryunit__link:hover:before {
             border-width: 7px;
             border-left-color: #DAE3E6
             }

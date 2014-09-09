@@ -1,0 +1,16 @@
+<menu class="entryunit__controls controls-entryunit">
+    <ul class="controls-entryunit__items">
+    {{#items}}
+        <li class="controls-entryunit__item controls-entryunit__item-{{id}}">
+            <a href="{{{url}}}" class="controls-entryunit__link">
+
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--{{id}}"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--{{id}}"></svg>
+                </span>
+
+                <span class="controls-entryunit__tooltip">{{{title}}}</span>
+            </a>
+        </li>
+    {{/items}}
+    </ul>
+</menu>

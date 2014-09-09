@@ -1,5 +1,5 @@
 /* author */
-.entryunit-author {
+.entryunit__author {
     position: relative;
     display: inline-block;
     margin: 0 .3em .3em 0;
@@ -7,19 +7,19 @@
     letter-spacing: .05em;
     font-family: ProximaNovaSemibold, Tahoma, Arial, sans-serif
     }
-    .entryunit-author .i-ljuser-username B {
+    .entryunit__author .i-ljuser-username B {
         font-weight: 400
         }
-.entryunit-author-wrotein {
+.entryunit__author-wrotein {
     text-transform: none;
     letter-spacing: normal;
     font-family: ProximaNovaRegular, Helvetica, Arial, sans-serif
     }
-    .entryunit-author .i-ljuser A:link,
-    .entryunit-author .i-ljuser A:visited {
+    .entryunit__author .i-ljuser A:link,
+    .entryunit__author .i-ljuser A:visited {
         color: #00A3D9
         }
-    .entryunit-author .i-ljuser A:active,
-    .entryunit-author .i-ljuser A:hover {
+    .entryunit__author .i-ljuser A:active,
+    .entryunit__author .i-ljuser A:hover {
         color: #0086B3
         }

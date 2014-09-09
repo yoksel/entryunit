@@ -31,7 +31,7 @@
             "headercomments",
             "title",
             "entrytext",
-            "actions"
+            "controls"
         ]
     },
 
@@ -44,7 +44,7 @@
             "headercomments",
             "title",
             "entrytext",
-            "actions"
+            "controls"
         ]
     },
 
@@ -57,7 +57,7 @@
             "headercomments",
             "title",
             "entrytext",
-            "actions"
+            "controls"
         ]
     },
 
@@ -70,7 +70,7 @@
             "headercomments",
             "title",
             "entrytext",
-            "actions"
+            "controls"
         ]
     },
 
@@ -121,8 +121,8 @@
             "title--sec",
             "entrytext",
             "tags",
-            "comments",
-            "actions"
+            "actions",
+            "controls"
         ]
     }
 

@@ -1,8 +1,13 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
 BODY {
   margin: 0;
   padding: 0;
   background: #FFF;
-  font: 15px/1.4 ProximaNovaRegular,Helvetica,sans-serif;
+  font: 16px/1.4 ProximaNovaRegular, Helvetica, sans-serif;
   letter-spacing: .01em;
   -webkit-font-smoothing: antialiased; }
 
@@ -36,7 +41,7 @@ UL {
 figure {
   margin: 0; }
 
-.entryunit .entryunit {
+.entryunit {
   position: relative;
   margin: 0;
   padding: 1.5em 0;
@@ -57,7 +62,7 @@ figure {
   border-bottom: 0; }
 
 /* meta */
-.entryunit-meta {
+.meta-entryunit {
   margin: 0 0 .3em;
   font-size: 14px;
   font-size: .875rem;
@@ -65,17 +70,17 @@ figure {
   color: #7A9199; }
 
 /* items */
-.entryunit-meta-items {
+.meta-entryunit__items {
   margin: 0;
   padding: 0;
   list-style: none; }
 
-.entryunit-meta-item {
+.meta-entryunit__item {
   display: inline;
   margin: 0;
   padding: 0; }
 
-.entryunit-date {
+.entryunit__date {
   position: relative;
   display: inline-block;
   margin: 0 1em .3em 0;
@@ -243,7 +248,7 @@ figure {
   display: inline-block; }
 
 /* author */
-.entryunit-author {
+.entryunit__author {
   position: relative;
   display: inline-block;
   margin: 0 .3em .3em 0;
@@ -251,18 +256,18 @@ figure {
   letter-spacing: .05em;
   font-family: ProximaNovaSemibold, Tahoma, Arial, sans-serif; }
 
-.entryunit-author .i-ljuser-username B {
+.entryunit__author .i-ljuser-username B {
   font-weight: 400; }
 
-.entryunit-author-wrotein {
+.entryunit__author-wrotein {
   text-transform: none;
   letter-spacing: normal;
   font-family: ProximaNovaRegular, Helvetica, Arial, sans-serif; }
 
-.entryunit-author .i-ljuser A:link, .entryunit-author .i-ljuser A:visited {
+.entryunit__author .i-ljuser A:link, .entryunit__author .i-ljuser A:visited {
   color: #00A3D9; }
 
-.entryunit-author .i-ljuser A:active, .entryunit-author .i-ljuser A:hover {
+.entryunit__author .i-ljuser A:active, .entryunit__author .i-ljuser A:hover {
   color: #0086B3; }
 
 /* comments in first meta */
@@ -286,26 +291,20 @@ figure {
   color: #0086B3; }
 
 /* Footer Comments */
-.entryunit-actions {
+.actions-entryunit {
   margin-top: 10px; }
 
-.entryunit-actions-item {
-  font-family: ProximaNovaSemibold,Helvetica,sans-serif;
-  font-size: .875em; }
-
-.entryunit-actions-item {
+.actions-entryunit__item {
   display: block;
   float: left;
   margin-right: 20px;
   text-transform: uppercase;
+  font-family: ProximaNovaSemibold,Helvetica,sans-serif;
+  font-size: .875em;
   letter-spacing: .05em;
   line-height: 33px; }
 
-.entryunit-actions-item-clear {
-  height: 0;
-  margin: 0; }
-
-.entryunit-actions-item .svgicon {
+.actions-entryunit__item .svgicon {
   margin-right: 6px;
   vertical-align: middle; }
 
@@ -717,7 +716,9 @@ figure {
 /* body */
 .entryunit-body {
   margin: 0;
-  font-size: 1em; }
+  padding: 15px 0;
+  font-size: 1em;
+  line-height: 1.4; }
 
 .entryunit-body:after {
   content: "";
@@ -1064,17 +1065,26 @@ HTML#js BODY .b-flatsocial:active SPAN, HTML#js BODY .b-flatsocial:hover SPAN, H
 .b-flatsocial-share .b-flatsocial-name {
   background-position: -1px -217px; }
 
-.b-lenta-item-metainfo LI {
-  display: block;
+.entryunit__tagscurrents {
+  font-size: .875em; }
+
+.tagscurrents__list {
+  margin: 0; }
+
+.tagscurrents__item {
   margin: 0 0 7px;
   padding: 0;
   list-style: none;
   color: #333; }
 
-.b-lenta-meta-label {
+.tagscurrents__label, .tagscurrents__content {
+  display: inline;
+  margin: 0; }
+
+.tagscurrents__label {
   text-transform: uppercase;
   letter-spacing: .05em;
-  font-family: ProximaNovaSemibold,Tahoma,Arial,sans-serif;
+  font-family: ProximaNovaSemibold,Tahoma, Arial, sans-serif;
   color: #7A9199; }
 
 /* mark as read & hide author from rating */
@@ -1155,7 +1165,7 @@ HTML#js BODY .b-flatsocial:active SPAN, HTML#js BODY .b-flatsocial:hover SPAN, H
 .entryunit:hover .entryunit-hide, .entryunit:hover .entryunit-read, .g-sensor .entryunit-hide, .g-sensor .entryunit-read, .mobile-msg .entryunit-hide, .mobile-msg .entryunit-read {
   visibility: visible; }
 
-.entryunit-controls {
+.controls-entryunit {
   display: none;
   position: absolute;
   z-index: 5;
@@ -1167,10 +1177,12 @@ HTML#js BODY .b-flatsocial:active SPAN, HTML#js BODY .b-flatsocial:hover SPAN, H
   border-left: 1px solid #DAE3E6;
   background: #F7F9FA; }
 
-.entryunit:hover .entryunit-controls {
+.entryunit:hover .controls-entryunit {
   display: block; }
 
-/* Fix icons while scrolling page */
+/* Fix icons while scrolling page
+not good enough
+ */
 .entryunit-scrolling {
   position: fixed;
   top: 0; }
@@ -1181,17 +1193,23 @@ HTML#js BODY .b-flatsocial:active SPAN, HTML#js BODY .b-flatsocial:hover SPAN, H
   bottom: 0; }
 
 /* Air: layout with sidebar on teh left side */
-.j-p-layout-tw .entryunit-controls {
+.j-p-layout-tw .controls-entryunit {
   border-width: 0 1px; }
 
 /* Items */
-.entryunit-controls-item {
+.controls-entryunit__item {
   display: block;
   position: relative;
   width: 40px;
   height: 40px; }
 
-.entryunit-controls-item .svgicon {
+.controls-entryunit__link {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 40px; }
+
+.controls-entryunit__icon {
   position: absolute;
   top: 0;
   right: 0;
@@ -1201,14 +1219,8 @@ HTML#js BODY .b-flatsocial:active SPAN, HTML#js BODY .b-flatsocial:hover SPAN, H
   height: 16px;
   margin: auto; }
 
-.entryunit-controls-item A {
-  display: block;
-  position: relative;
-  width: 40px;
-  height: 40px; }
-
 /* Tooltip */
-.entryunit-controls-tooltip {
+.controls-entryunit__tooltip {
   display: block;
   position: absolute;
   z-index: 5;
@@ -1222,14 +1234,14 @@ HTML#js BODY .b-flatsocial:active SPAN, HTML#js BODY .b-flatsocial:hover SPAN, H
   border: 1px solid #DAE3E6;
   white-space: nowrap; }
 
-.b-lenta-tiny-size .entryunit-actiongs-tooltip {
+.b-lenta-tiny-size .controls-entryunit__tooltip {
   font-size: 1em; }
 
-.entryunit-controls-item A:hover .entryunit-controls-tooltip {
+.controls-entryunit__link:hover .controls-entryunit__tooltip {
   visibility: visible; }
 
 /* Tooltip right corner */
-.entryunit-controls-item A:hover:after, .entryunit-controls-item A:hover:before {
+.controls-entryunit__link:hover:after, .controls-entryunit__link:hover:before {
   content: "";
   position: absolute;
   top: 0;
@@ -1242,7 +1254,7 @@ HTML#js BODY .b-flatsocial:active SPAN, HTML#js BODY .b-flatsocial:hover SPAN, H
   border: 5px solid transparent;
   border-left-color: #FFF; }
 
-.entryunit-controls-item A:hover:before {
+.controls-entryunit__link:hover:before {
   border-width: 7px;
   border-left-color: #DAE3E6; }
 

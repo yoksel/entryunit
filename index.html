@@ -293,10 +293,10 @@
                                 <!-- entryunit -->
                                 <article class="entryunit ">
     <div class="entryunit__userpic"><img src='assets/img/userpic.png'/></div>
-<div class="entryunit-meta">
-    <ul class="entryunit-meta-items">
-        <li class="entryunit-meta-item"><span class="entryunit-position"> <span class="entryunit-position-inner"> <span class="entryunit-position-number">2.</span><span class=" entryunit-icon entryunit-updown " title="Эта запись изменила свою позицию в рейтинге на 3 места"></span></span> </span></li>
-        <li class="entryunit-meta-item"><span class="entryunit-label entryunit-label--selfpromo">
+<div class="entryunit__meta meta-entryunit">
+    <ul class="meta-entryunit__items">
+        <li class="meta-entryunit__item"><span class="entryunit-position"> <span class="entryunit-position-inner"> <span class="entryunit-position-number">2.</span><span class=" entryunit-icon entryunit-updown " title="Эта запись изменила свою позицию в рейтинге на 3 места"></span></span> </span></li>
+        <li class="meta-entryunit__item"><span class="entryunit-label entryunit-label--selfpromo">
     <a href="/shop/selfpromo.bml?country=cyr" target="_blank">промо</a>
 </span>
 <span class="entryunit-label entryunit-label--commpromo">
@@ -304,28 +304,28 @@
 </span>
 <span class="entryunit-label entryunit-label--mustread">Рекомендуемое</span>
 </li>
-        <li class="entryunit-meta-item"><span class="entryunit-author">
+        <li class="meta-entryunit__item"><span class="entryunit__author">
     <span class="ljuser i-ljuser i-ljuser-type-P">
         <a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile">
             <img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/userinfo.gif">
         </a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>user</b></a>
     </span>
 </span></li>
-        <li class="entryunit-meta-item"><span class="entryunit-author">
+        <li class="meta-entryunit__item"><span class="entryunit__author">
     <span class="ljuser i-ljuser i-ljuser-type-C">
         <a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile">
             <img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/community.gif">
         </a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>comm</b></a>
     </span>
 </span></li>
-        <li class="entryunit-meta-item"><span class="entryunit-author">
+        <li class="meta-entryunit__item"><span class="entryunit__author author--entryunit">
     <span class="ljuser i-ljuser i-ljuser-type-P">
         <a class="i-ljuser-profile" target="_self" href="http://la-ra-fa.livejournal.com/profile">
             <img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/userinfo.gif">
         </a><a class="i-ljuser-username" title="" target="_self" href="http://la-ra-fa.livejournal.com/"><b>la_ra_fa</b></a>
     </span>
 
-    <span class="entryunit-author-wrotein">wrote in</span>
+    <span class="author--entryunit__wrotein">wrote in</span>
 
     <span class="ljuser i-ljuser i-ljuser-type-C">
         <a class="i-ljuser-profile" href="http://30-day-photo.livejournal.com/profile">
@@ -333,15 +333,15 @@
         </a><a class="i-ljuser-username" href="http://30-day-photo.livejournal.com/"><b>30_day_photo</b></a>
     </span>
 </span></li>
-        <li class="entryunit-meta-item"><time datetime="2014-08-25 22:00:00" pubdate="" class="entryunit-date">август 25, 22:00</time></li>
-        <li class="entryunit-meta-item"><span class="entryunit-stat"><span class="entryunit-stat-item entryunit-stat-friends" title="Friends count">18221</span><span class="entryunit-stat-item entryunit-stat-friendof" title="Friend of count">8012</span><span class="entryunit-stat-item entryunit-stat-posts" title="Posts count">32767</span></span></li>
-        <li class="entryunit-meta-item"><span class="entryunit-comments">
+        <li class="meta-entryunit__item"><time datetime="2014-08-25 22:00:00" pubdate="" class="entryunit__date">август 25, 22:00</time></li>
+        <li class="meta-entryunit__item"><span class="entryunit-stat"><span class="entryunit-stat-item entryunit-stat-friends" title="Friends count">18221</span><span class="entryunit-stat-item entryunit-stat-friendof" title="Friend of count">8012</span><span class="entryunit-stat-item entryunit-stat-posts" title="Posts count">32767</span></span></li>
+        <li class="meta-entryunit__item"><span class="entryunit-comments">
     <a href="#comments" target="_blank">
         <svg class="svgicon flaticon flaticon--comment-bold"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--comment-bold"></svg>
         <span class="entryunit-comments-inner">1234</span>
     </a>
 </span></li>
-        <li class="entryunit-meta-item"><span class="entryunit-comments">
+        <li class="meta-entryunit__item"><span class="entryunit-comments">
     <a target="_blank" href="#comments">
         <svg class="svgicon flaticon flaticon--comment-bold"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--comment-bold"></svg>
         <span class="entryunit-comments-inner">
@@ -426,121 +426,146 @@
 </div></div>
 
     </div>
-    <ul class="entryunit__metainfo">
-    <li class="b-lenta-metaitem entryunit__mood">
-        <span class="b-lenta-meta-label b-lenta-metatoggle-target">Настроение</span>
-        <span class="b-lenta-meta-content">creative</span>
+    <ul class="entryunit__tagscurrents">
+
+    <li class="tagscurrents__item tagscurrents__item--mood">
+        <dl class="tagscurrents__list">
+            <dt class="tagscurrents__label">Местонахождение</dt>
+            <dd class="tagscurrents__content"><a href="http://maps.google.com/maps?q=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,%20%D0%9D%D0%BE%D0%B2%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80,%20%D0%B4%D0%BE%D0%BC%2025%20%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81%201">Москва, Новинский бульвар, дом 25 корпус 1</a></dd>
+        </dl>
     </li>
-    <li class="b-lenta-metaitem entryunit__tags">
-        <span class="b-lenta-meta-label
-    b-lenta-metatoggle-target">Метки (<a href="http://www.livejournal.com/edittags.bml?journal=layouts_ru&amp;itemid=521188">редактировать</a>):</span>
-        <a class="b-lenta-tag b-lenta-meta-content" target="_self" href="http://layouts-ru.livejournal.com/tag/стиль: expressive">стиль: expressive</a>
-        <span>,</span>
-        <a class="b-lenta-tag b-lenta-meta-content" target="_self" href="http://layouts-ru.livejournal.com/tag/цвет: бежевый">цвет: бежевый</a>
-        <span>,</span>
-        <a class="b-lenta-tag b-lenta-meta-content" target="_self" href="http://layouts-ru.livejournal.com/tag/цвет: разноцветный">цвет: разноцветный</a>
+
+    <li class="tagscurrents__item tagscurrents__item--mood">
+        <dl class="tagscurrents__list">
+            <dt class="tagscurrents__label">Настроение</dt>
+            <dd class="tagscurrents__content">creative</dd>
+        </dl>
+    </li>
+
+    <li class="tagscurrents__item tagscurrents__item--tags">
+        <dl class="tagscurrents__list">
+            <dt class="tagscurrents__label">Метки (<a href="http://www.livejournal.com/edittags.bml?journal=layouts_ru&amp;itemid=521188">редактировать</a>)</dt>
+
+            <dd class="tagscurrents__content">
+                <a class="tagscurrents__tag" target="_self" href="http://layouts-ru.livejournal.com/tag/стиль: expressive">стиль: expressive</a><span>,</span>
+                <a class="tagscurrents__tag" target="_self" href="http://layouts-ru.livejournal.com/tag/цвет: бежевый">цвет: бежевый</a><span>,</span>
+                <a class="tagscurrents__tag" target="_self" href="http://layouts-ru.livejournal.com/tag/цвет: разноцветный">цвет: разноцветный</a>
+            </dd>
+
+        </dl>
+
     </li>
 </ul>
 </div>
     <footer class="entryunit__footer">
-    <ul class="entryunit-actions">
-    <li class="entryunit-actions-item entryunit-actions-item-comments">
+    <ul class="entryunit__actions actions-entryunit">
+    <li class="actions-entryunit__item actions-entryunit__item--comments">
         <a target="_self" href="http://mi3ch.livejournal.com/2665075.html#comments">
 
             <svg class="svgicon flaticon flaticon--comment-view"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--comment-view"></svg>
 
-            <span class="entryunit-actions-item-text ">6</span>
+            <span class="actions-entryunit__text ">6</span>
         </a>
     </li>
-    <li class="entryunit-actions-item entryunit-actions-item-reply">
+    <li class="actions-entryunit__item actions-entryunit__item--reply">
         <a target="_self" href="http://mi3ch.livejournal.com/2665075.html?mode=reply#add_comment">
 
             <svg class="svgicon flaticon flaticon--comment-add"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--comment-add"></svg>
 
-            <span class="entryunit-actions-item-text ">Add comment</span>
+            <span class="actions-entryunit__text ">Add comment</span>
         </a>
     </li>
 </ul>
-
-<!-- 
-    <a href="http://ya.ru">Добавить комментарий</a>
-
-    <a href="http://ya.ru">156 комментариев</a>
- -->
-    <ul class="entryunit-actions">
-    <li class="entryunit-actions-item">
+    <ul class="entryunit__actions actions-entryunit">
+    <li class="actions-entryunit__item">
         <a target="_blank" href="#join">Join</a>
     </li>
-    <li class="entryunit-actions-item">
+    <li class="actions-entryunit__item">
         <a target="_blank" href="#watch">Watch</a>
     </li>
 </ul>
-    <menu class="entryunit-controls">
-    <ul class="entryunit-controls-items">
+    <menu class="entryunit__controls controls-entryunit">
+    <ul class="controls-entryunit__items">
+        <li class="controls-entryunit__item controls-entryunit__item-check">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-check">
-            <a href="javasctipt:void(0)">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--check"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--check"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--check"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--check"></svg>
-
-                <span class="entryunit-controls-tooltip">Отметить как прочитанное</span>
+                <span class="controls-entryunit__tooltip">Отметить как прочитанное</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-hide">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-js-lj-hide">
-            <a href="javasctipt:void(0)">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--hide"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--hide"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--hide"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--hide"></svg>
-
-                <span class="entryunit-controls-tooltip">Скрыть автора из рейтинга</span>
+                <span class="controls-entryunit__tooltip">Скрыть автора из рейтинга</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-edit">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-delete-repost">
-            <a href="http://www.livejournal.com/tools/memadd.bml?journal=lj_releases&amp;itemid=89249">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--edit"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--edit"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--delete-repost"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--delete-repost"></svg>
-
-                <span class="entryunit-controls-tooltip ng-binding">Удалить репост</span>
+                <span class="controls-entryunit__tooltip">Редактировать</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-delete-repost">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-favorite">
-            <a href="http://www.livejournal.com/tools/memadd.bml?journal=lj_releases&amp;itemid=89249">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--delete-repost"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--delete-repost"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--favorite"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--favorite"></svg>
-
-                <span class="entryunit-controls-tooltip ng-binding">Добавить в избранное</span>
+                <span class="controls-entryunit__tooltip">Удалить репост</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-favorite">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-js-lj-share">
-            <a href="javasctipt:void(0)">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--favorite"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--favorite"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--share"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--share"></svg>
-
-                <span class="entryunit-controls-tooltip">Поделиться</span>
+                <span class="controls-entryunit__tooltip">Добавить в избранное</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-share">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-track">
-            <a href="http://www.livejournal.com/manage/subscriptions/entry.bml?journal=lj_releases&amp;amp;itemid=89249">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--share"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--share"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--track"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--track"></svg>
-
-                <span class="entryunit-controls-tooltip">Отслеживать</span>
+                <span class="controls-entryunit__tooltip">Поделиться</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-track">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-flag">
-            <a href="http://www.livejournal.com/manage/subscriptions/entry.bml?journal=lj_releases&amp;amp;itemid=89249">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--track"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--track"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--flag"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--flag"></svg>
-
-                <span class="entryunit-controls-tooltip">Пожаловаться</span>
+                <span class="controls-entryunit__tooltip">Отслеживать</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-flag">
+            <a href="#" class="controls-entryunit__link">
 
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--flag"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--flag"></svg>
+                </span>
+
+                <span class="controls-entryunit__tooltip">Пожаловаться</span>
+            </a>
+        </li>
     </ul>
 </menu>
 </footer>
@@ -560,10 +585,10 @@
                                 <!-- entryunit--self-promo -->
                                 <article class="entryunit entryunit--selfpromo">
     
-<div class="entryunit-meta">
-    <ul class="entryunit-meta-items">
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><span class="entryunit-label entryunit-label--selfpromo">
+<div class="entryunit__meta meta-entryunit">
+    <ul class="meta-entryunit__items">
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><span class="entryunit-label entryunit-label--selfpromo">
     <a href="/shop/selfpromo.bml?country=cyr" target="_blank">промо</a>
 </span>
 <span class="entryunit-label entryunit-label--commpromo">
@@ -571,24 +596,24 @@
 </span>
 <span class="entryunit-label entryunit-label--mustread">Рекомендуемое</span>
 </li>
-        <li class="entryunit-meta-item"><span class="entryunit-author">
+        <li class="meta-entryunit__item"><span class="entryunit__author">
     <span class="ljuser i-ljuser i-ljuser-type-P">
         <a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile">
             <img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/userinfo.gif">
         </a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>user</b></a>
     </span>
 </span></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><time datetime="2014-08-25 22:00:00" pubdate="" class="entryunit-date">август 25, 22:00</time></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><span class="entryunit-comments">
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><time datetime="2014-08-25 22:00:00" pubdate="" class="entryunit__date">август 25, 22:00</time></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><span class="entryunit-comments">
     <a href="#comments" target="_blank">
         <svg class="svgicon flaticon flaticon--comment-bold"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--comment-bold"></svg>
         <span class="entryunit-comments-inner">1234</span>
     </a>
 </span></li>
-        <li class="entryunit-meta-item"></li>
+        <li class="meta-entryunit__item"></li>
     </ul>
 </div>
     <header class="entryunit__head">
@@ -628,10 +653,10 @@
                                 <!-- entryunit--comm-promo -->
                                 <article class="entryunit entryunit--commpromo">
     
-<div class="entryunit-meta">
-    <ul class="entryunit-meta-items">
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><span class="entryunit-label entryunit-label--selfpromo">
+<div class="entryunit__meta meta-entryunit">
+    <ul class="meta-entryunit__items">
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><span class="entryunit-label entryunit-label--selfpromo">
     <a href="/shop/selfpromo.bml?country=cyr" target="_blank">промо</a>
 </span>
 <span class="entryunit-label entryunit-label--commpromo">
@@ -639,24 +664,24 @@
 </span>
 <span class="entryunit-label entryunit-label--mustread">Рекомендуемое</span>
 </li>
-        <li class="entryunit-meta-item"><span class="entryunit-author">
+        <li class="meta-entryunit__item"><span class="entryunit__author">
     <span class="ljuser i-ljuser i-ljuser-type-P">
         <a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile">
             <img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/userinfo.gif">
         </a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>user</b></a>
     </span>
 </span></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><time datetime="2014-08-25 22:00:00" pubdate="" class="entryunit-date">август 25, 22:00</time></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><span class="entryunit-comments">
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><time datetime="2014-08-25 22:00:00" pubdate="" class="entryunit__date">август 25, 22:00</time></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><span class="entryunit-comments">
     <a href="#comments" target="_blank">
         <svg class="svgicon flaticon flaticon--comment-bold"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--comment-bold"></svg>
         <span class="entryunit-comments-inner">1234</span>
     </a>
 </span></li>
-        <li class="entryunit-meta-item"></li>
+        <li class="meta-entryunit__item"></li>
     </ul>
 </div>
     <header class="entryunit__head">
@@ -696,28 +721,28 @@
                                 <!-- entryunit--rating -->
                                 <article class="entryunit ">
     
-<div class="entryunit-meta">
-    <ul class="entryunit-meta-items">
-        <li class="entryunit-meta-item"><span class="entryunit-position"> <span class="entryunit-position-inner"> <span class="entryunit-position-number">2.</span><span class=" entryunit-icon entryunit-updown " title="Эта запись изменила свою позицию в рейтинге на 3 места"></span></span> </span></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><span class="entryunit-author">
+<div class="entryunit__meta meta-entryunit">
+    <ul class="meta-entryunit__items">
+        <li class="meta-entryunit__item"><span class="entryunit-position"> <span class="entryunit-position-inner"> <span class="entryunit-position-number">2.</span><span class=" entryunit-icon entryunit-updown " title="Эта запись изменила свою позицию в рейтинге на 3 места"></span></span> </span></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><span class="entryunit__author">
     <span class="ljuser i-ljuser i-ljuser-type-P">
         <a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile">
             <img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/userinfo.gif">
         </a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>user</b></a>
     </span>
 </span></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><time datetime="2014-08-25 22:00:00" pubdate="" class="entryunit-date">август 25, 22:00</time></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><span class="entryunit-comments">
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><time datetime="2014-08-25 22:00:00" pubdate="" class="entryunit__date">август 25, 22:00</time></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><span class="entryunit-comments">
     <a href="#comments" target="_blank">
         <svg class="svgicon flaticon flaticon--comment-bold"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--comment-bold"></svg>
         <span class="entryunit-comments-inner">1234</span>
     </a>
 </span></li>
-        <li class="entryunit-meta-item"></li>
+        <li class="meta-entryunit__item"></li>
     </ul>
 </div>
     <header class="entryunit__head">
@@ -739,72 +764,88 @@
     <footer class="entryunit__footer">
     
     
-    <menu class="entryunit-controls">
-    <ul class="entryunit-controls-items">
+    <menu class="entryunit__controls controls-entryunit">
+    <ul class="controls-entryunit__items">
+        <li class="controls-entryunit__item controls-entryunit__item-check">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-check">
-            <a href="javasctipt:void(0)">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--check"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--check"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--check"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--check"></svg>
-
-                <span class="entryunit-controls-tooltip">Отметить как прочитанное</span>
+                <span class="controls-entryunit__tooltip">Отметить как прочитанное</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-hide">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-js-lj-hide">
-            <a href="javasctipt:void(0)">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--hide"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--hide"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--hide"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--hide"></svg>
-
-                <span class="entryunit-controls-tooltip">Скрыть автора из рейтинга</span>
+                <span class="controls-entryunit__tooltip">Скрыть автора из рейтинга</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-edit">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-delete-repost">
-            <a href="http://www.livejournal.com/tools/memadd.bml?journal=lj_releases&amp;itemid=89249">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--edit"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--edit"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--delete-repost"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--delete-repost"></svg>
-
-                <span class="entryunit-controls-tooltip ng-binding">Удалить репост</span>
+                <span class="controls-entryunit__tooltip">Редактировать</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-delete-repost">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-favorite">
-            <a href="http://www.livejournal.com/tools/memadd.bml?journal=lj_releases&amp;itemid=89249">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--delete-repost"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--delete-repost"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--favorite"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--favorite"></svg>
-
-                <span class="entryunit-controls-tooltip ng-binding">Добавить в избранное</span>
+                <span class="controls-entryunit__tooltip">Удалить репост</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-favorite">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-js-lj-share">
-            <a href="javasctipt:void(0)">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--favorite"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--favorite"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--share"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--share"></svg>
-
-                <span class="entryunit-controls-tooltip">Поделиться</span>
+                <span class="controls-entryunit__tooltip">Добавить в избранное</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-share">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-track">
-            <a href="http://www.livejournal.com/manage/subscriptions/entry.bml?journal=lj_releases&amp;amp;itemid=89249">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--share"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--share"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--track"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--track"></svg>
-
-                <span class="entryunit-controls-tooltip">Отслеживать</span>
+                <span class="controls-entryunit__tooltip">Поделиться</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-track">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-flag">
-            <a href="http://www.livejournal.com/manage/subscriptions/entry.bml?journal=lj_releases&amp;amp;itemid=89249">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--track"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--track"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--flag"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--flag"></svg>
-
-                <span class="entryunit-controls-tooltip">Пожаловаться</span>
+                <span class="controls-entryunit__tooltip">Отслеживать</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-flag">
+            <a href="#" class="controls-entryunit__link">
 
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--flag"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--flag"></svg>
+                </span>
+
+                <span class="controls-entryunit__tooltip">Пожаловаться</span>
+            </a>
+        </li>
     </ul>
 </menu>
 </footer>
@@ -812,7 +853,7 @@
                                 <!-- //entryunit--rating -->
                             </div>
                             <div class="module__item module__components">
-                                <ul><li>position</li><li>user</li><li>date</li><li>headercomments</li><li>title</li><li>entrytext</li><li>actions</li></ul>
+                                <ul><li>position</li><li>user</li><li>date</li><li>headercomments</li><li>title</li><li>entrytext</li><li>controls</li></ul>
                             </div>
                         </div>
                     </div>
@@ -824,28 +865,28 @@
                                 <!-- entryunit--rating-restored -->
                                 <article class="entryunit entryunit-state-restored">
     
-<div class="entryunit-meta">
-    <ul class="entryunit-meta-items">
-        <li class="entryunit-meta-item"><span class="entryunit-position"> <span class="entryunit-position-inner"> <span class="entryunit-position-number">2.</span><span class=" entryunit-icon entryunit-updown " title="Эта запись изменила свою позицию в рейтинге на 3 места"></span></span> </span></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><span class="entryunit-author">
+<div class="entryunit__meta meta-entryunit">
+    <ul class="meta-entryunit__items">
+        <li class="meta-entryunit__item"><span class="entryunit-position"> <span class="entryunit-position-inner"> <span class="entryunit-position-number">2.</span><span class=" entryunit-icon entryunit-updown " title="Эта запись изменила свою позицию в рейтинге на 3 места"></span></span> </span></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><span class="entryunit__author">
     <span class="ljuser i-ljuser i-ljuser-type-P">
         <a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile">
             <img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/userinfo.gif">
         </a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>user</b></a>
     </span>
 </span></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><time datetime="2014-08-25 22:00:00" pubdate="" class="entryunit-date">август 25, 22:00</time></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><span class="entryunit-comments">
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><time datetime="2014-08-25 22:00:00" pubdate="" class="entryunit__date">август 25, 22:00</time></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><span class="entryunit-comments">
     <a href="#comments" target="_blank">
         <svg class="svgicon flaticon flaticon--comment-bold"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--comment-bold"></svg>
         <span class="entryunit-comments-inner">1234</span>
     </a>
 </span></li>
-        <li class="entryunit-meta-item"></li>
+        <li class="meta-entryunit__item"></li>
     </ul>
 </div>
     <header class="entryunit__head">
@@ -867,72 +908,88 @@
     <footer class="entryunit__footer">
     
     
-    <menu class="entryunit-controls">
-    <ul class="entryunit-controls-items">
+    <menu class="entryunit__controls controls-entryunit">
+    <ul class="controls-entryunit__items">
+        <li class="controls-entryunit__item controls-entryunit__item-check">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-check">
-            <a href="javasctipt:void(0)">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--check"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--check"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--check"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--check"></svg>
-
-                <span class="entryunit-controls-tooltip">Отметить как прочитанное</span>
+                <span class="controls-entryunit__tooltip">Отметить как прочитанное</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-hide">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-js-lj-hide">
-            <a href="javasctipt:void(0)">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--hide"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--hide"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--hide"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--hide"></svg>
-
-                <span class="entryunit-controls-tooltip">Скрыть автора из рейтинга</span>
+                <span class="controls-entryunit__tooltip">Скрыть автора из рейтинга</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-edit">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-delete-repost">
-            <a href="http://www.livejournal.com/tools/memadd.bml?journal=lj_releases&amp;itemid=89249">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--edit"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--edit"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--delete-repost"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--delete-repost"></svg>
-
-                <span class="entryunit-controls-tooltip ng-binding">Удалить репост</span>
+                <span class="controls-entryunit__tooltip">Редактировать</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-delete-repost">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-favorite">
-            <a href="http://www.livejournal.com/tools/memadd.bml?journal=lj_releases&amp;itemid=89249">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--delete-repost"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--delete-repost"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--favorite"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--favorite"></svg>
-
-                <span class="entryunit-controls-tooltip ng-binding">Добавить в избранное</span>
+                <span class="controls-entryunit__tooltip">Удалить репост</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-favorite">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-js-lj-share">
-            <a href="javasctipt:void(0)">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--favorite"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--favorite"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--share"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--share"></svg>
-
-                <span class="entryunit-controls-tooltip">Поделиться</span>
+                <span class="controls-entryunit__tooltip">Добавить в избранное</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-share">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-track">
-            <a href="http://www.livejournal.com/manage/subscriptions/entry.bml?journal=lj_releases&amp;amp;itemid=89249">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--share"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--share"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--track"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--track"></svg>
-
-                <span class="entryunit-controls-tooltip">Отслеживать</span>
+                <span class="controls-entryunit__tooltip">Поделиться</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-track">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-flag">
-            <a href="http://www.livejournal.com/manage/subscriptions/entry.bml?journal=lj_releases&amp;amp;itemid=89249">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--track"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--track"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--flag"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--flag"></svg>
-
-                <span class="entryunit-controls-tooltip">Пожаловаться</span>
+                <span class="controls-entryunit__tooltip">Отслеживать</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-flag">
+            <a href="#" class="controls-entryunit__link">
 
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--flag"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--flag"></svg>
+                </span>
+
+                <span class="controls-entryunit__tooltip">Пожаловаться</span>
+            </a>
+        </li>
     </ul>
 </menu>
 </footer>
@@ -940,7 +997,7 @@
                                 <!-- //entryunit--rating-restored -->
                             </div>
                             <div class="module__item module__components">
-                                <ul><li>position</li><li>user</li><li>date</li><li>headercomments</li><li>title</li><li>entrytext</li><li>actions</li></ul>
+                                <ul><li>position</li><li>user</li><li>date</li><li>headercomments</li><li>title</li><li>entrytext</li><li>controls</li></ul>
                             </div>
                         </div>
                     </div>
@@ -952,28 +1009,28 @@
                                 <!-- entryunit--rating-state-up -->
                                 <article class="entryunit entryunit-state-up">
     
-<div class="entryunit-meta">
-    <ul class="entryunit-meta-items">
-        <li class="entryunit-meta-item"><span class="entryunit-position"> <span class="entryunit-position-inner"> <span class="entryunit-position-number">2.</span><span class=" entryunit-icon entryunit-updown " title="Эта запись изменила свою позицию в рейтинге на 3 места"></span></span> </span></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><span class="entryunit-author">
+<div class="entryunit__meta meta-entryunit">
+    <ul class="meta-entryunit__items">
+        <li class="meta-entryunit__item"><span class="entryunit-position"> <span class="entryunit-position-inner"> <span class="entryunit-position-number">2.</span><span class=" entryunit-icon entryunit-updown " title="Эта запись изменила свою позицию в рейтинге на 3 места"></span></span> </span></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><span class="entryunit__author">
     <span class="ljuser i-ljuser i-ljuser-type-P">
         <a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile">
             <img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/userinfo.gif">
         </a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>user</b></a>
     </span>
 </span></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><time datetime="2014-08-25 22:00:00" pubdate="" class="entryunit-date">август 25, 22:00</time></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><span class="entryunit-comments">
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><time datetime="2014-08-25 22:00:00" pubdate="" class="entryunit__date">август 25, 22:00</time></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><span class="entryunit-comments">
     <a href="#comments" target="_blank">
         <svg class="svgicon flaticon flaticon--comment-bold"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--comment-bold"></svg>
         <span class="entryunit-comments-inner">1234</span>
     </a>
 </span></li>
-        <li class="entryunit-meta-item"></li>
+        <li class="meta-entryunit__item"></li>
     </ul>
 </div>
     <header class="entryunit__head">
@@ -995,72 +1052,88 @@
     <footer class="entryunit__footer">
     
     
-    <menu class="entryunit-controls">
-    <ul class="entryunit-controls-items">
+    <menu class="entryunit__controls controls-entryunit">
+    <ul class="controls-entryunit__items">
+        <li class="controls-entryunit__item controls-entryunit__item-check">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-check">
-            <a href="javasctipt:void(0)">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--check"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--check"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--check"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--check"></svg>
-
-                <span class="entryunit-controls-tooltip">Отметить как прочитанное</span>
+                <span class="controls-entryunit__tooltip">Отметить как прочитанное</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-hide">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-js-lj-hide">
-            <a href="javasctipt:void(0)">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--hide"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--hide"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--hide"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--hide"></svg>
-
-                <span class="entryunit-controls-tooltip">Скрыть автора из рейтинга</span>
+                <span class="controls-entryunit__tooltip">Скрыть автора из рейтинга</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-edit">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-delete-repost">
-            <a href="http://www.livejournal.com/tools/memadd.bml?journal=lj_releases&amp;itemid=89249">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--edit"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--edit"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--delete-repost"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--delete-repost"></svg>
-
-                <span class="entryunit-controls-tooltip ng-binding">Удалить репост</span>
+                <span class="controls-entryunit__tooltip">Редактировать</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-delete-repost">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-favorite">
-            <a href="http://www.livejournal.com/tools/memadd.bml?journal=lj_releases&amp;itemid=89249">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--delete-repost"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--delete-repost"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--favorite"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--favorite"></svg>
-
-                <span class="entryunit-controls-tooltip ng-binding">Добавить в избранное</span>
+                <span class="controls-entryunit__tooltip">Удалить репост</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-favorite">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-js-lj-share">
-            <a href="javasctipt:void(0)">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--favorite"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--favorite"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--share"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--share"></svg>
-
-                <span class="entryunit-controls-tooltip">Поделиться</span>
+                <span class="controls-entryunit__tooltip">Добавить в избранное</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-share">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-track">
-            <a href="http://www.livejournal.com/manage/subscriptions/entry.bml?journal=lj_releases&amp;amp;itemid=89249">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--share"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--share"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--track"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--track"></svg>
-
-                <span class="entryunit-controls-tooltip">Отслеживать</span>
+                <span class="controls-entryunit__tooltip">Поделиться</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-track">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-flag">
-            <a href="http://www.livejournal.com/manage/subscriptions/entry.bml?journal=lj_releases&amp;amp;itemid=89249">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--track"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--track"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--flag"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--flag"></svg>
-
-                <span class="entryunit-controls-tooltip">Пожаловаться</span>
+                <span class="controls-entryunit__tooltip">Отслеживать</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-flag">
+            <a href="#" class="controls-entryunit__link">
 
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--flag"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--flag"></svg>
+                </span>
+
+                <span class="controls-entryunit__tooltip">Пожаловаться</span>
+            </a>
+        </li>
     </ul>
 </menu>
 </footer>
@@ -1068,7 +1141,7 @@
                                 <!-- //entryunit--rating-state-up -->
                             </div>
                             <div class="module__item module__components">
-                                <ul><li>position</li><li>user</li><li>date</li><li>headercomments</li><li>title</li><li>entrytext</li><li>actions</li></ul>
+                                <ul><li>position</li><li>user</li><li>date</li><li>headercomments</li><li>title</li><li>entrytext</li><li>controls</li></ul>
                             </div>
                         </div>
                     </div>
@@ -1080,28 +1153,28 @@
                                 <!-- entryunit--rating-state-down -->
                                 <article class="entryunit entryunit-state-down">
     
-<div class="entryunit-meta">
-    <ul class="entryunit-meta-items">
-        <li class="entryunit-meta-item"><span class="entryunit-position"> <span class="entryunit-position-inner"> <span class="entryunit-position-number">2.</span><span class=" entryunit-icon entryunit-updown " title="Эта запись изменила свою позицию в рейтинге на 3 места"></span></span> </span></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><span class="entryunit-author">
+<div class="entryunit__meta meta-entryunit">
+    <ul class="meta-entryunit__items">
+        <li class="meta-entryunit__item"><span class="entryunit-position"> <span class="entryunit-position-inner"> <span class="entryunit-position-number">2.</span><span class=" entryunit-icon entryunit-updown " title="Эта запись изменила свою позицию в рейтинге на 3 места"></span></span> </span></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><span class="entryunit__author">
     <span class="ljuser i-ljuser i-ljuser-type-P">
         <a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile">
             <img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/userinfo.gif">
         </a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>user</b></a>
     </span>
 </span></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><time datetime="2014-08-25 22:00:00" pubdate="" class="entryunit-date">август 25, 22:00</time></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><span class="entryunit-comments">
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><time datetime="2014-08-25 22:00:00" pubdate="" class="entryunit__date">август 25, 22:00</time></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><span class="entryunit-comments">
     <a href="#comments" target="_blank">
         <svg class="svgicon flaticon flaticon--comment-bold"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--comment-bold"></svg>
         <span class="entryunit-comments-inner">1234</span>
     </a>
 </span></li>
-        <li class="entryunit-meta-item"></li>
+        <li class="meta-entryunit__item"></li>
     </ul>
 </div>
     <header class="entryunit__head">
@@ -1123,72 +1196,88 @@
     <footer class="entryunit__footer">
     
     
-    <menu class="entryunit-controls">
-    <ul class="entryunit-controls-items">
+    <menu class="entryunit__controls controls-entryunit">
+    <ul class="controls-entryunit__items">
+        <li class="controls-entryunit__item controls-entryunit__item-check">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-check">
-            <a href="javasctipt:void(0)">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--check"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--check"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--check"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--check"></svg>
-
-                <span class="entryunit-controls-tooltip">Отметить как прочитанное</span>
+                <span class="controls-entryunit__tooltip">Отметить как прочитанное</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-hide">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-js-lj-hide">
-            <a href="javasctipt:void(0)">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--hide"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--hide"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--hide"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--hide"></svg>
-
-                <span class="entryunit-controls-tooltip">Скрыть автора из рейтинга</span>
+                <span class="controls-entryunit__tooltip">Скрыть автора из рейтинга</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-edit">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-delete-repost">
-            <a href="http://www.livejournal.com/tools/memadd.bml?journal=lj_releases&amp;itemid=89249">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--edit"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--edit"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--delete-repost"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--delete-repost"></svg>
-
-                <span class="entryunit-controls-tooltip ng-binding">Удалить репост</span>
+                <span class="controls-entryunit__tooltip">Редактировать</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-delete-repost">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-favorite">
-            <a href="http://www.livejournal.com/tools/memadd.bml?journal=lj_releases&amp;itemid=89249">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--delete-repost"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--delete-repost"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--favorite"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--favorite"></svg>
-
-                <span class="entryunit-controls-tooltip ng-binding">Добавить в избранное</span>
+                <span class="controls-entryunit__tooltip">Удалить репост</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-favorite">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-js-lj-share">
-            <a href="javasctipt:void(0)">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--favorite"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--favorite"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--share"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--share"></svg>
-
-                <span class="entryunit-controls-tooltip">Поделиться</span>
+                <span class="controls-entryunit__tooltip">Добавить в избранное</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-share">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-track">
-            <a href="http://www.livejournal.com/manage/subscriptions/entry.bml?journal=lj_releases&amp;amp;itemid=89249">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--share"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--share"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--track"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--track"></svg>
-
-                <span class="entryunit-controls-tooltip">Отслеживать</span>
+                <span class="controls-entryunit__tooltip">Поделиться</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-track">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-flag">
-            <a href="http://www.livejournal.com/manage/subscriptions/entry.bml?journal=lj_releases&amp;amp;itemid=89249">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--track"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--track"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--flag"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--flag"></svg>
-
-                <span class="entryunit-controls-tooltip">Пожаловаться</span>
+                <span class="controls-entryunit__tooltip">Отслеживать</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-flag">
+            <a href="#" class="controls-entryunit__link">
 
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--flag"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--flag"></svg>
+                </span>
+
+                <span class="controls-entryunit__tooltip">Пожаловаться</span>
+            </a>
+        </li>
     </ul>
 </menu>
 </footer>
@@ -1196,7 +1285,7 @@
                                 <!-- //entryunit--rating-state-down -->
                             </div>
                             <div class="module__item module__components">
-                                <ul><li>position</li><li>user</li><li>date</li><li>headercomments</li><li>title</li><li>entrytext</li><li>actions</li></ul>
+                                <ul><li>position</li><li>user</li><li>date</li><li>headercomments</li><li>title</li><li>entrytext</li><li>controls</li></ul>
                             </div>
                         </div>
                     </div>
@@ -1208,10 +1297,10 @@
                                 <!-- entryunit--mustread -->
                                 <article class="entryunit entryunit--mustread">
     
-<div class="entryunit-meta">
-    <ul class="entryunit-meta-items">
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><span class="entryunit-label entryunit-label--selfpromo">
+<div class="entryunit__meta meta-entryunit">
+    <ul class="meta-entryunit__items">
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><span class="entryunit-label entryunit-label--selfpromo">
     <a href="/shop/selfpromo.bml?country=cyr" target="_blank">промо</a>
 </span>
 <span class="entryunit-label entryunit-label--commpromo">
@@ -1219,19 +1308,19 @@
 </span>
 <span class="entryunit-label entryunit-label--mustread">Рекомендуемое</span>
 </li>
-        <li class="entryunit-meta-item"><span class="entryunit-author">
+        <li class="meta-entryunit__item"><span class="entryunit__author">
     <span class="ljuser i-ljuser i-ljuser-type-P">
         <a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile">
             <img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/userinfo.gif">
         </a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>user</b></a>
     </span>
 </span></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><span class="entryunit-comments">
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><span class="entryunit-comments">
     <a target="_blank" href="#comments">
         <svg class="svgicon flaticon flaticon--comment-bold"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--comment-bold"></svg>
         <span class="entryunit-comments-inner">
@@ -1278,28 +1367,28 @@
                                 <!-- entryunit--magazine -->
                                 <article class="entryunit ">
     
-<div class="entryunit-meta">
-    <ul class="entryunit-meta-items">
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><span class="entryunit-author">
+<div class="entryunit__meta meta-entryunit">
+    <ul class="meta-entryunit__items">
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><span class="entryunit__author">
     <span class="ljuser i-ljuser i-ljuser-type-P">
         <a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile">
             <img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/userinfo.gif">
         </a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>user</b></a>
     </span>
 </span></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><time datetime="2014-08-25 22:00:00" pubdate="" class="entryunit-date">август 25, 22:00</time></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><span class="entryunit-comments">
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><time datetime="2014-08-25 22:00:00" pubdate="" class="entryunit__date">август 25, 22:00</time></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><span class="entryunit-comments">
     <a href="#comments" target="_blank">
         <svg class="svgicon flaticon flaticon--comment-bold"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--comment-bold"></svg>
         <span class="entryunit-comments-inner">1234</span>
     </a>
 </span></li>
-        <li class="entryunit-meta-item"></li>
+        <li class="meta-entryunit__item"></li>
     </ul>
 </div>
     <header class="entryunit__head">
@@ -1342,20 +1431,20 @@
                                 <!-- entryunit--browsepost -->
                                 <article class="entryunit ">
     
-<div class="entryunit-meta">
-    <ul class="entryunit-meta-items">
-        <li class="entryunit-meta-item"><span class="entryunit-position"> <span class="entryunit-position-inner"> <span class="entryunit-position-number">2.</span><span class=" entryunit-icon entryunit-updown " title="Эта запись изменила свою позицию в рейтинге на 3 места"></span></span> </span></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><span class="entryunit-author">
+<div class="entryunit__meta meta-entryunit">
+    <ul class="meta-entryunit__items">
+        <li class="meta-entryunit__item"><span class="entryunit-position"> <span class="entryunit-position-inner"> <span class="entryunit-position-number">2.</span><span class=" entryunit-icon entryunit-updown " title="Эта запись изменила свою позицию в рейтинге на 3 места"></span></span> </span></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><span class="entryunit__author author--entryunit">
     <span class="ljuser i-ljuser i-ljuser-type-P">
         <a class="i-ljuser-profile" target="_self" href="http://la-ra-fa.livejournal.com/profile">
             <img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/userinfo.gif">
         </a><a class="i-ljuser-username" title="" target="_self" href="http://la-ra-fa.livejournal.com/"><b>la_ra_fa</b></a>
     </span>
 
-    <span class="entryunit-author-wrotein">wrote in</span>
+    <span class="author--entryunit__wrotein">wrote in</span>
 
     <span class="ljuser i-ljuser i-ljuser-type-C">
         <a class="i-ljuser-profile" href="http://30-day-photo.livejournal.com/profile">
@@ -1363,10 +1452,10 @@
         </a><a class="i-ljuser-username" href="http://30-day-photo.livejournal.com/"><b>30_day_photo</b></a>
     </span>
 </span></li>
-        <li class="entryunit-meta-item"><time datetime="2014-08-25 22:00:00" pubdate="" class="entryunit-date">август 25, 22:00</time></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><span class="entryunit-comments">
+        <li class="meta-entryunit__item"><time datetime="2014-08-25 22:00:00" pubdate="" class="entryunit__date">август 25, 22:00</time></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><span class="entryunit-comments">
     <a target="_blank" href="#comments">
         <svg class="svgicon flaticon flaticon--comment-bold"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--comment-bold"></svg>
         <span class="entryunit-comments-inner">
@@ -1467,23 +1556,23 @@
                                 <!-- entryunit--browsecommunity -->
                                 <article class="entryunit ">
     
-<div class="entryunit-meta">
-    <ul class="entryunit-meta-items">
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><span class="entryunit-author">
+<div class="entryunit__meta meta-entryunit">
+    <ul class="meta-entryunit__items">
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><span class="entryunit__author">
     <span class="ljuser i-ljuser i-ljuser-type-C">
         <a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile">
             <img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/community.gif">
         </a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>comm</b></a>
     </span>
 </span></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><span class="entryunit-stat"><span class="entryunit-stat-item entryunit-stat-friends" title="Friends count">18221</span><span class="entryunit-stat-item entryunit-stat-friendof" title="Friend of count">8012</span><span class="entryunit-stat-item entryunit-stat-posts" title="Posts count">32767</span></span></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><span class="entryunit-stat"><span class="entryunit-stat-item entryunit-stat-friends" title="Friends count">18221</span><span class="entryunit-stat-item entryunit-stat-friendof" title="Friend of count">8012</span><span class="entryunit-stat-item entryunit-stat-posts" title="Posts count">32767</span></span></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"></li>
     </ul>
 </div>
     <header class="entryunit__head">
@@ -1504,11 +1593,11 @@
 </div>
     <footer class="entryunit__footer">
     
-    <ul class="entryunit-actions">
-    <li class="entryunit-actions-item">
+    <ul class="entryunit__actions actions-entryunit">
+    <li class="actions-entryunit__item">
         <a target="_blank" href="#join">Join</a>
     </li>
-    <li class="entryunit-actions-item">
+    <li class="actions-entryunit__item">
         <a target="_blank" href="#watch">Watch</a>
     </li>
 </ul>
@@ -1530,23 +1619,23 @@
                                 <!-- entryunit--feed -->
                                 <article class="entryunit test">
     <div class="entryunit__userpic"><img src='assets/img/userpic.png'/></div>
-<div class="entryunit-meta">
-    <ul class="entryunit-meta-items">
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><span class="entryunit-author">
+<div class="entryunit__meta meta-entryunit">
+    <ul class="meta-entryunit__items">
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><span class="entryunit__author">
     <span class="ljuser i-ljuser i-ljuser-type-P">
         <a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile">
             <img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/userinfo.gif">
         </a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>user</b></a>
     </span>
 </span></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"><time datetime="2014-08-25 22:00:00" pubdate="" class="entryunit-date">август 25, 22:00</time></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"></li>
-        <li class="entryunit-meta-item"></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><time datetime="2014-08-25 22:00:00" pubdate="" class="entryunit__date">август 25, 22:00</time></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"></li>
     </ul>
 </div>
     <header class="entryunit__head">
@@ -1563,114 +1652,139 @@
 </div>
     <div class="entryunit__meta">
     
-    <ul class="entryunit__metainfo">
-    <li class="b-lenta-metaitem entryunit__mood">
-        <span class="b-lenta-meta-label b-lenta-metatoggle-target">Настроение</span>
-        <span class="b-lenta-meta-content">creative</span>
+    <ul class="entryunit__tagscurrents">
+
+    <li class="tagscurrents__item tagscurrents__item--mood">
+        <dl class="tagscurrents__list">
+            <dt class="tagscurrents__label">Местонахождение</dt>
+            <dd class="tagscurrents__content"><a href="http://maps.google.com/maps?q=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,%20%D0%9D%D0%BE%D0%B2%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80,%20%D0%B4%D0%BE%D0%BC%2025%20%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81%201">Москва, Новинский бульвар, дом 25 корпус 1</a></dd>
+        </dl>
     </li>
-    <li class="b-lenta-metaitem entryunit__tags">
-        <span class="b-lenta-meta-label
-    b-lenta-metatoggle-target">Метки (<a href="http://www.livejournal.com/edittags.bml?journal=layouts_ru&amp;itemid=521188">редактировать</a>):</span>
-        <a class="b-lenta-tag b-lenta-meta-content" target="_self" href="http://layouts-ru.livejournal.com/tag/стиль: expressive">стиль: expressive</a>
-        <span>,</span>
-        <a class="b-lenta-tag b-lenta-meta-content" target="_self" href="http://layouts-ru.livejournal.com/tag/цвет: бежевый">цвет: бежевый</a>
-        <span>,</span>
-        <a class="b-lenta-tag b-lenta-meta-content" target="_self" href="http://layouts-ru.livejournal.com/tag/цвет: разноцветный">цвет: разноцветный</a>
+
+    <li class="tagscurrents__item tagscurrents__item--mood">
+        <dl class="tagscurrents__list">
+            <dt class="tagscurrents__label">Настроение</dt>
+            <dd class="tagscurrents__content">creative</dd>
+        </dl>
+    </li>
+
+    <li class="tagscurrents__item tagscurrents__item--tags">
+        <dl class="tagscurrents__list">
+            <dt class="tagscurrents__label">Метки (<a href="http://www.livejournal.com/edittags.bml?journal=layouts_ru&amp;itemid=521188">редактировать</a>)</dt>
+
+            <dd class="tagscurrents__content">
+                <a class="tagscurrents__tag" target="_self" href="http://layouts-ru.livejournal.com/tag/стиль: expressive">стиль: expressive</a><span>,</span>
+                <a class="tagscurrents__tag" target="_self" href="http://layouts-ru.livejournal.com/tag/цвет: бежевый">цвет: бежевый</a><span>,</span>
+                <a class="tagscurrents__tag" target="_self" href="http://layouts-ru.livejournal.com/tag/цвет: разноцветный">цвет: разноцветный</a>
+            </dd>
+
+        </dl>
+
     </li>
 </ul>
 </div>
     <footer class="entryunit__footer">
-    <ul class="entryunit-actions">
-    <li class="entryunit-actions-item entryunit-actions-item-comments">
+    <ul class="entryunit__actions actions-entryunit">
+    <li class="actions-entryunit__item actions-entryunit__item--comments">
         <a target="_self" href="http://mi3ch.livejournal.com/2665075.html#comments">
 
             <svg class="svgicon flaticon flaticon--comment-view"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--comment-view"></svg>
 
-            <span class="entryunit-actions-item-text ">6</span>
+            <span class="actions-entryunit__text ">6</span>
         </a>
     </li>
-    <li class="entryunit-actions-item entryunit-actions-item-reply">
+    <li class="actions-entryunit__item actions-entryunit__item--reply">
         <a target="_self" href="http://mi3ch.livejournal.com/2665075.html?mode=reply#add_comment">
 
             <svg class="svgicon flaticon flaticon--comment-add"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--comment-add"></svg>
 
-            <span class="entryunit-actions-item-text ">Add comment</span>
+            <span class="actions-entryunit__text ">Add comment</span>
         </a>
     </li>
 </ul>
-
-<!-- 
-    <a href="http://ya.ru">Добавить комментарий</a>
-
-    <a href="http://ya.ru">156 комментариев</a>
- -->
     
-    <menu class="entryunit-controls">
-    <ul class="entryunit-controls-items">
+    <menu class="entryunit__controls controls-entryunit">
+    <ul class="controls-entryunit__items">
+        <li class="controls-entryunit__item controls-entryunit__item-check">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-check">
-            <a href="javasctipt:void(0)">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--check"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--check"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--check"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--check"></svg>
-
-                <span class="entryunit-controls-tooltip">Отметить как прочитанное</span>
+                <span class="controls-entryunit__tooltip">Отметить как прочитанное</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-hide">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-js-lj-hide">
-            <a href="javasctipt:void(0)">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--hide"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--hide"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--hide"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--hide"></svg>
-
-                <span class="entryunit-controls-tooltip">Скрыть автора из рейтинга</span>
+                <span class="controls-entryunit__tooltip">Скрыть автора из рейтинга</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-edit">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-delete-repost">
-            <a href="http://www.livejournal.com/tools/memadd.bml?journal=lj_releases&amp;itemid=89249">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--edit"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--edit"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--delete-repost"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--delete-repost"></svg>
-
-                <span class="entryunit-controls-tooltip ng-binding">Удалить репост</span>
+                <span class="controls-entryunit__tooltip">Редактировать</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-delete-repost">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-favorite">
-            <a href="http://www.livejournal.com/tools/memadd.bml?journal=lj_releases&amp;itemid=89249">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--delete-repost"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--delete-repost"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--favorite"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--favorite"></svg>
-
-                <span class="entryunit-controls-tooltip ng-binding">Добавить в избранное</span>
+                <span class="controls-entryunit__tooltip">Удалить репост</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-favorite">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-js-lj-share">
-            <a href="javasctipt:void(0)">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--favorite"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--favorite"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--share"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--share"></svg>
-
-                <span class="entryunit-controls-tooltip">Поделиться</span>
+                <span class="controls-entryunit__tooltip">Добавить в избранное</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-share">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-track">
-            <a href="http://www.livejournal.com/manage/subscriptions/entry.bml?journal=lj_releases&amp;amp;itemid=89249">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--share"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--share"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--track"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--track"></svg>
-
-                <span class="entryunit-controls-tooltip">Отслеживать</span>
+                <span class="controls-entryunit__tooltip">Поделиться</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-track">
+            <a href="#" class="controls-entryunit__link">
 
-        <li class="entryunit-controls-item entryunit-controls-item-flag">
-            <a href="http://www.livejournal.com/manage/subscriptions/entry.bml?journal=lj_releases&amp;amp;itemid=89249">
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--track"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--track"></svg>
+                </span>
 
-                <svg class="svgicon flaticon flaticon--flag"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--flag"></svg>
-
-                <span class="entryunit-controls-tooltip">Пожаловаться</span>
+                <span class="controls-entryunit__tooltip">Отслеживать</span>
             </a>
         </li>
+        <li class="controls-entryunit__item controls-entryunit__item-flag">
+            <a href="#" class="controls-entryunit__link">
 
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--flag"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--flag"></svg>
+                </span>
+
+                <span class="controls-entryunit__tooltip">Пожаловаться</span>
+            </a>
+        </li>
     </ul>
 </menu>
 </footer>
@@ -1678,7 +1792,7 @@
                                 <!-- //entryunit--feed -->
                             </div>
                             <div class="module__item module__components">
-                                <ul><li>userpic</li><li>user</li><li>date</li><li>title--sec</li><li>entrytext</li><li>tags</li><li>comments</li><li>actions</li></ul>
+                                <ul><li>userpic</li><li>user</li><li>date</li><li>title--sec</li><li>entrytext</li><li>tags</li><li>actions</li><li>controls</li></ul>
                             </div>
                         </div>
                     </div>
@@ -1688,74 +1802,24 @@
                         <h2 class="module__title">actions</h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
-                                <menu class="entryunit-controls">
-    <ul class="entryunit-controls-items">
+                                <ul class="entryunit__actions actions-entryunit">
+    <li class="actions-entryunit__item actions-entryunit__item--comments">
+        <a target="_self" href="http://mi3ch.livejournal.com/2665075.html#comments">
 
-        <li class="entryunit-controls-item entryunit-controls-item-check">
-            <a href="javasctipt:void(0)">
+            <svg class="svgicon flaticon flaticon--comment-view"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--comment-view"></svg>
 
-                <svg class="svgicon flaticon flaticon--check"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--check"></svg>
+            <span class="actions-entryunit__text ">6</span>
+        </a>
+    </li>
+    <li class="actions-entryunit__item actions-entryunit__item--reply">
+        <a target="_self" href="http://mi3ch.livejournal.com/2665075.html?mode=reply#add_comment">
 
-                <span class="entryunit-controls-tooltip">Отметить как прочитанное</span>
-            </a>
-        </li>
+            <svg class="svgicon flaticon flaticon--comment-add"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--comment-add"></svg>
 
-        <li class="entryunit-controls-item entryunit-controls-item-js-lj-hide">
-            <a href="javasctipt:void(0)">
-
-                <svg class="svgicon flaticon flaticon--hide"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--hide"></svg>
-
-                <span class="entryunit-controls-tooltip">Скрыть автора из рейтинга</span>
-            </a>
-        </li>
-
-        <li class="entryunit-controls-item entryunit-controls-item-delete-repost">
-            <a href="http://www.livejournal.com/tools/memadd.bml?journal=lj_releases&amp;itemid=89249">
-
-                <svg class="svgicon flaticon flaticon--delete-repost"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--delete-repost"></svg>
-
-                <span class="entryunit-controls-tooltip ng-binding">Удалить репост</span>
-            </a>
-        </li>
-
-        <li class="entryunit-controls-item entryunit-controls-item-favorite">
-            <a href="http://www.livejournal.com/tools/memadd.bml?journal=lj_releases&amp;itemid=89249">
-
-                <svg class="svgicon flaticon flaticon--favorite"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--favorite"></svg>
-
-                <span class="entryunit-controls-tooltip ng-binding">Добавить в избранное</span>
-            </a>
-        </li>
-
-        <li class="entryunit-controls-item entryunit-controls-item-js-lj-share">
-            <a href="javasctipt:void(0)">
-
-                <svg class="svgicon flaticon flaticon--share"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--share"></svg>
-
-                <span class="entryunit-controls-tooltip">Поделиться</span>
-            </a>
-        </li>
-
-        <li class="entryunit-controls-item entryunit-controls-item-track">
-            <a href="http://www.livejournal.com/manage/subscriptions/entry.bml?journal=lj_releases&amp;amp;itemid=89249">
-
-                <svg class="svgicon flaticon flaticon--track"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--track"></svg>
-
-                <span class="entryunit-controls-tooltip">Отслеживать</span>
-            </a>
-        </li>
-
-        <li class="entryunit-controls-item entryunit-controls-item-flag">
-            <a href="http://www.livejournal.com/manage/subscriptions/entry.bml?journal=lj_releases&amp;amp;itemid=89249">
-
-                <svg class="svgicon flaticon flaticon--flag"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--flag"></svg>
-
-                <span class="entryunit-controls-tooltip">Пожаловаться</span>
-            </a>
-        </li>
-
-    </ul>
-</menu>
+            <span class="actions-entryunit__text ">Add comment</span>
+        </a>
+    </li>
+</ul>
                             </div>
                         </div>
                     </div>
@@ -1763,7 +1827,7 @@
                         <h2 class="module__title">comm</h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
-                                <span class="entryunit-author">
+                                <span class="entryunit__author">
     <span class="ljuser i-ljuser i-ljuser-type-C">
         <a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile">
             <img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/community.gif">
@@ -1774,33 +1838,93 @@
                         </div>
                     </div>
                     <div class="module">
-                        <h2 class="module__title">comments</h2>
+                        <h2 class="module__title">controls</h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
-                                <ul class="entryunit-actions">
-    <li class="entryunit-actions-item entryunit-actions-item-comments">
-        <a target="_self" href="http://mi3ch.livejournal.com/2665075.html#comments">
+                                <menu class="entryunit__controls controls-entryunit">
+    <ul class="controls-entryunit__items">
+        <li class="controls-entryunit__item controls-entryunit__item-check">
+            <a href="#" class="controls-entryunit__link">
 
-            <svg class="svgicon flaticon flaticon--comment-view"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--comment-view"></svg>
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--check"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--check"></svg>
+                </span>
 
-            <span class="entryunit-actions-item-text ">6</span>
-        </a>
-    </li>
-    <li class="entryunit-actions-item entryunit-actions-item-reply">
-        <a target="_self" href="http://mi3ch.livejournal.com/2665075.html?mode=reply#add_comment">
+                <span class="controls-entryunit__tooltip">Отметить как прочитанное</span>
+            </a>
+        </li>
+        <li class="controls-entryunit__item controls-entryunit__item-hide">
+            <a href="#" class="controls-entryunit__link">
 
-            <svg class="svgicon flaticon flaticon--comment-add"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--comment-add"></svg>
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--hide"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--hide"></svg>
+                </span>
 
-            <span class="entryunit-actions-item-text ">Add comment</span>
-        </a>
-    </li>
-</ul>
+                <span class="controls-entryunit__tooltip">Скрыть автора из рейтинга</span>
+            </a>
+        </li>
+        <li class="controls-entryunit__item controls-entryunit__item-edit">
+            <a href="#" class="controls-entryunit__link">
 
-<!-- 
-    <a href="http://ya.ru">Добавить комментарий</a>
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--edit"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--edit"></svg>
+                </span>
 
-    <a href="http://ya.ru">156 комментариев</a>
- -->
+                <span class="controls-entryunit__tooltip">Редактировать</span>
+            </a>
+        </li>
+        <li class="controls-entryunit__item controls-entryunit__item-delete-repost">
+            <a href="#" class="controls-entryunit__link">
+
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--delete-repost"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--delete-repost"></svg>
+                </span>
+
+                <span class="controls-entryunit__tooltip">Удалить репост</span>
+            </a>
+        </li>
+        <li class="controls-entryunit__item controls-entryunit__item-favorite">
+            <a href="#" class="controls-entryunit__link">
+
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--favorite"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--favorite"></svg>
+                </span>
+
+                <span class="controls-entryunit__tooltip">Добавить в избранное</span>
+            </a>
+        </li>
+        <li class="controls-entryunit__item controls-entryunit__item-share">
+            <a href="#" class="controls-entryunit__link">
+
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--share"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--share"></svg>
+                </span>
+
+                <span class="controls-entryunit__tooltip">Поделиться</span>
+            </a>
+        </li>
+        <li class="controls-entryunit__item controls-entryunit__item-track">
+            <a href="#" class="controls-entryunit__link">
+
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--track"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--track"></svg>
+                </span>
+
+                <span class="controls-entryunit__tooltip">Отслеживать</span>
+            </a>
+        </li>
+        <li class="controls-entryunit__item controls-entryunit__item-flag">
+            <a href="#" class="controls-entryunit__link">
+
+                <span class="controls-entryunit__icon">
+                    <svg class="svgicon flaticon flaticon--flag"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--flag"></svg>
+                </span>
+
+                <span class="controls-entryunit__tooltip">Пожаловаться</span>
+            </a>
+        </li>
+    </ul>
+</menu>
                             </div>
                         </div>
                     </div>
@@ -1808,7 +1932,7 @@
                         <h2 class="module__title">date</h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
-                                <time datetime="2014-08-25 22:00:00" pubdate="" class="entryunit-date">август 25, 22:00</time>
+                                <time datetime="2014-08-25 22:00:00" pubdate="" class="entryunit__date">август 25, 22:00</time>
                             </div>
                         </div>
                     </div>
@@ -1873,11 +1997,11 @@
                         <h2 class="module__title">joinwatch</h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
-                                <ul class="entryunit-actions">
-    <li class="entryunit-actions-item">
+                                <ul class="entryunit__actions actions-entryunit">
+    <li class="actions-entryunit__item">
         <a target="_blank" href="#join">Join</a>
     </li>
-    <li class="entryunit-actions-item">
+    <li class="actions-entryunit__item">
         <a target="_blank" href="#watch">Watch</a>
     </li>
 </ul>
@@ -2005,19 +2129,34 @@
                         <h2 class="module__title">tags</h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
-                                <ul class="entryunit__metainfo">
-    <li class="b-lenta-metaitem entryunit__mood">
-        <span class="b-lenta-meta-label b-lenta-metatoggle-target">Настроение</span>
-        <span class="b-lenta-meta-content">creative</span>
+                                <ul class="entryunit__tagscurrents">
+
+    <li class="tagscurrents__item tagscurrents__item--mood">
+        <dl class="tagscurrents__list">
+            <dt class="tagscurrents__label">Местонахождение</dt>
+            <dd class="tagscurrents__content"><a href="http://maps.google.com/maps?q=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,%20%D0%9D%D0%BE%D0%B2%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80,%20%D0%B4%D0%BE%D0%BC%2025%20%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81%201">Москва, Новинский бульвар, дом 25 корпус 1</a></dd>
+        </dl>
     </li>
-    <li class="b-lenta-metaitem entryunit__tags">
-        <span class="b-lenta-meta-label
-    b-lenta-metatoggle-target">Метки (<a href="http://www.livejournal.com/edittags.bml?journal=layouts_ru&amp;itemid=521188">редактировать</a>):</span>
-        <a class="b-lenta-tag b-lenta-meta-content" target="_self" href="http://layouts-ru.livejournal.com/tag/стиль: expressive">стиль: expressive</a>
-        <span>,</span>
-        <a class="b-lenta-tag b-lenta-meta-content" target="_self" href="http://layouts-ru.livejournal.com/tag/цвет: бежевый">цвет: бежевый</a>
-        <span>,</span>
-        <a class="b-lenta-tag b-lenta-meta-content" target="_self" href="http://layouts-ru.livejournal.com/tag/цвет: разноцветный">цвет: разноцветный</a>
+
+    <li class="tagscurrents__item tagscurrents__item--mood">
+        <dl class="tagscurrents__list">
+            <dt class="tagscurrents__label">Настроение</dt>
+            <dd class="tagscurrents__content">creative</dd>
+        </dl>
+    </li>
+
+    <li class="tagscurrents__item tagscurrents__item--tags">
+        <dl class="tagscurrents__list">
+            <dt class="tagscurrents__label">Метки (<a href="http://www.livejournal.com/edittags.bml?journal=layouts_ru&amp;itemid=521188">редактировать</a>)</dt>
+
+            <dd class="tagscurrents__content">
+                <a class="tagscurrents__tag" target="_self" href="http://layouts-ru.livejournal.com/tag/стиль: expressive">стиль: expressive</a><span>,</span>
+                <a class="tagscurrents__tag" target="_self" href="http://layouts-ru.livejournal.com/tag/цвет: бежевый">цвет: бежевый</a><span>,</span>
+                <a class="tagscurrents__tag" target="_self" href="http://layouts-ru.livejournal.com/tag/цвет: разноцветный">цвет: разноцветный</a>
+            </dd>
+
+        </dl>
+
     </li>
 </ul>
                             </div>
@@ -2047,14 +2186,14 @@
                         <h2 class="module__title">tocommunity</h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
-                                <span class="entryunit-author">
+                                <span class="entryunit__author author--entryunit">
     <span class="ljuser i-ljuser i-ljuser-type-P">
         <a class="i-ljuser-profile" target="_self" href="http://la-ra-fa.livejournal.com/profile">
             <img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/userinfo.gif">
         </a><a class="i-ljuser-username" title="" target="_self" href="http://la-ra-fa.livejournal.com/"><b>la_ra_fa</b></a>
     </span>
 
-    <span class="entryunit-author-wrotein">wrote in</span>
+    <span class="author--entryunit__wrotein">wrote in</span>
 
     <span class="ljuser i-ljuser i-ljuser-type-C">
         <a class="i-ljuser-profile" href="http://30-day-photo.livejournal.com/profile">
@@ -2069,7 +2208,7 @@
                         <h2 class="module__title">user</h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
-                                <span class="entryunit-author">
+                                <span class="entryunit__author">
     <span class="ljuser i-ljuser i-ljuser-type-P">
         <a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile">
             <img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/userinfo.gif">
