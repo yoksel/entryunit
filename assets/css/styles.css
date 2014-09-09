@@ -271,7 +271,7 @@ figure {
   color: #0086B3; }
 
 /* comments in first meta */
-.entryunit-comments {
+.comments-entryunit {
   position: relative;
   display: inline-block;
   margin: 0 1em .3em 0;
@@ -279,14 +279,14 @@ figure {
   letter-spacing: .05em;
   font-family: ProximaNovaSemibold, Tahoma, Arial, sans-serif; }
 
-.entryunit-comments .svgicon {
+.comments-entryunit .svgicon {
   vertical-align: middle; }
 
-.entryunit-comments A:link, .entryunit-comments A:visited {
+.comments-entryunit A:link, .comments-entryunit A:visited {
   text-decoration: none;
   color: #00A3D9; }
 
-.entryunit-comments A:active, .entryunit-comments A:hover {
+.comments-entryunit A:active, .comments-entryunit A:hover {
   text-decoration: none;
   color: #0086B3; }
 
