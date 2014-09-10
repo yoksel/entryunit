@@ -88,7 +88,9 @@
                         position: relative;
                         height: 42px
                         }
-                    .b-ljpromo .entryunit .entryunit-body:before, .b-ljpromo .entryunit .entryunit-head:before, .b-ljpromo .entryunit .entryunit-meta:before {
+                    .b-ljpromo .entryunit .entryunit-body:before,
+                    .b-ljpromo .entryunit .entryunit-head:before,
+                    .b-ljpromo .entryunit .entryunit-meta:before {
                         content: "";
                         position: absolute;
                         bottom: 0;

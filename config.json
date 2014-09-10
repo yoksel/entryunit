@@ -3,11 +3,11 @@
         "aditional-classes": "entryunit--selfpromo",
         "elements": [
             "labels",
-            "user",
+            "author--user",
             "date",
             "headercomments",
             "title",
-            "entrytext"
+            "text"
         ]
     },
 
@@ -15,22 +15,22 @@
         "aditional-classes": "entryunit--commpromo",
         "elements": [
             "labels",
-            "user",
+            "author--user",
             "date",
             "headercomments",
             "title",
-            "entrytext"
+            "text"
         ]
     },
 
     "rating": {
         "elements": [
             "position",
-            "user",
+            "author--user",
             "date",
             "headercomments",
             "title",
-            "entrytext",
+            "text",
             "controls"
         ]
     },
@@ -39,11 +39,11 @@
         "aditional-classes": "entryunit-state-restored",
         "elements": [
             "position",
-            "user",
+            "author--user",
             "date",
             "headercomments",
             "title",
-            "entrytext",
+            "text",
             "controls"
         ]
     },
@@ -52,11 +52,11 @@
         "aditional-classes": "entryunit-state-up",
         "elements": [
             "position",
-            "user",
+            "author--user",
             "date",
             "headercomments",
             "title",
-            "entrytext",
+            "text",
             "controls"
         ]
     },
@@ -65,11 +65,11 @@
         "aditional-classes": "entryunit-state-down",
         "elements": [
             "position",
-            "user",
+            "author--user",
             "date",
             "headercomments",
             "title",
-            "entrytext",
+            "text",
             "controls"
         ]
     },
@@ -78,48 +78,57 @@
         "aditional-classes": "entryunit--mustread",
         "elements": [
             "labels",
-            "user",
+            "author--user",
             "headerreply",
             "title",
-            "entrytext"
+            "text"
         ]
     },
 
     "magazine": [
-        "user",
+        "author--user",
         "date",
         "headercomments",
         "title",
-        "imagefull",
-        "entrytext"
+        "img--panorama",
+        "text"
+    ],
+
+    "magazine-thumb": [
+        "author--user",
+        "date",
+        "headercomments",
+        "title",
+        "img--thumbnail",
+        "text"
     ],
 
     "browsepost": [
         "position",
-        "tocommunity",
+        "author--tocomm",
         "date",
         "headerreply",
         "title",
-        "entrytext",
+        "text",
         "share"
     ],
 
     "browsecommunity": [
-        "comm",
+        "author--comm",
         "stats",
-        "imageupic",
-        "shorttext",
-        "joinwatch"
+        "img--upic",
+        "text--short",
+        "actions--joinwatch"
     ],
 
     "feed": {
         "aditional-classes": "test",
         "elements": [
             "userpic",
-            "user",
+            "author--user",
             "date",
             "title--sec",
-            "entrytext",
+            "text",
             "tags",
             "actions",
             "controls"
