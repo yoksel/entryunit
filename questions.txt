@@ -6,3 +6,5 @@ TODO:
 
 3. Responsive (controls)
 
+4. ie8 for up and down arrows
+

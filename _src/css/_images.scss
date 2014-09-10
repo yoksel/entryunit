@@ -27,25 +27,27 @@
         background-size: cover
         }
 
-.b-entryunit-video {
+.video-entryunit {
     margin: 0
     }
 
-.b-entryunit-video EMBED,.b-entryunit-video IFRAME,.b-entryunit-video OBJECT {
-    width: 100%;
-    height: 360px;
-    max-width: 900px
-    }
+    .video-entryunit EMBED,
+    .video-entryunit IFRAME,
+    .video-entryunit OBJECT {
+        width: 100%;
+        height: 360px;
+        max-width: 900px
+        }
 
 
-/* In jornal o feed */
+/* In jornal or feed */
 
-.b-entryunit-article {
+.entryunit__text {
         margin: 0;
         line-height: 1.4
-    }
+        }
 
-    .b-entryunit-article IMG {
+    .entryunit__text IMG {
         max-width: 100%;
         height: auto
-    }
+        }

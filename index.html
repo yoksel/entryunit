@@ -8,8 +8,15 @@
         BODY {
     background: #FFF;
     }
+
+UL {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+
 .wrapper {
-    min-width: 500px;
+    min-width: 350px;
     max-width: 1000px;
     margin: 3em auto;
     padding: 0 2em;
@@ -62,26 +69,33 @@
 .module__title {
     display: inline-block;
     position: relative;
-    margin: 0 0 .5em;
-    padding: .2em .5em;
-    background: steelblue;
-    font: 1.3em/1 Trebuchet MS, sans-serif;
+    height: 1.42em;
+    margin: 0 0 1em;
+    overflow: hidden;
+    font: 1.3em/1.42 Trebuchet MS, sans-serif;
     color: #FFF;
     }
+    .module__title-inner {
+        display: inline-block;
+        height: 1.42em;
+        padding: 0 .5em ;
+        background: steelblue;
+        }
+        .demoitem--elements .module__title-inner {
+            background: yellowgreen;
+            }
     .module__title:after {
         content: "";
-        display: block;
-        position: absolute;
+        display: inline-block;
+        position: relative;
         top: 0;
-        right: -.692em;
+        right: 0;
         width: 0;
         height: 0;
-        border: .72em solid transparent;
+        border: .73em solid transparent;
         border-right-width: 0;
         border-left-color: steelblue;
-        }
-    .demoitem--elements .module__title {
-        background: yellowgreen;
+        vertical-align: top;
         }
         .demoitem--elements .module__title:after {
             border-left-color: yellowgreen;
@@ -95,6 +109,7 @@
         width: 100%;
         clear: both;
         }
+
 .module__item {
     box-sizing: border-box;
     }
@@ -102,16 +117,29 @@
         border: 1px solid #DDD;
         padding: 1em;
         }
-    .demoitem--templates .module__content {
-        float: left;
-        width: 60%;
-        padding-right: 2em;
-        border-right: 2px solid #DDD;
+    .demoitem--elements .module__content:after {
+        content: "";
+        display: table;
+        width: 100%;
+        clear: both;
         }
+
+     .demoitem--templates .module__content {
+        float: left;
+        width: 100%;
+        }
+        .demoitem--templates .module__content-inner {
+            margin-right: 180px;
+            padding-right: 2em;
+            border-right: 2px solid #DDD;
+            }
     .demoitem--templates .module__components {
         float: right;
-        width: 38%;
+        width: 160px;
+        margin-left: -160px;
         }
+
+
     </style>
     <!-- Custom content -->
         
@@ -287,22 +315,25 @@
             <div class="demoitem demoitem--templates">
                     <!-- Module: entryunit -->
                     <div class="module">
-                        <h2 class="module__title">entryunit</h2>
+                        <h2 class="module__title"><span class="module__title-inner">entryunit</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
-                                <!-- entryunit -->
-                                <article class="entryunit ">
+                                <div class="module__item module__content-inner">
+                                    <!-- entryunit -->
+                                    <article class="entryunit ">
     <div class="entryunit__userpic"><img src='assets/img/userpic.png'/></div>
 <div class="entryunit__meta meta-entryunit">
     <ul class="meta-entryunit__items">
-        <li class="meta-entryunit__item"><span class="entryunit-position"> <span class="entryunit-position-inner"> <span class="entryunit-position-number">2.</span><span class=" entryunit-icon entryunit-updown " title="Эта запись изменила свою позицию в рейтинге на 3 места"></span></span> </span></li>
-        <li class="meta-entryunit__item"><span class="entryunit-label entryunit-label--selfpromo">
+        <li class="meta-entryunit__item"><span class="entryunit__position position-entryunit">
+    <span class="position-entryunit__number" title="Эта запись изменила свою позицию в рейтинге на 3 места">2.</span>
+</span></li>
+        <li class="meta-entryunit__item"><span class="label-entryunit label-entryunit--selfpromo">
     <a href="/shop/selfpromo.bml?country=cyr" target="_blank">промо</a>
 </span>
-<span class="entryunit-label entryunit-label--commpromo">
+<span class="label-entryunit label-entryunit--commpromo">
     <a href="/shop/commpromo.bml?country=cyr" target="_blank">промо</a>
 </span>
-<span class="entryunit-label entryunit-label--mustread">Рекомендуемое</span>
+<span class="label-entryunit label-entryunit--mustread">Рекомендуемое</span>
 </li>
         <li class="meta-entryunit__item"><span class="entryunit__author">
     <span class="ljuser i-ljuser i-ljuser-type-P">
@@ -363,7 +394,10 @@
     <ul class='j-e-types '><li class='j-e-types-item j-e-type-sticky' title='Верхняя запись'><svg class='svgicon flaticon flaticon--security-friends'  style='pointer-events: none; visibility: hidden;'><use xlink:href='#flaticon--security-friends'></svg>Верхняя запись</li></ul><a href="http://www.livejournal.com/magazine/299255.html">Разнокомпонентный интеграл от функции комплексной переменной: методология и особенности</a>
 </h3>
 </header>
-    <div class="entryunit-body">
+    <div class="entryunit__body">
+    <div class="entryunit__video video-entryunit">
+    <iframe data-link="http://youtube.com/watch?v=CQCCvGtSHbw" frameborder="0" height="315" src="http://www.youtube.com/embed/CQCCvGtSHbw?wmode=opaque" width="560"></iframe>
+</div>
     <figure class="entryunit__panorama panorama-entryunit">
     <a class="panorama-entryunit__pic" href="http://www.livejournal.com/magazine/300684.html" style="background-image: url(http://ic.pics.livejournal.com/lj_magazine/70300696/498036/498036_original.jpg);"></a>
 </figure>
@@ -498,7 +532,7 @@
 </ul>
     <menu class="entryunit__controls controls-entryunit">
     <ul class="controls-entryunit__items">
-        <li class="controls-entryunit__item controls-entryunit__item-check">
+        <li class="controls-entryunit__item controls-entryunit__item--check">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -508,7 +542,7 @@
                 <span class="controls-entryunit__tooltip">Отметить как прочитанное</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-hide">
+        <li class="controls-entryunit__item controls-entryunit__item--hide">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -518,7 +552,7 @@
                 <span class="controls-entryunit__tooltip">Скрыть автора из рейтинга</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-edit">
+        <li class="controls-entryunit__item controls-entryunit__item--edit">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -528,7 +562,7 @@
                 <span class="controls-entryunit__tooltip">Редактировать</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-delete-repost">
+        <li class="controls-entryunit__item controls-entryunit__item--delete-repost">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -538,7 +572,7 @@
                 <span class="controls-entryunit__tooltip">Удалить репост</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-favorite">
+        <li class="controls-entryunit__item controls-entryunit__item--favorite">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -548,7 +582,7 @@
                 <span class="controls-entryunit__tooltip">Добавить в избранное</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-share">
+        <li class="controls-entryunit__item controls-entryunit__item--share">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -558,7 +592,7 @@
                 <span class="controls-entryunit__tooltip">Поделиться</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-track">
+        <li class="controls-entryunit__item controls-entryunit__item--track">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -568,7 +602,7 @@
                 <span class="controls-entryunit__tooltip">Отслеживать</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-flag">
+        <li class="controls-entryunit__item controls-entryunit__item--flag">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -582,7 +616,8 @@
 </menu>
 </footer>
 </article>
-                                <!-- //entryunit -->
+                                    <!-- //entryunit -->
+                                </div>
                             </div>
                             <div class="module__item module__components">
                                 
@@ -591,22 +626,23 @@
                     </div>
                     <!-- Module: entryunit--self-promo -->
                     <div class="module">
-                        <h2 class="module__title">entryunit--self-promo</h2>
+                        <h2 class="module__title"><span class="module__title-inner">entryunit--self-promo</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
-                                <!-- entryunit--self-promo -->
-                                <article class="entryunit entryunit--selfpromo">
+                                <div class="module__item module__content-inner">
+                                    <!-- entryunit--self-promo -->
+                                    <article class="entryunit entryunit--selfpromo">
     
 <div class="entryunit__meta meta-entryunit">
     <ul class="meta-entryunit__items">
         <li class="meta-entryunit__item"></li>
-        <li class="meta-entryunit__item"><span class="entryunit-label entryunit-label--selfpromo">
+        <li class="meta-entryunit__item"><span class="label-entryunit label-entryunit--selfpromo">
     <a href="/shop/selfpromo.bml?country=cyr" target="_blank">промо</a>
 </span>
-<span class="entryunit-label entryunit-label--commpromo">
+<span class="label-entryunit label-entryunit--commpromo">
     <a href="/shop/commpromo.bml?country=cyr" target="_blank">промо</a>
 </span>
-<span class="entryunit-label entryunit-label--mustread">Рекомендуемое</span>
+<span class="label-entryunit label-entryunit--mustread">Рекомендуемое</span>
 </li>
         <li class="meta-entryunit__item"><span class="entryunit__author">
     <span class="ljuser i-ljuser i-ljuser-type-P">
@@ -636,7 +672,8 @@
 </h3>
 
 </header>
-    <div class="entryunit-body">
+    <div class="entryunit__body">
+    
     
     
     
@@ -655,7 +692,8 @@
     
 </footer>
 </article>
-                                <!-- //entryunit--self-promo -->
+                                    <!-- //entryunit--self-promo -->
+                                </div>
                             </div>
                             <div class="module__item module__components">
                                 <ul><li>labels</li><li>author--user</li><li>date</li><li>headercomments</li><li>title</li><li>text</li></ul>
@@ -664,22 +702,23 @@
                     </div>
                     <!-- Module: entryunit--comm-promo -->
                     <div class="module">
-                        <h2 class="module__title">entryunit--comm-promo</h2>
+                        <h2 class="module__title"><span class="module__title-inner">entryunit--comm-promo</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
-                                <!-- entryunit--comm-promo -->
-                                <article class="entryunit entryunit--commpromo">
+                                <div class="module__item module__content-inner">
+                                    <!-- entryunit--comm-promo -->
+                                    <article class="entryunit entryunit--commpromo">
     
 <div class="entryunit__meta meta-entryunit">
     <ul class="meta-entryunit__items">
         <li class="meta-entryunit__item"></li>
-        <li class="meta-entryunit__item"><span class="entryunit-label entryunit-label--selfpromo">
+        <li class="meta-entryunit__item"><span class="label-entryunit label-entryunit--selfpromo">
     <a href="/shop/selfpromo.bml?country=cyr" target="_blank">промо</a>
 </span>
-<span class="entryunit-label entryunit-label--commpromo">
+<span class="label-entryunit label-entryunit--commpromo">
     <a href="/shop/commpromo.bml?country=cyr" target="_blank">промо</a>
 </span>
-<span class="entryunit-label entryunit-label--mustread">Рекомендуемое</span>
+<span class="label-entryunit label-entryunit--mustread">Рекомендуемое</span>
 </li>
         <li class="meta-entryunit__item"><span class="entryunit__author">
     <span class="ljuser i-ljuser i-ljuser-type-P">
@@ -709,7 +748,8 @@
 </h3>
 
 </header>
-    <div class="entryunit-body">
+    <div class="entryunit__body">
+    
     
     
     
@@ -728,7 +768,8 @@
     
 </footer>
 </article>
-                                <!-- //entryunit--comm-promo -->
+                                    <!-- //entryunit--comm-promo -->
+                                </div>
                             </div>
                             <div class="module__item module__components">
                                 <ul><li>labels</li><li>author--user</li><li>date</li><li>headercomments</li><li>title</li><li>text</li></ul>
@@ -737,15 +778,18 @@
                     </div>
                     <!-- Module: entryunit--rating -->
                     <div class="module">
-                        <h2 class="module__title">entryunit--rating</h2>
+                        <h2 class="module__title"><span class="module__title-inner">entryunit--rating</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
-                                <!-- entryunit--rating -->
-                                <article class="entryunit ">
+                                <div class="module__item module__content-inner">
+                                    <!-- entryunit--rating -->
+                                    <article class="entryunit ">
     
 <div class="entryunit__meta meta-entryunit">
     <ul class="meta-entryunit__items">
-        <li class="meta-entryunit__item"><span class="entryunit-position"> <span class="entryunit-position-inner"> <span class="entryunit-position-number">2.</span><span class=" entryunit-icon entryunit-updown " title="Эта запись изменила свою позицию в рейтинге на 3 места"></span></span> </span></li>
+        <li class="meta-entryunit__item"><span class="entryunit__position position-entryunit">
+    <span class="position-entryunit__number" title="Эта запись изменила свою позицию в рейтинге на 3 места">2.</span>
+</span></li>
         <li class="meta-entryunit__item"></li>
         <li class="meta-entryunit__item"><span class="entryunit__author">
     <span class="ljuser i-ljuser i-ljuser-type-P">
@@ -775,7 +819,8 @@
 </h3>
 
 </header>
-    <div class="entryunit-body">
+    <div class="entryunit__body">
+    
     
     
     
@@ -793,7 +838,7 @@
     
     <menu class="entryunit__controls controls-entryunit">
     <ul class="controls-entryunit__items">
-        <li class="controls-entryunit__item controls-entryunit__item-check">
+        <li class="controls-entryunit__item controls-entryunit__item--check">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -803,7 +848,7 @@
                 <span class="controls-entryunit__tooltip">Отметить как прочитанное</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-hide">
+        <li class="controls-entryunit__item controls-entryunit__item--hide">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -813,7 +858,7 @@
                 <span class="controls-entryunit__tooltip">Скрыть автора из рейтинга</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-edit">
+        <li class="controls-entryunit__item controls-entryunit__item--edit">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -823,7 +868,7 @@
                 <span class="controls-entryunit__tooltip">Редактировать</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-delete-repost">
+        <li class="controls-entryunit__item controls-entryunit__item--delete-repost">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -833,7 +878,7 @@
                 <span class="controls-entryunit__tooltip">Удалить репост</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-favorite">
+        <li class="controls-entryunit__item controls-entryunit__item--favorite">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -843,7 +888,7 @@
                 <span class="controls-entryunit__tooltip">Добавить в избранное</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-share">
+        <li class="controls-entryunit__item controls-entryunit__item--share">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -853,7 +898,7 @@
                 <span class="controls-entryunit__tooltip">Поделиться</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-track">
+        <li class="controls-entryunit__item controls-entryunit__item--track">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -863,7 +908,7 @@
                 <span class="controls-entryunit__tooltip">Отслеживать</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-flag">
+        <li class="controls-entryunit__item controls-entryunit__item--flag">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -877,7 +922,8 @@
 </menu>
 </footer>
 </article>
-                                <!-- //entryunit--rating -->
+                                    <!-- //entryunit--rating -->
+                                </div>
                             </div>
                             <div class="module__item module__components">
                                 <ul><li>position</li><li>author--user</li><li>date</li><li>headercomments</li><li>title</li><li>text</li><li>controls</li></ul>
@@ -886,15 +932,18 @@
                     </div>
                     <!-- Module: entryunit--rating-restored -->
                     <div class="module">
-                        <h2 class="module__title">entryunit--rating-restored</h2>
+                        <h2 class="module__title"><span class="module__title-inner">entryunit--rating-restored</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
-                                <!-- entryunit--rating-restored -->
-                                <article class="entryunit entryunit-state-restored">
+                                <div class="module__item module__content-inner">
+                                    <!-- entryunit--rating-restored -->
+                                    <article class="entryunit entryunit-state-restored">
     
 <div class="entryunit__meta meta-entryunit">
     <ul class="meta-entryunit__items">
-        <li class="meta-entryunit__item"><span class="entryunit-position"> <span class="entryunit-position-inner"> <span class="entryunit-position-number">2.</span><span class=" entryunit-icon entryunit-updown " title="Эта запись изменила свою позицию в рейтинге на 3 места"></span></span> </span></li>
+        <li class="meta-entryunit__item"><span class="entryunit__position position-entryunit">
+    <span class="position-entryunit__number" title="Эта запись изменила свою позицию в рейтинге на 3 места">2.</span>
+</span></li>
         <li class="meta-entryunit__item"></li>
         <li class="meta-entryunit__item"><span class="entryunit__author">
     <span class="ljuser i-ljuser i-ljuser-type-P">
@@ -924,7 +973,8 @@
 </h3>
 
 </header>
-    <div class="entryunit-body">
+    <div class="entryunit__body">
+    
     
     
     
@@ -942,7 +992,7 @@
     
     <menu class="entryunit__controls controls-entryunit">
     <ul class="controls-entryunit__items">
-        <li class="controls-entryunit__item controls-entryunit__item-check">
+        <li class="controls-entryunit__item controls-entryunit__item--check">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -952,7 +1002,7 @@
                 <span class="controls-entryunit__tooltip">Отметить как прочитанное</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-hide">
+        <li class="controls-entryunit__item controls-entryunit__item--hide">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -962,7 +1012,7 @@
                 <span class="controls-entryunit__tooltip">Скрыть автора из рейтинга</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-edit">
+        <li class="controls-entryunit__item controls-entryunit__item--edit">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -972,7 +1022,7 @@
                 <span class="controls-entryunit__tooltip">Редактировать</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-delete-repost">
+        <li class="controls-entryunit__item controls-entryunit__item--delete-repost">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -982,7 +1032,7 @@
                 <span class="controls-entryunit__tooltip">Удалить репост</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-favorite">
+        <li class="controls-entryunit__item controls-entryunit__item--favorite">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -992,7 +1042,7 @@
                 <span class="controls-entryunit__tooltip">Добавить в избранное</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-share">
+        <li class="controls-entryunit__item controls-entryunit__item--share">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -1002,7 +1052,7 @@
                 <span class="controls-entryunit__tooltip">Поделиться</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-track">
+        <li class="controls-entryunit__item controls-entryunit__item--track">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -1012,7 +1062,7 @@
                 <span class="controls-entryunit__tooltip">Отслеживать</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-flag">
+        <li class="controls-entryunit__item controls-entryunit__item--flag">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -1026,7 +1076,8 @@
 </menu>
 </footer>
 </article>
-                                <!-- //entryunit--rating-restored -->
+                                    <!-- //entryunit--rating-restored -->
+                                </div>
                             </div>
                             <div class="module__item module__components">
                                 <ul><li>position</li><li>author--user</li><li>date</li><li>headercomments</li><li>title</li><li>text</li><li>controls</li></ul>
@@ -1035,15 +1086,18 @@
                     </div>
                     <!-- Module: entryunit--rating-state-up -->
                     <div class="module">
-                        <h2 class="module__title">entryunit--rating-state-up</h2>
+                        <h2 class="module__title"><span class="module__title-inner">entryunit--rating-state-up</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
-                                <!-- entryunit--rating-state-up -->
-                                <article class="entryunit entryunit-state-up">
+                                <div class="module__item module__content-inner">
+                                    <!-- entryunit--rating-state-up -->
+                                    <article class="entryunit entryunit-state-up">
     
 <div class="entryunit__meta meta-entryunit">
     <ul class="meta-entryunit__items">
-        <li class="meta-entryunit__item"><span class="entryunit-position"> <span class="entryunit-position-inner"> <span class="entryunit-position-number">2.</span><span class=" entryunit-icon entryunit-updown " title="Эта запись изменила свою позицию в рейтинге на 3 места"></span></span> </span></li>
+        <li class="meta-entryunit__item"><span class="entryunit__position position-entryunit">
+    <span class="position-entryunit__number" title="Эта запись изменила свою позицию в рейтинге на 3 места">2.</span>
+</span></li>
         <li class="meta-entryunit__item"></li>
         <li class="meta-entryunit__item"><span class="entryunit__author">
     <span class="ljuser i-ljuser i-ljuser-type-P">
@@ -1073,7 +1127,8 @@
 </h3>
 
 </header>
-    <div class="entryunit-body">
+    <div class="entryunit__body">
+    
     
     
     
@@ -1091,7 +1146,7 @@
     
     <menu class="entryunit__controls controls-entryunit">
     <ul class="controls-entryunit__items">
-        <li class="controls-entryunit__item controls-entryunit__item-check">
+        <li class="controls-entryunit__item controls-entryunit__item--check">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -1101,7 +1156,7 @@
                 <span class="controls-entryunit__tooltip">Отметить как прочитанное</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-hide">
+        <li class="controls-entryunit__item controls-entryunit__item--hide">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -1111,7 +1166,7 @@
                 <span class="controls-entryunit__tooltip">Скрыть автора из рейтинга</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-edit">
+        <li class="controls-entryunit__item controls-entryunit__item--edit">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -1121,7 +1176,7 @@
                 <span class="controls-entryunit__tooltip">Редактировать</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-delete-repost">
+        <li class="controls-entryunit__item controls-entryunit__item--delete-repost">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -1131,7 +1186,7 @@
                 <span class="controls-entryunit__tooltip">Удалить репост</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-favorite">
+        <li class="controls-entryunit__item controls-entryunit__item--favorite">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -1141,7 +1196,7 @@
                 <span class="controls-entryunit__tooltip">Добавить в избранное</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-share">
+        <li class="controls-entryunit__item controls-entryunit__item--share">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -1151,7 +1206,7 @@
                 <span class="controls-entryunit__tooltip">Поделиться</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-track">
+        <li class="controls-entryunit__item controls-entryunit__item--track">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -1161,7 +1216,7 @@
                 <span class="controls-entryunit__tooltip">Отслеживать</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-flag">
+        <li class="controls-entryunit__item controls-entryunit__item--flag">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -1175,7 +1230,8 @@
 </menu>
 </footer>
 </article>
-                                <!-- //entryunit--rating-state-up -->
+                                    <!-- //entryunit--rating-state-up -->
+                                </div>
                             </div>
                             <div class="module__item module__components">
                                 <ul><li>position</li><li>author--user</li><li>date</li><li>headercomments</li><li>title</li><li>text</li><li>controls</li></ul>
@@ -1184,15 +1240,18 @@
                     </div>
                     <!-- Module: entryunit--rating-state-down -->
                     <div class="module">
-                        <h2 class="module__title">entryunit--rating-state-down</h2>
+                        <h2 class="module__title"><span class="module__title-inner">entryunit--rating-state-down</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
-                                <!-- entryunit--rating-state-down -->
-                                <article class="entryunit entryunit-state-down">
+                                <div class="module__item module__content-inner">
+                                    <!-- entryunit--rating-state-down -->
+                                    <article class="entryunit entryunit-state-down">
     
 <div class="entryunit__meta meta-entryunit">
     <ul class="meta-entryunit__items">
-        <li class="meta-entryunit__item"><span class="entryunit-position"> <span class="entryunit-position-inner"> <span class="entryunit-position-number">2.</span><span class=" entryunit-icon entryunit-updown " title="Эта запись изменила свою позицию в рейтинге на 3 места"></span></span> </span></li>
+        <li class="meta-entryunit__item"><span class="entryunit__position position-entryunit">
+    <span class="position-entryunit__number" title="Эта запись изменила свою позицию в рейтинге на 3 места">2.</span>
+</span></li>
         <li class="meta-entryunit__item"></li>
         <li class="meta-entryunit__item"><span class="entryunit__author">
     <span class="ljuser i-ljuser i-ljuser-type-P">
@@ -1222,7 +1281,8 @@
 </h3>
 
 </header>
-    <div class="entryunit-body">
+    <div class="entryunit__body">
+    
     
     
     
@@ -1240,7 +1300,7 @@
     
     <menu class="entryunit__controls controls-entryunit">
     <ul class="controls-entryunit__items">
-        <li class="controls-entryunit__item controls-entryunit__item-check">
+        <li class="controls-entryunit__item controls-entryunit__item--check">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -1250,7 +1310,7 @@
                 <span class="controls-entryunit__tooltip">Отметить как прочитанное</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-hide">
+        <li class="controls-entryunit__item controls-entryunit__item--hide">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -1260,7 +1320,7 @@
                 <span class="controls-entryunit__tooltip">Скрыть автора из рейтинга</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-edit">
+        <li class="controls-entryunit__item controls-entryunit__item--edit">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -1270,7 +1330,7 @@
                 <span class="controls-entryunit__tooltip">Редактировать</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-delete-repost">
+        <li class="controls-entryunit__item controls-entryunit__item--delete-repost">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -1280,7 +1340,7 @@
                 <span class="controls-entryunit__tooltip">Удалить репост</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-favorite">
+        <li class="controls-entryunit__item controls-entryunit__item--favorite">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -1290,7 +1350,7 @@
                 <span class="controls-entryunit__tooltip">Добавить в избранное</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-share">
+        <li class="controls-entryunit__item controls-entryunit__item--share">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -1300,7 +1360,7 @@
                 <span class="controls-entryunit__tooltip">Поделиться</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-track">
+        <li class="controls-entryunit__item controls-entryunit__item--track">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -1310,7 +1370,7 @@
                 <span class="controls-entryunit__tooltip">Отслеживать</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-flag">
+        <li class="controls-entryunit__item controls-entryunit__item--flag">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -1324,7 +1384,8 @@
 </menu>
 </footer>
 </article>
-                                <!-- //entryunit--rating-state-down -->
+                                    <!-- //entryunit--rating-state-down -->
+                                </div>
                             </div>
                             <div class="module__item module__components">
                                 <ul><li>position</li><li>author--user</li><li>date</li><li>headercomments</li><li>title</li><li>text</li><li>controls</li></ul>
@@ -1333,22 +1394,23 @@
                     </div>
                     <!-- Module: entryunit--mustread -->
                     <div class="module">
-                        <h2 class="module__title">entryunit--mustread</h2>
+                        <h2 class="module__title"><span class="module__title-inner">entryunit--mustread</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
-                                <!-- entryunit--mustread -->
-                                <article class="entryunit entryunit--mustread">
+                                <div class="module__item module__content-inner">
+                                    <!-- entryunit--mustread -->
+                                    <article class="entryunit entryunit--mustread">
     
 <div class="entryunit__meta meta-entryunit">
     <ul class="meta-entryunit__items">
         <li class="meta-entryunit__item"></li>
-        <li class="meta-entryunit__item"><span class="entryunit-label entryunit-label--selfpromo">
+        <li class="meta-entryunit__item"><span class="label-entryunit label-entryunit--selfpromo">
     <a href="/shop/selfpromo.bml?country=cyr" target="_blank">промо</a>
 </span>
-<span class="entryunit-label entryunit-label--commpromo">
+<span class="label-entryunit label-entryunit--commpromo">
     <a href="/shop/commpromo.bml?country=cyr" target="_blank">промо</a>
 </span>
-<span class="entryunit-label entryunit-label--mustread">Рекомендуемое</span>
+<span class="label-entryunit label-entryunit--mustread">Рекомендуемое</span>
 </li>
         <li class="meta-entryunit__item"><span class="entryunit__author">
     <span class="ljuser i-ljuser i-ljuser-type-P">
@@ -1380,7 +1442,8 @@
 </h3>
 
 </header>
-    <div class="entryunit-body">
+    <div class="entryunit__body">
+    
     
     
     
@@ -1399,7 +1462,8 @@
     
 </footer>
 </article>
-                                <!-- //entryunit--mustread -->
+                                    <!-- //entryunit--mustread -->
+                                </div>
                             </div>
                             <div class="module__item module__components">
                                 <ul><li>labels</li><li>author--user</li><li>headerreply</li><li>title</li><li>text</li></ul>
@@ -1408,11 +1472,12 @@
                     </div>
                     <!-- Module: entryunit--magazine -->
                     <div class="module">
-                        <h2 class="module__title">entryunit--magazine</h2>
+                        <h2 class="module__title"><span class="module__title-inner">entryunit--magazine</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
-                                <!-- entryunit--magazine -->
-                                <article class="entryunit ">
+                                <div class="module__item module__content-inner">
+                                    <!-- entryunit--magazine -->
+                                    <article class="entryunit ">
     
 <div class="entryunit__meta meta-entryunit">
     <ul class="meta-entryunit__items">
@@ -1446,7 +1511,8 @@
 </h3>
 
 </header>
-    <div class="entryunit-body">
+    <div class="entryunit__body">
+    
     <figure class="entryunit__panorama panorama-entryunit">
     <a class="panorama-entryunit__pic" href="http://www.livejournal.com/magazine/300684.html" style="background-image: url(http://ic.pics.livejournal.com/lj_magazine/70300696/498036/498036_original.jpg);"></a>
 </figure>
@@ -1467,7 +1533,8 @@
     
 </footer>
 </article>
-                                <!-- //entryunit--magazine -->
+                                    <!-- //entryunit--magazine -->
+                                </div>
                             </div>
                             <div class="module__item module__components">
                                 <ul><li>author--user</li><li>date</li><li>headercomments</li><li>title</li><li>img--panorama</li><li>text</li></ul>
@@ -1476,11 +1543,12 @@
                     </div>
                     <!-- Module: entryunit--magazine-thumb -->
                     <div class="module">
-                        <h2 class="module__title">entryunit--magazine-thumb</h2>
+                        <h2 class="module__title"><span class="module__title-inner">entryunit--magazine-thumb</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
-                                <!-- entryunit--magazine-thumb -->
-                                <article class="entryunit ">
+                                <div class="module__item module__content-inner">
+                                    <!-- entryunit--magazine-thumb -->
+                                    <article class="entryunit ">
     
 <div class="entryunit__meta meta-entryunit">
     <ul class="meta-entryunit__items">
@@ -1514,7 +1582,8 @@
 </h3>
 
 </header>
-    <div class="entryunit-body">
+    <div class="entryunit__body">
+    
     
     <figure class="entryunit__thumbnail thumbnail-entryunit">
     <a href="http://filibuster60.livejournal.com/1301633.html" target="_blank">
@@ -1537,24 +1606,99 @@
     
 </footer>
 </article>
-                                <!-- //entryunit--magazine-thumb -->
+                                    <!-- //entryunit--magazine-thumb -->
+                                </div>
                             </div>
                             <div class="module__item module__components">
                                 <ul><li>author--user</li><li>date</li><li>headercomments</li><li>title</li><li>img--thumbnail</li><li>text</li></ul>
                             </div>
                         </div>
                     </div>
-                    <!-- Module: entryunit--browsepost -->
+                    <!-- Module: entryunit--video -->
                     <div class="module">
-                        <h2 class="module__title">entryunit--browsepost</h2>
+                        <h2 class="module__title"><span class="module__title-inner">entryunit--video</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
-                                <!-- entryunit--browsepost -->
-                                <article class="entryunit ">
+                                <div class="module__item module__content-inner">
+                                    <!-- entryunit--video -->
+                                    <article class="entryunit ">
     
 <div class="entryunit__meta meta-entryunit">
     <ul class="meta-entryunit__items">
-        <li class="meta-entryunit__item"><span class="entryunit-position"> <span class="entryunit-position-inner"> <span class="entryunit-position-number">2.</span><span class=" entryunit-icon entryunit-updown " title="Эта запись изменила свою позицию в рейтинге на 3 места"></span></span> </span></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><span class="entryunit__author">
+    <span class="ljuser i-ljuser i-ljuser-type-P">
+        <a class="i-ljuser-profile" href="http://yokcel.lj.ru/profile">
+            <img class="i-ljuser-userhead ContextualPopup ContextualPopup" src="http://www.livejournal.com/img/userinfo.gif">
+        </a><a class="i-ljuser-username" href="http://yokcel.lj.ru/"><b>user</b></a>
+    </span>
+</span></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><time datetime="2014-08-25 22:00:00" pubdate="" class="entryunit__date">август 25, 22:00</time></li>
+        <li class="meta-entryunit__item"></li>
+        <li class="meta-entryunit__item"><span class="entryunit__comments comments-entryunit">
+    <a href="#comments" target="_blank" class="comments-entryunit__link">
+
+        <svg class="svgicon flaticon flaticon--comment-bold"  style="pointer-events: none; visibility: hidden;"><use xlink:href="#flaticon--comment-bold"></svg>
+
+        <span class="comments-entryunit__text">1234</span>
+    </a>
+</span></li>
+        <li class="meta-entryunit__item"></li>
+    </ul>
+</div>
+    <header class="entryunit__head">
+<h3 class="entryunit__title">
+    <a href="http://www.livejournal.com/magazine/299255.html">Разнокомпонентный интеграл от функции комплексной переменной: методология и особенности</a>
+</h3>
+
+</header>
+    <div class="entryunit__body">
+    <div class="entryunit__video video-entryunit">
+    <iframe data-link="http://youtube.com/watch?v=CQCCvGtSHbw" frameborder="0" height="315" src="http://www.youtube.com/embed/CQCCvGtSHbw?wmode=opaque" width="560"></iframe>
+</div>
+    
+    
+    
+    
+    <div class="entryunit__text">
+    Бесконечно малая величина, в том числе, стремительно транслирует действительный контрапункт контрастных фактур, что известно даже школьникам. Интеграл по бесконечной области, как следует из вышесказанного, монотонно изменяет шоу-бизнес. Неравенство Бернулли mezzo forte раскручивает разнокомпонентный громкостнoй прогрессийный период.
+</div>
+</div>
+    <div class="entryunit__meta">
+    
+    
+</div>
+    <footer class="entryunit__footer">
+    
+    
+    
+</footer>
+</article>
+                                    <!-- //entryunit--video -->
+                                </div>
+                            </div>
+                            <div class="module__item module__components">
+                                <ul><li>author--user</li><li>date</li><li>headercomments</li><li>title</li><li>img--video</li><li>text</li></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Module: entryunit--browsepost -->
+                    <div class="module">
+                        <h2 class="module__title"><span class="module__title-inner">entryunit--browsepost</span></h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <div class="module__item module__content-inner">
+                                    <!-- entryunit--browsepost -->
+                                    <article class="entryunit ">
+    
+<div class="entryunit__meta meta-entryunit">
+    <ul class="meta-entryunit__items">
+        <li class="meta-entryunit__item"><span class="entryunit__position position-entryunit">
+    <span class="position-entryunit__number" title="Эта запись изменила свою позицию в рейтинге на 3 места">2.</span>
+</span></li>
         <li class="meta-entryunit__item"></li>
         <li class="meta-entryunit__item"></li>
         <li class="meta-entryunit__item"></li>
@@ -1594,7 +1738,8 @@
 </h3>
 
 </header>
-    <div class="entryunit-body">
+    <div class="entryunit__body">
+    
     
     
     
@@ -1667,7 +1812,8 @@
     
 </footer>
 </article>
-                                <!-- //entryunit--browsepost -->
+                                    <!-- //entryunit--browsepost -->
+                                </div>
                             </div>
                             <div class="module__item module__components">
                                 <ul><li>position</li><li>author--tocomm</li><li>date</li><li>headerreply</li><li>title</li><li>text</li><li>share</li></ul>
@@ -1676,11 +1822,12 @@
                     </div>
                     <!-- Module: entryunit--browsecommunity -->
                     <div class="module">
-                        <h2 class="module__title">entryunit--browsecommunity</h2>
+                        <h2 class="module__title"><span class="module__title-inner">entryunit--browsecommunity</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
-                                <!-- entryunit--browsecommunity -->
-                                <article class="entryunit ">
+                                <div class="module__item module__content-inner">
+                                    <!-- entryunit--browsecommunity -->
+                                    <article class="entryunit ">
     
 <div class="entryunit__meta meta-entryunit">
     <ul class="meta-entryunit__items">
@@ -1705,7 +1852,8 @@
 
 
 </header>
-    <div class="entryunit-body">
+    <div class="entryunit__body">
+    
     
     
     <figure class="entryunit__thumbnail thumbnail-entryunit">
@@ -1733,7 +1881,8 @@
     
 </footer>
 </article>
-                                <!-- //entryunit--browsecommunity -->
+                                    <!-- //entryunit--browsecommunity -->
+                                </div>
                             </div>
                             <div class="module__item module__components">
                                 <ul><li>author--comm</li><li>stats</li><li>img--upic</li><li>text--short</li><li>actions--joinwatch</li></ul>
@@ -1742,11 +1891,12 @@
                     </div>
                     <!-- Module: entryunit--feed -->
                     <div class="module">
-                        <h2 class="module__title">entryunit--feed</h2>
+                        <h2 class="module__title"><span class="module__title-inner">entryunit--feed</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
-                                <!-- entryunit--feed -->
-                                <article class="entryunit test">
+                                <div class="module__item module__content-inner">
+                                    <!-- entryunit--feed -->
+                                    <article class="entryunit entryunit--feed">
     <div class="entryunit__userpic"><img src='assets/img/userpic.png'/></div>
 <div class="entryunit__meta meta-entryunit">
     <ul class="meta-entryunit__items">
@@ -1773,7 +1923,8 @@
     <ul class='j-e-types '><li class='j-e-types-item j-e-type-sticky' title='Верхняя запись'><svg class='svgicon flaticon flaticon--security-friends'  style='pointer-events: none; visibility: hidden;'><use xlink:href='#flaticon--security-friends'></svg>Верхняя запись</li></ul><a href="http://www.livejournal.com/magazine/299255.html">Разнокомпонентный интеграл от функции комплексной переменной: методология и особенности</a>
 </h3>
 </header>
-    <div class="entryunit-body">
+    <div class="entryunit__body">
+    
     
     
     
@@ -1837,7 +1988,7 @@
     
     <menu class="entryunit__controls controls-entryunit">
     <ul class="controls-entryunit__items">
-        <li class="controls-entryunit__item controls-entryunit__item-check">
+        <li class="controls-entryunit__item controls-entryunit__item--check">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -1847,7 +1998,7 @@
                 <span class="controls-entryunit__tooltip">Отметить как прочитанное</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-hide">
+        <li class="controls-entryunit__item controls-entryunit__item--hide">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -1857,7 +2008,7 @@
                 <span class="controls-entryunit__tooltip">Скрыть автора из рейтинга</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-edit">
+        <li class="controls-entryunit__item controls-entryunit__item--edit">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -1867,7 +2018,7 @@
                 <span class="controls-entryunit__tooltip">Редактировать</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-delete-repost">
+        <li class="controls-entryunit__item controls-entryunit__item--delete-repost">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -1877,7 +2028,7 @@
                 <span class="controls-entryunit__tooltip">Удалить репост</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-favorite">
+        <li class="controls-entryunit__item controls-entryunit__item--favorite">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -1887,7 +2038,7 @@
                 <span class="controls-entryunit__tooltip">Добавить в избранное</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-share">
+        <li class="controls-entryunit__item controls-entryunit__item--share">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -1897,7 +2048,7 @@
                 <span class="controls-entryunit__tooltip">Поделиться</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-track">
+        <li class="controls-entryunit__item controls-entryunit__item--track">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -1907,7 +2058,7 @@
                 <span class="controls-entryunit__tooltip">Отслеживать</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-flag">
+        <li class="controls-entryunit__item controls-entryunit__item--flag">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -1921,17 +2072,18 @@
 </menu>
 </footer>
 </article>
-                                <!-- //entryunit--feed -->
+                                    <!-- //entryunit--feed -->
+                                </div>
                             </div>
                             <div class="module__item module__components">
-                                <ul><li>userpic</li><li>author--user</li><li>date</li><li>title--sec</li><li>text</li><li>tags</li><li>actions</li><li>controls</li></ul>
+                                <ul><li>author--userpic</li><li>author--user</li><li>date</li><li>title--sec</li><li>text</li><li>tags</li><li>actions</li><li>controls</li></ul>
                             </div>
                         </div>
                     </div>
             </div>
             <div class="demoitem demoitem--elements">
                     <div class="module">
-                        <h2 class="module__title">actions</h2>
+                        <h2 class="module__title"><span class="module__title-inner">actions</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
                                 <ul class="entryunit__actions actions-entryunit">
@@ -1956,7 +2108,7 @@
                         </div>
                     </div>
                     <div class="module">
-                        <h2 class="module__title">actions--joinwatch</h2>
+                        <h2 class="module__title"><span class="module__title-inner">actions--joinwatch</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
                                 <ul class="entryunit__actions actions-entryunit">
@@ -1971,7 +2123,7 @@
                         </div>
                     </div>
                     <div class="module">
-                        <h2 class="module__title">author--comm</h2>
+                        <h2 class="module__title"><span class="module__title-inner">author--comm</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
                                 <span class="entryunit__author">
@@ -1985,7 +2137,7 @@
                         </div>
                     </div>
                     <div class="module">
-                        <h2 class="module__title">author--tocomm</h2>
+                        <h2 class="module__title"><span class="module__title-inner">author--tocomm</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
                                 <span class="entryunit__author author-entryunit">
@@ -2007,7 +2159,7 @@
                         </div>
                     </div>
                     <div class="module">
-                        <h2 class="module__title">author--user</h2>
+                        <h2 class="module__title"><span class="module__title-inner">author--user</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
                                 <span class="entryunit__author">
@@ -2021,12 +2173,20 @@
                         </div>
                     </div>
                     <div class="module">
-                        <h2 class="module__title">controls</h2>
+                        <h2 class="module__title"><span class="module__title-inner">author--userpic</span></h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <div class="entryunit__userpic"><img src='assets/img/userpic.png'/></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <h2 class="module__title"><span class="module__title-inner">controls</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
                                 <menu class="entryunit__controls controls-entryunit">
     <ul class="controls-entryunit__items">
-        <li class="controls-entryunit__item controls-entryunit__item-check">
+        <li class="controls-entryunit__item controls-entryunit__item--check">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -2036,7 +2196,7 @@
                 <span class="controls-entryunit__tooltip">Отметить как прочитанное</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-hide">
+        <li class="controls-entryunit__item controls-entryunit__item--hide">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -2046,7 +2206,7 @@
                 <span class="controls-entryunit__tooltip">Скрыть автора из рейтинга</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-edit">
+        <li class="controls-entryunit__item controls-entryunit__item--edit">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -2056,7 +2216,7 @@
                 <span class="controls-entryunit__tooltip">Редактировать</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-delete-repost">
+        <li class="controls-entryunit__item controls-entryunit__item--delete-repost">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -2066,7 +2226,7 @@
                 <span class="controls-entryunit__tooltip">Удалить репост</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-favorite">
+        <li class="controls-entryunit__item controls-entryunit__item--favorite">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -2076,7 +2236,7 @@
                 <span class="controls-entryunit__tooltip">Добавить в избранное</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-share">
+        <li class="controls-entryunit__item controls-entryunit__item--share">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -2086,7 +2246,7 @@
                 <span class="controls-entryunit__tooltip">Поделиться</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-track">
+        <li class="controls-entryunit__item controls-entryunit__item--track">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -2096,7 +2256,7 @@
                 <span class="controls-entryunit__tooltip">Отслеживать</span>
             </a>
         </li>
-        <li class="controls-entryunit__item controls-entryunit__item-flag">
+        <li class="controls-entryunit__item controls-entryunit__item--flag">
             <a href="#" class="controls-entryunit__link">
 
                 <span class="controls-entryunit__icon">
@@ -2112,7 +2272,7 @@
                         </div>
                     </div>
                     <div class="module">
-                        <h2 class="module__title">date</h2>
+                        <h2 class="module__title"><span class="module__title-inner">date</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
                                 <time datetime="2014-08-25 22:00:00" pubdate="" class="entryunit__date">август 25, 22:00</time>
@@ -2120,7 +2280,7 @@
                         </div>
                     </div>
                     <div class="module">
-                        <h2 class="module__title">headercomments</h2>
+                        <h2 class="module__title"><span class="module__title-inner">headercomments</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
                                 <span class="entryunit__comments comments-entryunit">
@@ -2135,7 +2295,7 @@
                         </div>
                     </div>
                     <div class="module">
-                        <h2 class="module__title">headerreply</h2>
+                        <h2 class="module__title"><span class="module__title-inner">headerreply</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
                                 <span class="entryunit__comments comments-entryunit">
@@ -2152,7 +2312,7 @@
                         </div>
                     </div>
                     <div class="module">
-                        <h2 class="module__title">img--panorama</h2>
+                        <h2 class="module__title"><span class="module__title-inner">img--panorama</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
                                 <figure class="entryunit__panorama panorama-entryunit">
@@ -2162,7 +2322,7 @@
                         </div>
                     </div>
                     <div class="module">
-                        <h2 class="module__title">img--thumbnail</h2>
+                        <h2 class="module__title"><span class="module__title-inner">img--thumbnail</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
                                 <figure class="entryunit__thumbnail thumbnail-entryunit">
@@ -2174,7 +2334,7 @@
                         </div>
                     </div>
                     <div class="module">
-                        <h2 class="module__title">img--upic</h2>
+                        <h2 class="module__title"><span class="module__title-inner">img--upic</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
                                 <figure class="entryunit__thumbnail thumbnail-entryunit">
@@ -2184,30 +2344,42 @@
                         </div>
                     </div>
                     <div class="module">
-                        <h2 class="module__title">labels</h2>
+                        <h2 class="module__title"><span class="module__title-inner">img--video</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
-                                <span class="entryunit-label entryunit-label--selfpromo">
+                                <div class="entryunit__video video-entryunit">
+    <iframe data-link="http://youtube.com/watch?v=CQCCvGtSHbw" frameborder="0" height="315" src="http://www.youtube.com/embed/CQCCvGtSHbw?wmode=opaque" width="560"></iframe>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <h2 class="module__title"><span class="module__title-inner">labels</span></h2>
+                        <div class="module__wrapper">
+                            <div class="module__item module__content">
+                                <span class="label-entryunit label-entryunit--selfpromo">
     <a href="/shop/selfpromo.bml?country=cyr" target="_blank">промо</a>
 </span>
-<span class="entryunit-label entryunit-label--commpromo">
+<span class="label-entryunit label-entryunit--commpromo">
     <a href="/shop/commpromo.bml?country=cyr" target="_blank">промо</a>
 </span>
-<span class="entryunit-label entryunit-label--mustread">Рекомендуемое</span>
+<span class="label-entryunit label-entryunit--mustread">Рекомендуемое</span>
 
                             </div>
                         </div>
                     </div>
                     <div class="module">
-                        <h2 class="module__title">position</h2>
+                        <h2 class="module__title"><span class="module__title-inner">position</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
-                                <span class="entryunit-position"> <span class="entryunit-position-inner"> <span class="entryunit-position-number">2.</span><span class=" entryunit-icon entryunit-updown " title="Эта запись изменила свою позицию в рейтинге на 3 места"></span></span> </span>
+                                <span class="entryunit__position position-entryunit">
+    <span class="position-entryunit__number" title="Эта запись изменила свою позицию в рейтинге на 3 места">2.</span>
+</span>
                             </div>
                         </div>
                     </div>
                     <div class="module">
-                        <h2 class="module__title">share</h2>
+                        <h2 class="module__title"><span class="module__title-inner">share</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
                                 <div class="b-entryunit-sidelikes">
@@ -2269,7 +2441,7 @@
                         </div>
                     </div>
                     <div class="module">
-                        <h2 class="module__title">stats</h2>
+                        <h2 class="module__title"><span class="module__title-inner">stats</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
                                 <span class="entryunit-stat"><span class="entryunit-stat-item entryunit-stat-friends" title="Friends count">18221</span><span class="entryunit-stat-item entryunit-stat-friendof" title="Friend of count">8012</span><span class="entryunit-stat-item entryunit-stat-posts" title="Posts count">32767</span></span>
@@ -2277,7 +2449,7 @@
                         </div>
                     </div>
                     <div class="module">
-                        <h2 class="module__title">tags</h2>
+                        <h2 class="module__title"><span class="module__title-inner">tags</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
                                 <ul class="entryunit__tagscurrents">
@@ -2314,7 +2486,7 @@
                         </div>
                     </div>
                     <div class="module">
-                        <h2 class="module__title">text</h2>
+                        <h2 class="module__title"><span class="module__title-inner">text</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
                                 <div class="entryunit__text">
@@ -2324,7 +2496,7 @@
                         </div>
                     </div>
                     <div class="module">
-                        <h2 class="module__title">text--short</h2>
+                        <h2 class="module__title"><span class="module__title-inner">text--short</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
                                 <div class="entryunit__text">
@@ -2334,7 +2506,7 @@
                         </div>
                     </div>
                     <div class="module">
-                        <h2 class="module__title">title</h2>
+                        <h2 class="module__title"><span class="module__title-inner">title</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
                                 <h3 class="entryunit__title">
@@ -2344,20 +2516,12 @@
                         </div>
                     </div>
                     <div class="module">
-                        <h2 class="module__title">title--sec</h2>
+                        <h2 class="module__title"><span class="module__title-inner">title--sec</span></h2>
                         <div class="module__wrapper">
                             <div class="module__item module__content">
                                 <h3 class="entryunit__title">
     <ul class='j-e-types '><li class='j-e-types-item j-e-type-sticky' title='Верхняя запись'><svg class='svgicon flaticon flaticon--security-friends'  style='pointer-events: none; visibility: hidden;'><use xlink:href='#flaticon--security-friends'></svg>Верхняя запись</li></ul><a href="http://www.livejournal.com/magazine/299255.html">Разнокомпонентный интеграл от функции комплексной переменной: методология и особенности</a>
 </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="module">
-                        <h2 class="module__title">userpic</h2>
-                        <div class="module__wrapper">
-                            <div class="module__item module__content">
-                                <div class="entryunit__userpic"><img src='assets/img/userpic.png'/></div>
                             </div>
                         </div>
                     </div>

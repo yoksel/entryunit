@@ -1,31 +1,12 @@
 /* restored entry (displayed entry from hidden user or readed entry) */
 .entryunit-state-restored {
     }
-    .entryunit-state-restored .entryunit-author,
-    .entryunit-state-restored .entryunit-body,
-    .entryunit-state-restored .entryunit-comments,
-    .entryunit-state-restored .entryunit-date,
-    .entryunit-state-restored .entryunit-head,
-    .entryunit-state-restored .entryunit-label {
+    .entryunit-state-restored .entryunit__author,
+    .entryunit-state-restored .entryunit__body,
+    .entryunit-state-restored .entryunit__comments,
+    .entryunit-state-restored .entryunit__date,
+    .entryunit-state-restored .entryunit__head,
+    .entryunit-state-restored .entryunit__label {
         -ms-filter: "alpha(Opacity=20)";
         opacity: .2
-        }
-    .entryunit-state-restored .entryunit-hide,
-    .entryunit-state-restored .entryunit-read {
-        visibility: visible
-        }
-     .entryunits .entryunit-state-restored:before {
-        display: block
-        }
-    .entryunit-state-restored-author .entryunit-hide-hide {
-        display: none
-        }
-    .entryunit-state-restored-author .entryunit-hide-show {
-        display: inline
-        }
-    .entryunit-state-restored-entry .entryunit-read-read {
-        display: none
-        }
-    .entryunit-state-restored-entry .entryunit-read-unread {
-        display: inline
         }

@@ -103,6 +103,15 @@
         "text"
     ],
 
+    "video": [
+        "author--user",
+        "date",
+        "headercomments",
+        "title",
+        "img--video",
+        "text"
+    ],
+
     "browsepost": [
         "position",
         "author--tocomm",
@@ -122,9 +131,9 @@
     ],
 
     "feed": {
-        "aditional-classes": "test",
+        "aditional-classes": "entryunit--feed",
         "elements": [
-            "userpic",
+            "author--userpic",
             "author--user",
             "date",
             "title--sec",

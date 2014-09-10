@@ -1,5 +1,5 @@
 /* label */
-.entryunit-label {
+.label-entryunit {
     display: inline-block;
     margin: 0 0.5rem 0.3rem 0;
     padding: 4px 10px;
@@ -10,45 +10,45 @@
     font: 11px/1 "ProximaNovaSemibold",Tahoma,Arial,sans-serif;
     color: #FFF;
     }
-   .entryunit-label A {
+   .label-entryunit A {
         display: inline-block;
         margin: -2px -10px;
         padding: 2px 10px;
         }
-    .entryunit-label A:link,
-    .entryunit-label A:visited,
-    .entryunit-label A:hover,
-    .entryunit-label A:active {
+    .label-entryunit A:link,
+    .label-entryunit A:visited,
+    .label-entryunit A:hover,
+    .label-entryunit A:active {
         text-decoration: none;
         color: #FFF;
         }
 
 /* selfpromo */
-.entryunit-label--selfpromo {
+.label-entryunit--selfpromo {
     background: #FD8F40;
     }
-    .entryunit-label--selfpromo:hover {
+    .label-entryunit--selfpromo:hover {
         background: #FF8126;
         }
 /* mustread */
-.entryunit-label--mustread,
-.entryunit-label--mustread:hover {
+.label-entryunit--mustread,
+.label-entryunit--mustread:hover {
     background: #39BF71;
     }
 /* commpromo */
-.entryunit-label--commpromo {
+.label-entryunit--commpromo {
     background: #40AEFD;
     }
-    .entryunit-label--commpromo:hover {
+    .label-entryunit--commpromo:hover {
         background: #26A4FF;
         }
 
 /* labels for selfpromo, commpromo, mustread */
-.entryunit-label {
+.label-entryunit {
     display: none;
     }
-    .entryunit--selfpromo .entryunit-label--selfpromo,
-    .entryunit--commpromo .entryunit-label--commpromo,
-    .entryunit--mustread .entryunit-label--mustread {
+    .entryunit--selfpromo .label-entryunit--selfpromo,
+    .entryunit--commpromo .label-entryunit--commpromo,
+    .entryunit--mustread .label-entryunit--mustread {
         display: inline-block;
         }

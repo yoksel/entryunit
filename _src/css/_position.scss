@@ -1,18 +1,18 @@
  /* position */
-.entryunit-position {
+.entryunit__position {
     position: absolute;
     right: 100%;
     display: inline-block;
     margin: 0 1em 0 0;
     padding: 0;
     }
-    .entryunit-state-topthree .entryunit-position-number {
+    .entryunit-state-topthree .position-entryunit__number {
         font-size: 1.2307em;
         font-weight: 700
         }
 
 /* changing the position of an entry */
-.entryunit-position-number:after {
+.position-entryunit__number:after {
     content: "";
     display: block;
     width: 7px;
@@ -21,29 +21,9 @@
     position: absolute;
     right: 4px;
     }
-    .entryunit-state-up .entryunit-position-number:after {
+    .entryunit-state-up .position-entryunit__number:after {
         background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20class%3D%22arrow--top%22%20viewBox%3D%220%200%206%206%22%3E%3Cpath%20d%3D%22M0%2C6%203%2C0%2C%206%2C6%22%20fill%3D%22rgb%28125%2C200%2C60%29%22/%3E%3C/svg%3E);
         }
-    .entryunit-state-down .entryunit-position-number:after {
+    .entryunit-state-down .position-entryunit__number:after {
         background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20class%3D%22arrow--bottom%22%20viewBox%3D%220%200%206%206%22%3E%3Cpath%20d%3D%22M0%2C0%203%2C6%2C%206%2C0%22%20fill%3D%22rgb%28204%2C0%2C0%29%22/%3E%3C/svg%3E);
         }
-
-/* TODO: IE8 version*/
-
-/*
-
-.entryunit-updown {
-    display: none;
-    position: absolute;
-    top: 17px;
-    right: -2px;
-    }
-
-.entryunit-state-up .entryunit-updown {
-    display: block;
-    background-position: 0 -34px
-}
-.entryunit-state-down .entryunit-updown {
-    display: block;
-    background-position: 0 -51px
-}*/
