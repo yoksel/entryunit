@@ -138,7 +138,7 @@
             "date",
             "title--sec",
             "text",
-            "tags",
+            "tagscurrents",
             "actions",
             "controls"
         ]
