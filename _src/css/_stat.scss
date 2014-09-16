@@ -1,32 +1,29 @@
-.entryunit-stat {
-    margin: 0 0 0 1em
-}
-.entryunit-stat-item {
-    position: relative;
-    margin: 0 .7em 0 0;
-    padding: 0 0 0 20px
-}
-.entryunit-stat-item:after {
-    content: " ";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 16px;
-    height: 16px;
-    margin: 0;
-    padding: 0;
-    background-repeat: no-repeat;
-    background-position: 0 0
-}
-.entryunit-stat-friends:after {
-    top: -2px;
-    background-image: url(http://stat.ljdev5.livejournal.ru/img/userinfo_v3.svg?v=1), none
-}
-.entryunit-stat-friendof:after {
-    top: -2px;
-    background-image: url(http://stat.ljdev5.livejournal.ru/img/community_v3.svg?v=1), none
-}
-.entryunit-stat-posts:after {
-    top: -2px;
-    background-image: url(http://stat.ljdev5.livejournal.ru/img/icons/posts-16.svg?v=1), none
-}
+.stat-entryunit {
+    display: inline-block;
+    margin: 0 0 0 1em;
+    }
+    .stat-entryunit__item {
+        position: relative;
+        display: inline-block;
+        margin: 0 1em 0 0;
+        padding: 0;
+        }
+        .stat-entryunit__item:before {
+            content: " ";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            margin: 0 4px 0 0;
+            padding: 0;
+            vertical-align: -3px;
+            background-repeat: no-repeat;
+            background-position: 50% 50%
+            }
+        .stat-entryunit__item--friends:before {
+            top: -2px;
+            background-image: url(http://stat.ljdev5.livejournal.ru/img/userinfo_v3.svg), none
+            }
+        .stat-entryunit__item--posts:before {
+            top: -2px;
+            background-image: url(http://stat.livejournal.com/img/icons/posts-14.svg), none
+            }

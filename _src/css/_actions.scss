@@ -76,13 +76,16 @@ not good enough
     border: 1px solid #DAE3E6;
     white-space: nowrap;
     }
+    .controls-entryunit__tooltip:hover {
+        color: #136480;
+        }
 
     .b-lenta-tiny-size .controls-entryunit__tooltip {
         font-size: 1em
         }
 
     .controls-entryunit__link:hover .controls-entryunit__tooltip {
-        visibility: visible
+        visibility: visible;
         }
 
     /* Tooltip right corner */
