@@ -1,0 +1,17 @@
+.likes-entryunit {
+
+    }
+    .likes-entryunit:after {
+        content: "";
+        display: table;
+        border-collapse: collapse;
+        clear: both;
+        }
+
+    .likes-entryunit__item {
+        float: left;
+        }
+        .likes-entryunit__item--share {
+            margin: 0 12px 0 0;
+            }
+
