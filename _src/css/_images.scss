@@ -1,3 +1,4 @@
+/* images */
 .thumbnail-entryunit {
     float: left;
     margin: 3px 1em .7em 0;
@@ -8,12 +9,9 @@
         width: 100px;
         border: 0
         }
-
-
 .panorama-entryunit {
     margin: 0 0 1em
     }
-
     .panorama-entryunit__pic {
         display: block;
         width: 100%;
@@ -26,11 +24,9 @@
         background-repeat: no-repeat;
         background-size: cover
         }
-
 .video-entryunit {
     margin: 0
     }
-
     .video-entryunit EMBED,
     .video-entryunit IFRAME,
     .video-entryunit OBJECT {
@@ -39,14 +35,10 @@
         max-width: 900px
         }
 
-
 /* In jornal or feed */
 
 .entryunit__text {
-        margin: 0;
-        line-height: 1.4
         }
-
     .entryunit__text IMG {
         max-width: 100%;
         height: auto

@@ -1,6 +1,6 @@
 {
     "self-promo": {
-        "aditional-classes": "entryunit--selfpromo",
+        "aditional-classes": "entryunit--promo entryunit--selfpromo",
         "elements": [
             "labels",
             "author--user",
@@ -12,7 +12,7 @@
     },
 
     "comm-promo": {
-        "aditional-classes": "entryunit--commpromo",
+        "aditional-classes": "entryunit--promo entryunit--commpromo",
         "elements": [
             "labels",
             "author--user",

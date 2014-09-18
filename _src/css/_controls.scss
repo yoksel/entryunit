@@ -1,6 +1,7 @@
 .controls-entryunit {
     display: none;
     position: absolute;
+    clear: both;
     z-index: 5;
     top: 0;
     bottom: 0;
@@ -30,7 +31,7 @@ not good enough
         bottom: 0
         }
 
-/* Air: layout with sidebar on teh left side */
+/* Air: layout with sidebar on the left side */
 .j-p-layout-tw .controls-entryunit {
     border-width: 0 1px
     }
