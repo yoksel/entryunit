@@ -1,3 +1,4 @@
+/* controls */
 .controls-entryunit {
     display: none;
     position: absolute;
@@ -17,14 +18,13 @@
         display: block;
         }
 
-/* Fix icons while scrolling page
-not good enough
+/* Fix icons while scrolling page.
+TODO: CHANGE classes
  */
 .entryunit-scrolling {
     position: fixed;
     top: 0
     }
-
     .entryunit-scrolling-stop {
         position: absolute;
         top: auto;

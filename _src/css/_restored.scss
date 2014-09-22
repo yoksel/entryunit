@@ -1,12 +1,13 @@
 /* restored entry (displayed entry from hidden user or readed entry) */
-.entryunit-state-restored {
+.entryunit--restored {
     }
-    .entryunit-state-restored .entryunit__author,
-    .entryunit-state-restored .entryunit__body,
-    .entryunit-state-restored .entryunit__comments,
-    .entryunit-state-restored .entryunit__date,
-    .entryunit-state-restored .entryunit__head,
-    .entryunit-state-restored .entryunit__label {
+    .entryunit--restored .entryunit__position,
+    .entryunit--restored .entryunit__author,
+    .entryunit--restored .entryunit__body,
+    .entryunit--restored .entryunit__comments,
+    .entryunit--restored .entryunit__date,
+    .entryunit--restored .entryunit__head,
+    .entryunit--restored .entryunit__label {
         -ms-filter: "alpha(Opacity=20)";
         opacity: .2
         }

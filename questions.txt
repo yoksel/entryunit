@@ -4,7 +4,12 @@ TODO:
 
 2. b-entryunit   b-entryunit-state-up    b-entryunit-state-topthree
 
-3. Responsive (controls)
+3. ie8 for up and down arrows !!
 
-4. ie8 for up and down arrows
+4. icons fallbaks
+
+5.  Change classes
+    .entryunit-scrolling
+    .entryunit-scrolling-stop
+
 

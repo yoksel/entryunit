@@ -1,5 +1,5 @@
 {
-    "self-promo": {
+    "selfpromo": {
         "aditional-classes": "entryunit--promo entryunit--selfpromo",
         "elements": [
             "labels",
@@ -11,7 +11,7 @@
         ]
     },
 
-    "comm-promo": {
+    "commpromo": {
         "aditional-classes": "entryunit--promo entryunit--commpromo",
         "elements": [
             "labels",
@@ -24,6 +24,7 @@
     },
 
     "rating": {
+        "aditional-classes": "entryunit--rating",
         "elements": [
             "position",
             "author--user",
@@ -35,8 +36,8 @@
         ]
     },
 
-    "rating-restored": {
-        "aditional-classes": "entryunit-state-restored",
+    "restored": {
+        "aditional-classes": "entryunit--restored",
         "elements": [
             "position",
             "author--user",
@@ -49,7 +50,7 @@
     },
 
     "rating-state-up": {
-        "aditional-classes": "entryunit-state-up",
+        "aditional-classes": "entryunit--state-up",
         "elements": [
             "position",
             "author--user",
@@ -62,7 +63,7 @@
     },
 
     "rating-state-down": {
-        "aditional-classes": "entryunit-state-down",
+        "aditional-classes": "entryunit--state-down",
         "elements": [
             "position",
             "author--user",

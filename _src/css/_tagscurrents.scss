@@ -1,22 +1,23 @@
-.entryunit__tagscurrents {
+/* tagscurrents */
+.tagscurrents-entryunit {
     margin-top: 15px;
     font-size: .875em;
     }
-    .tagscurrents__list {
+    .tagscurrents-entryunit__list {
         margin: 0;
         }
-        .tagscurrents__item {
+        .tagscurrents-entryunit__item {
             margin: 0 0 7px;
             padding: 0;
             list-style: none;
             color: #333;
             }
-        .tagscurrents__label,
-        .tagscurrents__content {
+        .tagscurrents-entryunit__label,
+        .tagscurrents-entryunit__content {
             display: inline;
             margin: 0;
             }
-        .tagscurrents__label {
+        .tagscurrents-entryunit__label {
             text-transform: uppercase;
             letter-spacing: .05em;
             font-family: ProximaNovaSemibold,Tahoma, Arial, sans-serif;

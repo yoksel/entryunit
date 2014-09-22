@@ -31,8 +31,8 @@ A:active {
     display: inline-block;
     width: 16px;
     height: 16px;
-    visibility: inherit!important;
-    pointer-events: auto!important;
+    visibility: inherit !important;
+    pointer-events: auto !important;
     fill: currentColor;
     }
 
@@ -60,8 +60,6 @@ figure {
 
 @import '_stat';
 
-@import '_promo';
-
 @import '_head';
 
 @import '_userpic';
@@ -72,7 +70,7 @@ figure {
 
 @import '_types';
 
-@import '_flatsocial';
+@import '_socials';
 
 @import '_tagscurrents';
 
