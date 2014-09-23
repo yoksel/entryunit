@@ -19,7 +19,8 @@
         },{
             "id": "favorite",
             "title": "Добавить в избранное",
-            "url": "#"
+            "url": "#",
+            "class": "controls-entryunit__item--pressed"
         },{
             "id": "share",
             "title": "Поделиться",
