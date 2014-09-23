@@ -71,20 +71,6 @@ figure {
         border-bottom: 0
         }
 
-    /* restored entry (displayed entry from hidden user or readed entry) */
-    .entryunit--restored {
-        }
-        .entryunit--restored .entryunit__position,
-        .entryunit--restored .entryunit__author,
-        .entryunit--restored .entryunit__body,
-        .entryunit--restored .entryunit__comments,
-        .entryunit--restored .entryunit__date,
-        .entryunit--restored .entryunit__head,
-        .entryunit--restored .entryunit__label {
-            -ms-filter: "alpha(Opacity=20)";
-            opacity: .2
-            }
-
 /* meta */
 .meta-entryunit {
     margin: 0 0 .3em;
@@ -142,6 +128,40 @@ figure {
 .entryunit__footer {
     clear: both;
     }
+
+/* STATES
+--------------------------- */
+/* Modifiers
+.entryunit--restored
+
+.entryunit--state-topthree
+
+.entryunit--state-up
+.entryunit--state-down
+
+.entryunit--selfpromo
+.entryunit--commpromo
+.entryunit--mustread
+
+.entryunit--scrolling
+.entryunit--scrolling-stop
+
+.entryunit--promo
+*/
+
+/* restored entry (displayed entry from hidden user or readed entry) */
+.entryunit--restored {
+    }
+    .entryunit--restored .entryunit__position,
+    .entryunit--restored .entryunit__author,
+    .entryunit--restored .entryunit__body,
+    .entryunit--restored .entryunit__comments,
+    .entryunit--restored .entryunit__date,
+    .entryunit--restored .entryunit__head,
+    .entryunit--restored .entryunit__label {
+        -ms-filter: "alpha(Opacity=20)";
+        opacity: .2
+        }
 
 /* POSITION
 --------------------------- */

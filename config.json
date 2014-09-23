@@ -74,6 +74,20 @@
             "controls"
         ]
     },
+    "state-topthree": {
+        "aditional-classes": "entryunit--state-topthree",
+        "elements": [
+            "position",
+            "author--user",
+            "date",
+            "headercomments",
+            "title",
+            "text",
+            "controls"
+        ]
+    },
+
+
 
     "mustread": {
         "aditional-classes": "entryunit--mustread",
