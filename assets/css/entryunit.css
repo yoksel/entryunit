@@ -452,7 +452,8 @@ figure {
         display: block;
         position: relative;
         width: 40px;
-        height: 40px
+        height: 40px;
+        color: #7A9199;
         }
     .controls-entryunit__icon {
         position: absolute;
@@ -462,8 +463,16 @@ figure {
         left: 0;
         width: 16px;
         height: 16px;
-        margin: auto
+        margin: auto;
+        color: #7A9199;
         }
+        .controls-entryunit__link:hover .controls-entryunit__icon,
+        .controls-entryunit__item--pressed .controls-entryunit__icon {
+            color: #0086B3;
+            }
+        .controls-entryunit__icon .svgicon {
+            fill: currentColor !important;
+            }
 
 /* Tooltip */
 .controls-entryunit__tooltip {
