@@ -143,6 +143,20 @@
             "actions",
             "controls"
         ]
+    },
+
+    "feed--has-image": {
+        "aditional-classes": "entryunit--feed",
+        "elements": [
+            "author--userpic",
+            "author--user",
+            "date",
+            "title--sec",
+            "text--bigimg",
+            "tagscurrents",
+            "actions",
+            "controls"
+        ]
     }
 
 }

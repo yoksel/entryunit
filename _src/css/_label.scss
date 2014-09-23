@@ -2,29 +2,29 @@
 .labels-entryunit{
     display: inline-block;
     }
-.labels-entryunit__item {
-    display: inline-block;
-    margin: 0 0.5rem 0.3rem 0;
-    padding: 4px 10px;
-    vertical-align: 1px;
-    border-radius: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font: 11px/1 "ProximaNovaSemibold",Tahoma,Arial,sans-serif;
-    color: #FFF;
-    }
-   .labels-entryunit__item A {
+    .labels-entryunit__item {
         display: inline-block;
-        margin: -2px -10px;
-        padding: 2px 10px;
-        }
-    .labels-entryunit__item A:link,
-    .labels-entryunit__item A:visited,
-    .labels-entryunit__item A:hover,
-    .labels-entryunit__item A:active {
-        text-decoration: none;
+        margin: 0 0.5rem 0.3rem 0;
+        padding: 4px 10px;
+        vertical-align: 1px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        font: 11px/1 "ProximaNovaSemibold",Tahoma,Arial,sans-serif;
         color: #FFF;
         }
+       .labels-entryunit__item A {
+            display: inline-block;
+            margin: -2px -10px;
+            padding: 2px 10px;
+            }
+        .labels-entryunit__item A:link,
+        .labels-entryunit__item A:visited,
+        .labels-entryunit__item A:hover,
+        .labels-entryunit__item A:active {
+            text-decoration: none;
+            color: #FFF;
+            }
 
 /* selfpromo */
 .labels-entryunit__item--selfpromo {

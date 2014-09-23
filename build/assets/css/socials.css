@@ -1,0 +1,169 @@
+.lj-like-item {
+    display: inline-block!important;
+    min-height: 20px;
+    vertical-align: middle!important;
+    margin: 6px 12px 0 0!important;
+    }
+    .lj-like-item A,
+    .lj-like-item DIV,
+    .lj-like-item IFRAME,
+    .lj-like-item SPAN {
+        vertical-align: middle !important
+        }
+
+.b-flatsocial {
+    position: relative!important;
+    display: inline-block!important;
+    margin: 0!important;
+    padding: 0!important;
+    border: 0!important;
+    border-radius: 0!important;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .05em;
+    font: 11px/1 Arial,sans-serif!important;
+    background: none!important;
+    box-shadow: none!important;
+    -moz-column-count: auto!important;
+    -moz-column-gap: normal!important;
+    -moz-columns: auto!important;
+    -webkit-column-count: auto!important;
+    -webkit-column-gap: normal!important;
+    -webkit-columns: auto!important;
+    column-count: auto!important;
+    column-gap: normal!important;
+    columns: auto!important
+}
+
+HTML#js BODY .b-flatsocial:active,
+HTML#js BODY .b-flatsocial:hover,
+HTML#js BODY .b-flatsocial:link,
+HTML#js BODY .b-flatsocial:visited {
+    margin: 0!important;
+    padding: 0!important;
+    border: 0!important;
+    border-radius: 0!important;
+    text-decoration: none!important;
+    background: none!important;
+    color: #475559
+}
+
+HTML#js BODY .b-flatsocial:active SPAN,
+HTML#js BODY .b-flatsocial:hover SPAN,
+HTML#js BODY .b-flatsocial:link SPAN,
+HTML#js BODY .b-flatsocial:visited SPAN {
+    text-decoration: none;
+    color: #475559
+}
+
+.b-flatsocial-name {
+    display: inline-block!important;
+    width: 25px!important;
+    height: 25px!important;
+    margin: 0!important;
+    padding: 0!important;
+    vertical-align: top;
+    border: 0;
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+    background-image: url(../../assets/img/flatsocial_25.svg),none;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    cursor: pointer
+}
+
+.b-flatsocial-name,doesnotexist:-o-prefocus {
+    background-image: url(../../assets/img/flatsocial_25.png)
+}
+
+.b-flatsocial-counter {
+    display: inline-block!important;
+    position: relative;
+    height: 14px;
+    margin: 0 0 0 9px;
+    padding: 4px 5px 0;
+    border: 1px solid #CED6D9;
+    border-radius: 3px;
+    background: #FFF;
+    color: #475559
+}
+
+.b-flatsocial-counter:after,.b-flatsocial-counter:before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    width: 0;
+    height: 0;
+    border: solid transparent;
+    pointer-events: none
+}
+
+.b-flatsocial-counter:after {
+    border-color: transparent #FFF transparent transparent;
+    border-width: 5px;
+    margin-top: -5px
+}
+
+.b-flatsocial-counter:before {
+    border-color: transparent #CED6D9 transparent transparent;
+    border-width: 6px;
+    margin-top: -6px
+}
+
+.b-flatsocial-button .b-flatsocial-counter {
+    display: none!important
+}
+
+.b-flatsocial-facebook .b-flatsocial-name {
+    background-position: -1px -28px
+}
+
+.b-flatsocial-twitter .b-flatsocial-name {
+    background-position: -1px -298px
+}
+
+.b-flatsocial-google .b-flatsocial-name {
+    background-position: -1px -55px
+}
+
+.b-flatsocial-vk .b-flatsocial-name {
+    background-position: -1px -325px
+}
+
+.b-flatsocial-ok .b-flatsocial-name {
+    background-position: -1px -163px
+}
+
+.b-flatsocial-tumblr .b-flatsocial-name {
+    background-position: -1px -271px
+}
+
+.b-flatsocial-surfingbird .b-flatsocial-name {
+    background-position: -1px -190px
+}
+
+.b-flatsocial-digg .b-flatsocial-name {
+    background-position: -1px -1px
+}
+
+.b-flatsocial-lj .b-flatsocial-name {
+    background-position: -1px -82px
+}
+
+.b-flatsocial-mail .b-flatsocial-name {
+    background-position: -1px -109px
+}
+
+.b-flatsocial-moimir .b-flatsocial-name {
+    background-position: -1px -136px
+}
+
+.b-flatsocial-stumbleupon .b-flatsocial-name {
+    background-position: -1px -244px
+}
+
+.b-flatsocial-share .b-flatsocial-name {
+    background-position: -1px -217px
+}

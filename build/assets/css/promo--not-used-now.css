@@ -1,0 +1,414 @@
+/* promoblocks */
+.b-ljpromo {
+    margin: 0;
+    padding: 1.5em 60px 1.5em 0;
+    border-bottom: 1px solid #DAE3E6
+    }
+    /* container */
+    .b-ljpromo-container {
+        position: relative;
+        min-height: 1em;
+        margin: 0;
+        padding: 0
+        }
+
+        /* head */
+        .b-ljpromo-head {
+            display: none;
+            position: absolute;
+            margin: 0;
+            padding: 4px 10px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            font: 11px/1 ProximaNovaSemibold, Tahoma, Arial, sans-serif;
+            background: #FD8F4A;
+            color: #FFF
+            }
+        .b-ljpromo-head A:active,
+        .b-ljpromo-head A:hover,
+        .b-ljpromo-head A:link,
+        .b-ljpromo-head A:visited {
+            margin: -4px -10px;
+            padding: 4px 10px;
+            color: #FFF
+            }
+
+        /* wrapper for carousel */
+        .b-ljpromo-wrapper {
+            overflow: hidden;
+            position: relative;
+            height: 99px;
+            margin: 0
+            }
+        /* items */
+        .b-ljpromo-items {
+            margin: 0;
+            padding: 0;
+            list-style: none
+            }
+        .b-ljpromo-items:after {
+            content: "";
+            display: table;
+            border-collapse: collapse;
+            clear: both
+            }
+            /* item */
+            .b-ljpromo-item {
+                margin: 0;
+                padding: 0
+                }
+                .b-ljpromo .entryunit {
+                    height: 99px;
+                    margin: 0;
+                    padding-top: 0
+                    }
+                    .b-ljpromo .entryunit .entryunit-hide,
+                    .b-ljpromo .entryunit .entryunit-label,
+                    .b-ljpromo .entryunit .entryunit-position,
+                    .b-ljpromo .entryunit .entryunit-promoicon,
+                    .b-ljpromo .entryunit .entryunit-read,
+                    .b-ljpromo .entryunit .entryunit-topic,
+                    .b-ljpromo .entryunit .entryunit-updown,
+                    .b-ljpromo .entryunit .entryunit-video {
+                        display: none
+                        }
+                    .b-ljpromo .entryunit .entryunit-meta {
+                        overflow: hidden;
+                        position: relative;
+                        height: 21px
+                        }
+                    .b-ljpromo .entryunit .entryunit-head {
+                        overflow: hidden;
+                        position: relative;
+                        height: 27px
+                        }
+                    .b-ljpromo .entryunit .entryunit-body {
+                        overflow: hidden;
+                        position: relative;
+                        height: 42px
+                        }
+                    .b-ljpromo .entryunit .entryunit-body:before,
+                    .b-ljpromo .entryunit .entryunit-head:before,
+                    .b-ljpromo .entryunit .entryunit-meta:before {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        width: 10%;
+                        height: 21px;
+                        background: linear-gradient(to right,
+                            rgba(255, 255, 255, 0),
+                            rgba(255, 255, 255, 1) 50%);
+                        text-align: right
+                        }
+                    .b-ljpromo .entryunit .entryunit-head:before {
+                        height: 27px
+                        }
+                    .b-ljpromo .entryunit .entryunit-body:before {
+                        height: 21px
+                        }
+            /* more */
+            .b-ljpromo-more {
+                display: none;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                margin: 0;
+                padding: 0
+                }
+            .s-content .b-ljpromo-more {
+                margin: 0
+                }
+                .b-ljpromo-more-inner {
+                    display: table;
+                    width: 100%;
+                    height: 100%;
+                    margin: 0;
+                    padding: 0
+                    }
+                    .b-ljpromo-more-inner-inner {
+                        display: table-cell;
+                        margin: 0;
+                        padding: 0;
+                        vertical-align: middle;
+                        text-align: center
+                        }
+
+        /* emptiness */
+        .b-ljpromo-emptiness {
+            display: none;
+            margin: 0;
+            padding: 1.7em 0 0
+            }
+            .b-ljpromo-emptiness H3 {
+                margin: 0 0 .3rem;
+                font: 1.733em/1 ProximaNovaLight, Helvetica, Arial, sans-serif
+                }
+            .b-ljpromo-emptiness P {
+                margin: 0;
+                font-size: 1em
+                }
+
+        /* nav */
+        .b-ljpromo-nav {
+            position: absolute;
+            right: -30px;
+            width: 16px;
+            height: 20px;
+            display: none
+            }
+        /* hide without js */
+        #js .b-ljpromo-nav {
+            display: block
+            }
+        .b-ljpromo-nav-prev {
+            top: 40px
+            }
+            .b-ljpromo-nav-next {
+                top: 0
+                }
+            .b-ljpromo-nav .entryunit-icon {
+                display: block;
+                top: 0;
+                left: 0
+                }
+
+    /* promo stat */
+    .b-ljpromo-stat {
+        margin: .3em 0 0;
+        padding: 0;
+        font-size: 14px;
+        font-size: .875rem;
+        letter-spacing: normal;
+        color: #7A9199
+        }
+
+/* selfpromo */
+.b-ljpromo-selfpromo .b-ljpromo-head {
+    background: #FD8F40
+    }
+    .b-ljpromo-selfpromo .b-ljpromo-head:hover {
+        background: #FF8126
+        }
+    .b-ljpromo-selfpromo .entryunit .entryunit-label-selfpromo {
+        display: inline-block
+        }
+
+/* calendar promo */
+.b-ljpromo-commpromo .b-ljpromo-head {
+    background: #40AEFD
+    }
+    .b-ljpromo-commpromo .b-ljpromo-head:hover {
+        background: #26A4FF
+        }
+    .b-ljpromo-commpromo .entryunit .entryunit-label-commpromo {
+        display: inline-block
+        }
+
+/* dummy preloader */
+.b-ljpromo-dummy {
+    display: none;
+    margin: 0;
+    background: url(http://stat.ljdev5.livejournal.ru/img/preloader/preloader-disc-blue-white-16.gif?v=39502) -900px 0 no-repeat
+    }
+    .b-ljpromo-dummy-meta {
+        margin: 0 0 1rem;
+        color: #859DA6
+        }
+        .b-ljpromo-dummy-promo {
+            display: inline-block;
+            margin: 0 1rem 0 0;
+            padding: 4px 10px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            font: 11px/1 ProximaNovaSemibold, Tahoma, Arial, sans-serif;
+            background: #FD8F40;
+            color: #FFF
+            }
+        .b-ljpromo-dummy-promo:hover {
+            background: #FF8126
+            }
+        .b-mainpage .b-ljpromo-dummy-promo:active,
+        .b-mainpage .b-ljpromo-dummy-promo:hover,
+        .b-mainpage .b-ljpromo-dummy-promo:link,
+        .b-mainpage .b-ljpromo-dummy-promo:visited {
+            text-decoration: none;
+            color: #FFF!important
+            }
+    .b-ljpromo-dummy-head {
+        margin: 0 0 .5rem
+        }
+    .b-ljpromo-dummy-body {
+        margin: 0
+        }
+        .b-ljpromo-dummy-block {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            background: #F8F8F8;
+            -webkit-animation: loading 1s infinite;
+            -moz-animation: loading 1s infinite;
+            -o-animation: loading 1s infinite;
+            animation: loading 1s infinite
+            }
+        @-webkit-keyframes loading {
+            0% {
+                background: #F8F8F8
+                }
+            50% {
+                background: #FBFBFB
+                }
+            100% {
+                background: #F8F8F8
+                }
+            }
+        @-moz-keyframes loading {
+            0% {
+                background: #F8F8F8
+                }
+            50% {
+                background: #FBFBFB
+                }
+            100% {
+                background: #F8F8F8
+                }
+            }
+        @-o-keyframes loading {
+            0% {
+                background: #F8F8F8
+                }
+            50% {
+                background: #FBFBFB
+                }
+            100% {
+                background: #F8F8F8
+                }
+            }
+        @keyframes loading {
+            0% {
+                background: #F8F8F8
+                }
+            50% {
+                background: #FBFBFB
+                }
+            100% {
+                background: #F8F8F8
+                }
+            }
+        .b-ljpromo-dummy-meta .b-ljpromo-dummy-block {
+            width: 200px;
+            height: 1em;
+            vertical-align: -3px
+            }
+        .b-ljpromo-dummy-head .b-ljpromo-dummy-block {
+            width: 200px;
+            height: 2em
+            }
+        .b-ljpromo-dummy-body .b-ljpromo-dummy-block {
+            display: block;
+            width: 200px;
+            height: 1em;
+            margin-bottom: .4em
+            }
+        .b-ljpromo-dummy-body .b-ljpromo-dummy-block:first-child {
+            width: 500px
+            }
+
+/* hide left arrow (promo on start) */
+#js .b-ljpromo-start .b-ljpromo-nav-prev {
+    display: block
+    }
+#js .b-ljpromo-start .b-ljpromo-nav-next {
+    -ms-filter: "alpha(Opacity=30)";
+    opacity: .3;
+    pointer-events: none
+    }
+
+/* hide right arrow (promo on end) */
+/* hide items, show more link */
+.b-ljpromo-end .b-ljpromo-items {
+    visibility: hidden
+    }
+.b-ljpromo-end .b-ljpromo-more {
+    display: block
+    }
+#js .b-ljpromo-end .b-ljpromo-nav-prev {
+    -ms-filter: "alpha(Opacity=30)";
+    opacity: .3;
+    pointer-events: none
+    }
+    #js .b-ljpromo-end .b-ljpromo-nav-next {
+        display: block
+        }
+/* loading promo */
+.b-ljpromo-loading {
+    }
+    .b-ljpromo-loading .b-ljpromo-wrapper {
+        min-height: 4em
+        }
+    .b-ljpromo-loading .b-ljpromo-nav-prev .entryunit-icon-prev {
+        background: url(http://stat.ljdev5.livejournal.ru/img/preloader/preloader-disc-blue-white-16.gif?v=39502) 50% 50% no-repeat
+        }
+    /* with empty */
+    .b-ljpromo-loading .b-ljpromo-emptiness,
+    .b-ljpromo-loading.b-ljpromo-empty .b-ljpromo-emptiness {
+        display: none
+        }
+    #js .b-ljpromo-loading.b-ljpromo-empty .b-ljpromo-nav,
+    .b-ljpromo-loading.b-ljpromo-empty .b-ljpromo-nav,
+    .b-ljpromo-loading.b-ljpromo-empty .b-ljpromo-wrapper {
+        display: block
+        }
+
+/* preloading promo (switching locale) */
+.b-ljpromo-preloading {
+    }
+    .b-ljpromo-preloading .b-ljpromo-stat {
+        visibility: hidden
+        }
+    .b-ljpromo-preloading .b-ljpromo-dummy {
+        display: block
+        }
+    #js .b-ljpromo-preloading .b-ljpromo-nav,
+    .b-ljpromo-preloading .b-ljpromo-emptiness,
+    .b-ljpromo-preloading .b-ljpromo-nav,
+    .b-ljpromo-preloading.b-ljpromo-empty
+    .b-ljpromo-emptiness {
+        display: none
+        }
+    .b-ljpromo-preloading.b-ljpromo-empty .b-ljpromo-wrapper {
+        display: block
+        }
+
+/* empty promo */
+.b-ljpromo-empty {
+    }
+    .b-ljpromo-empty .b-ljpromo-emptiness,
+    .b-ljpromo-empty .b-ljpromo-head {
+        display: block
+        }
+    #js .b-ljpromo-empty .b-ljpromo-nav,
+    .b-ljpromo-empty .b-ljpromo-nav,
+    .b-ljpromo-empty .b-ljpromo-stat,
+    .b-ljpromo-empty .b-ljpromo-wrapper {
+        display: none
+        }
+
+/* promo in shop */
+.b-shop {
+    }
+    .b-shop .b-ljpromo-selfpromo {
+        margin: 2em 0;
+        padding: 2em 0;
+        border-top: 1px solid #DAE3E6
+        }
+    .b-shop .b-ljpromo-commpromo {
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 0;
+        border-bottom: 0
+        }

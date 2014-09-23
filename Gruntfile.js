@@ -73,6 +73,26 @@ module.exports = function(grunt) {
                     }
                 }
             }
+        },
+
+        copy: {
+          main: {
+            files: [
+              // includes files within path
+              // {expand: true, src: ['path/*'], dest: 'dest/', filter: 'isFile'},
+
+              // includes files within path and its sub-directories
+              {expand: true,
+                src: ['index.html', 'assets/**'],
+                dest: 'build/'},
+
+              // makes all src relative to cwd
+              // {expand: true, cwd: 'path/', src: ['**'], dest: 'dest/'},
+
+              // flattens results to a single level
+              // {expand: true, flatten: true, src: ['path/**'], dest: 'dest/', filter: 'isFile'}
+            ]
+          }
         }
 
     });
@@ -80,6 +100,10 @@ module.exports = function(grunt) {
     grunt.registerTask('default', [
         'connect:server:open',
         'watch'
+    ]);
+
+    grunt.registerTask('build', [
+        'copy'
     ]);
 
 };
