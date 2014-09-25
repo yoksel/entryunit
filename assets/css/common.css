@@ -1,0 +1,49 @@
+/* COMMON
+--------------------------- */
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    }
+BODY {
+    margin: 0;
+    padding: 0;
+    background: #FFF;
+    font: 16px/1.4 ProximaNovaRegular, Helvetica, sans-serif;
+    letter-spacing: .01em;
+    -webkit-font-smoothing: antialiased
+    }
+
+A:link {
+    text-decoration: none;
+    color: #00A3D9;
+    }
+A:visited {
+    text-decoration: none;
+    color: #5CB7D6;
+    }
+A:hover {
+    color: #0086B3;
+    }
+A:active {
+    color: #0086B3;
+    }
+
+.svgicon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    visibility: inherit !important;
+    pointer-events: auto !important;
+    fill: currentColor;
+    }
+
+UL {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+
+figure {
+    margin: 0;
+    }

@@ -159,6 +159,20 @@
         ]
     },
 
+    "feed--repost": {
+        "aditional-classes": "entryunit--feed",
+        "elements": [
+            "author--userpic",
+            "author--repost",
+            "date",
+            "title--sec",
+            "text",
+            "tagscurrents",
+            "actions",
+            "controls"
+        ]
+    },
+
     "feed--has-image": {
         "aditional-classes": "entryunit--feed",
         "elements": [
@@ -167,6 +181,20 @@
             "date",
             "title--sec",
             "text--bigimg",
+            "tagscurrents",
+            "actions",
+            "controls"
+        ]
+    },
+
+    "feed--has-cut": {
+        "aditional-classes": "entryunit--feed",
+        "elements": [
+            "author--userpic",
+            "author--user",
+            "date",
+            "title--sec",
+            "text--cut",
             "tagscurrents",
             "actions",
             "controls"
