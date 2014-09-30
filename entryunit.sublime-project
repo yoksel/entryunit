@@ -2,7 +2,8 @@
 	"folders":
 	[
 		{
-			"path": "/Users/ybuhvalova/Documents/Makets/entryunit"
+			"follow_symlinks": true,
+			"path": "."
 		}
 	]
 }
