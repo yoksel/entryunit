@@ -1,5 +1,5 @@
 {
     "url": "http://www.livejournal.com/magazine/299255.html",
     "text": "Разнокомпонентный интеграл от функции комплексной переменной: методология и особенности",
-    "secure": "<ul class='entryunit__types types-entryunit'><li class='types-entryunit__item types-entryunit__item--sticky' title='Верхняя запись'><svg class='svgicon flaticon flaticon--security-friends'  style='pointer-events: none; visibility: hidden;'><use xlink:href='#flaticon--security-friends'></svg></li></ul>"
+    "secure": "<ul class='entryunit__types types-entryunit'><li class='types-entryunit__item types-entryunit__item--security-protected' title='Защищённая запись'><svg class='svgicon flaticon flaticon--security-protected' style='pointer-events: none; visibility: hidden;'><use xlink:href='#flaticon--security-protected'></use></svg></li><li class='types-entryunit__item types-entryunit__item--sticky' title='Верхняя запись'><svg class='svgicon flaticon flaticon--sticky' style='pointer-events: none; visibility: hidden;'><use xlink:href='#flaticon--sticky'></use></svg></li></ul>"
 }

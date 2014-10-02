@@ -9,15 +9,15 @@
             "title": "Скрыть автора из рейтинга",
             "url": "#"
         },{
-            "id": "edit",
+            "id": "edit_entry",
             "title": "Редактировать",
             "url": "#"
         },{
-            "id": "delete-repost",
+            "id": "delete_repost",
             "title": "Удалить репост",
             "url": "#"
         },{
-            "id": "favorite",
+            "id": "mem_add",
             "title": "Добавить в избранное",
             "url": "#",
             "class": "controls-entryunit__item--pressed"
@@ -26,7 +26,7 @@
             "title": "Поделиться",
             "url": "#"
         },{
-            "id": "track",
+            "id": "watch_comments",
             "title": "Отслеживать",
             "url": "#"
         },{
