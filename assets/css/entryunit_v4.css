@@ -335,13 +335,14 @@
 /* TYPES
 --------------------------- */
 .types-entryunit {
-    float: left;
+    display: inline-block;
     margin: 0 5px 0 0;
+    vertical-align: 15%;
     }
     .types-entryunit__item {
         display: inline-block;
         margin: 0 5px 0 0;
-        vertical-align: middle;
+        vertical-align: text-bottom;
         overflow: hidden;
         }
         .types-entryunit__item .svgicon {
