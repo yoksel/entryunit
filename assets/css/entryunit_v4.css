@@ -444,6 +444,7 @@
             color: #0086B3;
             }
         .controls-entryunit__icon .svgicon {
+            display: block;
             fill: currentColor !important;
             }
 
