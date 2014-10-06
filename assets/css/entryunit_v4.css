@@ -596,6 +596,7 @@
         display: block;
         width: 100%;
         margin-top: 15px;
+        padding: 0;
         visibility: visible;
         background: #f8f9fb;
         border: 1px solid #DAE3E6;
@@ -604,6 +605,7 @@
 
     .controls-entryunit__item {
         display: inline-block;
+        vertical-align: top;
         }
 
     .controls-entryunit__link:after,
