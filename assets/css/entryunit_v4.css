@@ -9,6 +9,9 @@
     color: #242F33;
     *zoom: 1;
     }
+    .j-p-layout-tw .entryunit {
+        padding-left: 30px;
+        }
     .entryunit:after {
         content: "";
         display: table;
@@ -17,7 +20,7 @@
         }
     /* remove line on last element */
     .entryunit:last-child {
-        padding-bottom: 0;
+        /*padding-bottom: 0;*/ /* need padding in last journal post */
         border-bottom: 0
         }
 
@@ -390,20 +393,22 @@
     width: 40px;
     margin: 0;
     padding: 10px 0 0 0;
-    border-left: 1px solid #DAE3E6;
+    border: 1px solid #DAE3E6;
+    border-width: 0 0 0 1px;
     background: #F7F9FA;
     }
 
-    .entryunit:hover .controls-entryunit {
+    .entryunit:hover .controls-entryunit,
+    .entryunit--addmem-open .controls-entryunit {
         display: block;
         }
 
-/* Fix icons while scrolling page */
-.entryunit--scrolling {
+/* Show icons while scrolling page */
+.js--scrolling {
     position: fixed;
     top: 0
     }
-    .entryunit--scrolling-stop {
+    .js--scrolling-stop {
         position: absolute;
         top: auto;
         bottom: 0
@@ -536,7 +541,9 @@
 /* In jornal or feed */
 .entryunit__text {
         }
-    .entryunit__text IMG {
+    .entryunit__text IMG:not(.i-ljpoll-results-bar) {
+
+
         max-width: 100%;
         height: auto
         }
@@ -569,6 +576,13 @@
         height: 300px
     }
 }
+
+@media (max-width: 900px) {
+    .j-p-layout-tw .entryunit {
+        padding-left: 0;
+        }
+}
+
 @media all and (max-width: 700px) {
     .panorama-entryunit__pic,
     .video-entryunit EMBED,
@@ -580,17 +594,14 @@
 
  @media (max-width: 680px) {
     .entryunit {
-        padding-right: 0;
+        padding: 2.5em 0 0;
         }
-
-    .b-lenta-item-date {
-        display: block
-    }
-
     .entryunit__text {
         line-height: 1.5
         }
-
+    .actions-entryunit--no-controls {
+        margin-bottom: 1.5em;
+        }
     .controls-entryunit {
         position: relative;
         display: block;
@@ -600,8 +611,11 @@
         visibility: visible;
         background: #f8f9fb;
         border: 1px solid #DAE3E6;
-        border-width: 1px 0;
         }
+        .controls-entryunit,
+        .j-p-layout-tw .controls-entryunit {
+            border-width: 1px 0 0;
+            }
 
     .controls-entryunit__item {
         display: inline-block;
@@ -614,13 +628,11 @@
         display: none
         }
 
-    .j-e-scrolling-stop {
-        bottom: auto
-        }
-
-    .j-e-scrolling {
+    .js--scrolling,
+    .js--scrolling-stop {
         position: relative;
-        top: auto
+        top: auto;
+        bottom: auto;
         }
 }
 
@@ -632,6 +644,7 @@
         height: 200px
     }
 }
+
 @media all and (max-width: 480px) {
     .entryunit__title {
         font-size: 1.5em
